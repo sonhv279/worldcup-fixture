@@ -38,8 +38,11 @@ button {
 
 .site-header {
   background:
-    linear-gradient(135deg, rgba(6, 56, 38, 0.94), rgba(9, 91, 65, 0.86)),
-    radial-gradient(circle at top right, rgba(217, 169, 40, 0.45), transparent 42%);
+    linear-gradient(135deg, rgba(5, 34, 24, 0.88), rgba(8, 72, 52, 0.78)),
+    radial-gradient(circle at top right, rgba(217, 169, 40, 0.28), transparent 42%),
+    url("assets/hero-stadium-bg.png");
+  background-position: center;
+  background-size: cover;
   color: #fff;
   padding: 18px clamp(16px, 4vw, 56px) 44px;
 }
