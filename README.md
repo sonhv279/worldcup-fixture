@@ -6,8 +6,13 @@ Website tinh gon de theo doi lich 104 tran FIFA World Cup 2026 theo gio Viet Nam
 
 - Hien thi 104 tran theo ngay/gio Viet Nam.
 - Bo loc theo ngay, vong dau, bang, san, quoc gia dang cai va tim kiem nhanh.
-- Khu "Tran gan nhat" de xem tran sap dien ra.
-- Tab "San van dong" gom 16 san, thanh pho/quoc gia va danh sach tran tai tung san.
+- Khu "Tran gan nhat" kem countdown den gio bong lan.
+- Card trang thai giai dau: truoc giai, dang dien ra, da ket thuc.
+- Tab "Lich thang" hien thi cac ngay co tran theo dang calendar.
+- Tab "Bang xep hang" tinh diem cac bang tu ty so FIFA.
+- Tab "Nhanh dau" hien thi knockout bracket theo tung vong.
+- Tab "San van dong" gom 16 san, thanh pho/quoc gia, so tran, suc chua neu API co du lieu va link ban do.
+- Toggle "Nen ro/Nen diu" de dieu chinh do ro cua anh background.
 - Du lieu cache tu FIFA API vao `data/worldcup-2026.json`.
 - Ho tro mo truc tiep `index.html` bang Chrome nho file cache `data/worldcup-2026.js`.
 
@@ -68,6 +73,7 @@ Script se validate:
 ├── styles.css
 ├── app.js
 ├── assets/
+│   ├── hero-stadium-bg.png
 │   └── world-cup-2026-logo.png
 ├── data/
 │   ├── worldcup-2026.json

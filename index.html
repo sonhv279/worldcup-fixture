@@ -21,9 +21,12 @@
         </a>
         <div class="nav-tabs" role="tablist" aria-label="Chọn chế độ xem">
           <button class="nav-tab is-active" type="button" data-view="schedule" role="tab" aria-selected="true">Lịch thi đấu</button>
+          <button class="nav-tab" type="button" data-view="calendar" role="tab" aria-selected="false">Lịch tháng</button>
           <button class="nav-tab" type="button" data-view="standings" role="tab" aria-selected="false">Bảng xếp hạng</button>
+          <button class="nav-tab" type="button" data-view="bracket" role="tab" aria-selected="false">Nhánh đấu</button>
           <button class="nav-tab" type="button" data-view="venues" role="tab" aria-selected="false">Sân vận động</button>
         </div>
+        <button class="background-toggle" id="background-toggle" type="button" aria-pressed="false">Nền rõ</button>
       </nav>
 
       <section class="hero" aria-labelledby="page-title">
@@ -56,6 +59,24 @@
           <span>Múi giờ</span>
           <strong>GMT+7</strong>
         </article>
+      </section>
+
+      <section class="phase-card" aria-labelledby="phase-title">
+        <div>
+          <p class="eyebrow">Trạng thái giải</p>
+          <h2 id="phase-title"><span id="phase-label">Đang tải...</span></h2>
+          <p id="phase-detail">Đang phân tích lịch thi đấu và dữ liệu tỷ số.</p>
+        </div>
+        <div class="phase-metrics" aria-label="Thông tin trạng thái">
+          <div>
+            <span>Tiến độ</span>
+            <strong id="phase-progress">--</strong>
+          </div>
+          <div>
+            <span>Ưu tiên xem</span>
+            <strong id="phase-focus">Lịch</strong>
+          </div>
+        </div>
       </section>
 
       <section class="next-card" aria-labelledby="next-title">
@@ -129,6 +150,18 @@
         <div id="venues-list" class="venues-grid" aria-live="polite"></div>
       </section>
 
+      <section id="calendar-view" class="view-section" aria-labelledby="calendar-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Calendar</p>
+            <h2 id="calendar-title">Lịch tháng</h2>
+          </div>
+          <div class="result-count" id="calendar-count">-- ngày</div>
+        </div>
+        <p class="helper-text">Các ô ngày được nhóm theo giờ Việt Nam. Bấm tab lịch thi đấu để xem chi tiết đầy đủ từng trận.</p>
+        <div id="calendar-list" class="calendar-list" aria-live="polite"></div>
+      </section>
+
       <section id="standings-view" class="view-section" aria-labelledby="standings-title">
         <div class="section-heading">
           <div>
@@ -139,6 +172,18 @@
         </div>
         <p class="helper-text">Bảng điểm được tính từ tỷ số trong dữ liệu FIFA. Khi các trận chưa diễn ra, các đội sẽ cùng 0 điểm.</p>
         <div id="standings-list" class="standings-grid" aria-live="polite"></div>
+      </section>
+
+      <section id="bracket-view" class="view-section" aria-labelledby="bracket-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Knockout</p>
+            <h2 id="bracket-title">Nhánh đấu</h2>
+          </div>
+          <div class="result-count" id="bracket-count">-- trận</div>
+        </div>
+        <p class="helper-text">Nhánh đấu dùng dữ liệu knockout từ FIFA. Khi đội chưa xác định, website hiển thị placeholder như "Thắng trận 101".</p>
+        <div id="bracket-list" class="bracket-scroll" aria-live="polite"></div>
       </section>
 
       <section id="error-state" class="error-state" hidden>

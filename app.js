@@ -3,6 +3,8 @@ const DATA_URL = "data/worldcup-2026.json";
 const state = {
   data: null,
   view: "schedule",
+  nextMatch: null,
+  countdownTimer: null,
   filters: {
     query: "",
     date: "",
@@ -19,16 +21,27 @@ const elements = {
   statVenues: document.querySelector("#stat-venues"),
   statDays: document.querySelector("#stat-days"),
   nextMatch: document.querySelector("#next-match"),
+  phaseLabel: document.querySelector("#phase-label"),
+  phaseDetail: document.querySelector("#phase-detail"),
+  phaseProgress: document.querySelector("#phase-progress"),
+  phaseFocus: document.querySelector("#phase-focus"),
   resultCount: document.querySelector("#result-count"),
   venueCount: document.querySelector("#venue-count"),
   standingsCount: document.querySelector("#standings-count"),
+  calendarCount: document.querySelector("#calendar-count"),
+  bracketCount: document.querySelector("#bracket-count"),
   scheduleList: document.querySelector("#schedule-list"),
   venuesList: document.querySelector("#venues-list"),
   standingsList: document.querySelector("#standings-list"),
+  calendarList: document.querySelector("#calendar-list"),
+  bracketList: document.querySelector("#bracket-list"),
   scheduleView: document.querySelector("#schedule-view"),
   venuesView: document.querySelector("#venues-view"),
   standingsView: document.querySelector("#standings-view"),
+  calendarView: document.querySelector("#calendar-view"),
+  bracketView: document.querySelector("#bracket-view"),
   errorState: document.querySelector("#error-state"),
+  backgroundToggle: document.querySelector("#background-toggle"),
   resetFilters: document.querySelector("#reset-filters"),
   searchInput: document.querySelector("#search-input"),
   dateFilter: document.querySelector("#date-filter"),
@@ -48,6 +61,15 @@ const dateTimeFormatter = new Intl.DateTimeFormat("vi-VN", {
   minute: "2-digit",
   hour12: false
 });
+
+const monthFormatter = new Intl.DateTimeFormat("vi-VN", {
+  month: "long",
+  year: "numeric"
+});
+
+const shortWeekdays = ["T2", "T3", "T4", "T5", "T6", "T7", "CN"];
+
+const knockoutStages = ["Vòng 1/32", "Vòng 1/8", "Tứ kết", "Bán kết", "Tranh hạng ba", "Chung kết"];
 
 const flagEmojiByCountry = {
   ALG: "🇩🇿",
@@ -124,6 +146,46 @@ function formatUpdated(isoDate) {
   return `Cập nhật ${dateTimeFormatter.format(new Date(isoDate))}`;
 }
 
+function parseVietnamShortDate(value) {
+  const [day, month, year] = String(value || "").split("/").map(Number);
+  return { day, month, year };
+}
+
+function dateFromVietnamShortDate(value) {
+  const { day, month, year } = parseVietnamShortDate(value);
+  return new Date(Date.UTC(year, month - 1, day));
+}
+
+function monthKeyFromMatch(match) {
+  const { month, year } = parseVietnamShortDate(match.vietnamShortDate);
+  return `${year}-${String(month).padStart(2, "0")}`;
+}
+
+function formatCountdown(isoDate) {
+  const diff = new Date(isoDate).getTime() - Date.now();
+  if (diff <= 0) {
+    return "Đang diễn ra hoặc chờ cập nhật";
+  }
+
+  const totalMinutes = Math.floor(diff / 60000);
+  const days = Math.floor(totalMinutes / 1440);
+  const hours = Math.floor((totalMinutes % 1440) / 60);
+  const minutes = totalMinutes % 60;
+
+  if (days > 0) {
+    return `Còn ${days} ngày ${hours} giờ`;
+  }
+  if (hours > 0) {
+    return `Còn ${hours} giờ ${minutes} phút`;
+  }
+  return `Còn ${minutes} phút`;
+}
+
+function googleMapsUrl(venue) {
+  const query = [venue.name, venue.city, venue.countryName].filter(Boolean).join(", ");
+  return `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(query)}`;
+}
+
 function uniqueBy(items, keyFn) {
   const map = new Map();
   for (const item of items) {
@@ -170,6 +232,36 @@ function renderStats() {
   elements.statMatches.textContent = state.data.matches.length;
   elements.statVenues.textContent = state.data.venues.length;
   elements.statDays.textContent = days.size;
+}
+
+function renderTournamentPhase() {
+  const matches = state.data.matches;
+  const now = new Date();
+  const firstMatch = matches[0];
+  const lastMatch = matches[matches.length - 1];
+  const completed = matches.filter((match) => match.score || Number(match.status?.code) >= 10).length;
+  const progress = Math.round((completed / matches.length) * 100);
+
+  if (now < new Date(firstMatch.utcDate)) {
+    elements.phaseLabel.textContent = "Trước giải";
+    elements.phaseDetail.textContent = `Trận khai mạc: ${firstMatch.home.name} vs ${firstMatch.away.name}, ${firstMatch.vietnamTime} ${firstMatch.vietnamDate}.`;
+    elements.phaseProgress.textContent = "0%";
+    elements.phaseFocus.textContent = "Lịch và sân";
+    return;
+  }
+
+  if (now <= new Date(lastMatch.utcDate)) {
+    elements.phaseLabel.textContent = "Đang diễn ra";
+    elements.phaseDetail.textContent = "Ưu tiên theo dõi trận hôm nay, tỷ số mới và bảng xếp hạng các bảng.";
+    elements.phaseProgress.textContent = `${progress}%`;
+    elements.phaseFocus.textContent = completed > 0 ? "BXH và tỷ số" : "Trận sắp tới";
+    return;
+  }
+
+  elements.phaseLabel.textContent = "Đã kết thúc";
+  elements.phaseDetail.textContent = `Giải đã kết thúc sau trận chung kết tại ${lastMatch.stadium.name}.`;
+  elements.phaseProgress.textContent = "100%";
+  elements.phaseFocus.textContent = "Kết quả";
 }
 
 function teamHtml(team) {
@@ -223,6 +315,7 @@ function scoreText(match) {
 function renderNextMatch() {
   const now = new Date();
   const upcoming = state.data.matches.find((match) => new Date(match.utcDate) >= now) || state.data.matches[0];
+  state.nextMatch = upcoming;
 
   if (!upcoming) {
     elements.nextMatch.innerHTML = "Không có dữ liệu trận đấu.";
@@ -234,6 +327,7 @@ function renderNextMatch() {
     <div class="next-time">
       <strong>${escapeHtml(upcoming.vietnamTime)}</strong>
       <span>${escapeHtml(upcoming.vietnamDate)}</span>
+      <em id="next-countdown">${escapeHtml(formatCountdown(upcoming.utcDate))}</em>
     </div>
     <div>
       <div class="match-title-row">
@@ -248,6 +342,22 @@ function renderNextMatch() {
       <div><strong>Giờ địa phương:</strong> ${escapeHtml(upcoming.localTimeAtVenue)}</div>
     </dl>
   `;
+}
+
+function startCountdown() {
+  if (state.countdownTimer) {
+    window.clearInterval(state.countdownTimer);
+  }
+
+  const update = () => {
+    const countdown = document.querySelector("#next-countdown");
+    if (countdown && state.nextMatch) {
+      countdown.textContent = formatCountdown(state.nextMatch.utcDate);
+    }
+  };
+
+  update();
+  state.countdownTimer = window.setInterval(update, 60000);
 }
 
 function matchesQuery(match, query) {
@@ -349,6 +459,7 @@ function renderVenues() {
   elements.venuesList.innerHTML = state.data.venues
     .map((venue) => `
       <article class="venue-card">
+        <div class="venue-photo" aria-hidden="true"></div>
         <header>
           <div>
             <h3>${escapeHtml(venue.name)}</h3>
@@ -356,9 +467,14 @@ function renderVenues() {
           </div>
           <div class="venue-count" aria-label="${escapeHtml(venue.matchCount)} trận">${escapeHtml(venue.matchCount)}</div>
         </header>
+        <dl class="venue-details">
+          <div><dt>Sức chứa</dt><dd>${venue.capacity ? Number(venue.capacity).toLocaleString("vi-VN") : "Đang cập nhật"}</dd></div>
+          <div><dt>Mái che</dt><dd>${venue.roof ? "Có" : "Không rõ"}</dd></div>
+        </dl>
         <div class="match-chips" aria-label="Danh sách trận">
           ${venue.matchNumbers.map((number) => `<span class="match-chip">Trận ${escapeHtml(number)}</span>`).join("")}
         </div>
+        <a class="map-link" href="${escapeHtml(googleMapsUrl(venue))}" target="_blank" rel="noreferrer">Xem trên bản đồ</a>
       </article>
     `)
     .join("");
@@ -494,6 +610,106 @@ function renderStandings() {
     .join("");
 }
 
+function renderCalendar() {
+  const dayGroups = new Map();
+  for (const match of state.data.matches) {
+    const key = match.vietnamShortDate;
+    if (!dayGroups.has(key)) {
+      dayGroups.set(key, []);
+    }
+    dayGroups.get(key).push(match);
+  }
+
+  const monthGroups = new Map();
+  for (const [date, matches] of dayGroups.entries()) {
+    const monthKey = monthKeyFromMatch(matches[0]);
+    if (!monthGroups.has(monthKey)) {
+      monthGroups.set(monthKey, []);
+    }
+    monthGroups.get(monthKey).push({ date, matches });
+  }
+
+  elements.calendarCount.textContent = `${dayGroups.size} ngày`;
+  elements.calendarList.innerHTML = [...monthGroups.entries()]
+    .sort(([a], [b]) => a.localeCompare(b))
+    .map(([, days]) => {
+      const firstDay = dateFromVietnamShortDate(days[0].date);
+      const year = firstDay.getUTCFullYear();
+      const month = firstDay.getUTCMonth();
+      const daysInMonth = new Date(Date.UTC(year, month + 1, 0)).getUTCDate();
+      const firstWeekday = (new Date(Date.UTC(year, month, 1)).getUTCDay() + 6) % 7;
+      const byDay = new Map(days.map((item) => [parseVietnamShortDate(item.date).day, item.matches]));
+      const cells = [];
+
+      for (let i = 0; i < firstWeekday; i += 1) {
+        cells.push(`<div class="calendar-day is-empty" aria-hidden="true"></div>`);
+      }
+
+      for (let day = 1; day <= daysInMonth; day += 1) {
+        const matches = byDay.get(day) || [];
+        cells.push(`
+          <article class="calendar-day ${matches.length ? "has-matches" : ""}">
+            <strong>${day}</strong>
+            ${matches.length ? `
+              <span>${matches.length} trận</span>
+              <div class="calendar-matches">
+                ${matches.slice(0, 3).map((match) => `
+                  <div>${escapeHtml(match.vietnamTime)} · Trận ${escapeHtml(match.matchNumber)}</div>
+                `).join("")}
+                ${matches.length > 3 ? `<div>+${matches.length - 3} trận nữa</div>` : ""}
+              </div>
+            ` : ""}
+          </article>
+        `);
+      }
+
+      return `
+        <section class="calendar-month">
+          <h3>${escapeHtml(monthFormatter.format(firstDay))}</h3>
+          <div class="calendar-weekdays">
+            ${shortWeekdays.map((day) => `<span>${day}</span>`).join("")}
+          </div>
+          <div class="calendar-grid">
+            ${cells.join("")}
+          </div>
+        </section>
+      `;
+    })
+    .join("");
+}
+
+function bracketTeamName(team) {
+  return team.name || team.shortName || team.abbreviation || "Chưa xác định";
+}
+
+function renderBracket() {
+  const knockoutMatches = state.data.matches.filter((match) => !match.group);
+  elements.bracketCount.textContent = `${knockoutMatches.length} trận`;
+  elements.bracketList.innerHTML = knockoutStages
+    .map((stage) => {
+      const matches = knockoutMatches.filter((match) => match.stageVi === stage);
+      return `
+        <section class="bracket-round">
+          <h3>${escapeHtml(stage)}</h3>
+          ${matches.map((match) => `
+            <article class="bracket-match">
+              <div class="bracket-meta">
+                <span>Trận ${escapeHtml(match.matchNumber)}</span>
+                <strong>${escapeHtml(match.vietnamTime)} · ${escapeHtml(match.vietnamShortDate)}</strong>
+              </div>
+              <div class="bracket-teams">
+                <div>${escapeHtml(bracketTeamName(match.home))}</div>
+                <div>${escapeHtml(bracketTeamName(match.away))}</div>
+              </div>
+              <p>${escapeHtml(match.stadium.name)} · ${escapeHtml(match.stadium.city)}</p>
+            </article>
+          `).join("")}
+        </section>
+      `;
+    })
+    .join("");
+}
+
 function updateFilterFromInputs() {
   state.filters.query = elements.searchInput.value.trim();
   state.filters.date = elements.dateFilter.value;
@@ -523,13 +739,29 @@ function setView(view) {
   });
 
   elements.scheduleView.classList.toggle("is-active", view === "schedule");
+  elements.calendarView.classList.toggle("is-active", view === "calendar");
   elements.venuesView.classList.toggle("is-active", view === "venues");
   elements.standingsView.classList.toggle("is-active", view === "standings");
+  elements.bracketView.classList.toggle("is-active", view === "bracket");
+}
+
+function applyBackgroundMode(mode) {
+  const soft = mode === "soft";
+  document.body.classList.toggle("bg-soft", soft);
+  elements.backgroundToggle.textContent = soft ? "Nền dịu" : "Nền rõ";
+  elements.backgroundToggle.setAttribute("aria-pressed", String(!soft));
+  window.localStorage.setItem("backgroundMode", mode);
 }
 
 function bindEvents() {
   document.querySelectorAll(".nav-tab").forEach((button) => {
     button.addEventListener("click", () => setView(button.dataset.view));
+  });
+
+  const savedBackgroundMode = window.localStorage.getItem("backgroundMode") || "clear";
+  applyBackgroundMode(savedBackgroundMode);
+  elements.backgroundToggle.addEventListener("click", () => {
+    applyBackgroundMode(document.body.classList.contains("bg-soft") ? "clear" : "soft");
   });
 
   elements.resetFilters.addEventListener("click", resetFilters);
@@ -563,16 +795,22 @@ async function init() {
     state.data = await loadData();
     setupFilters();
     renderStats();
+    renderTournamentPhase();
     renderNextMatch();
+    startCountdown();
     renderSchedule();
+    renderCalendar();
     renderVenues();
     renderStandings();
+    renderBracket();
   } catch (error) {
     console.error(error);
     elements.nextMatch.hidden = true;
     elements.scheduleView.hidden = true;
+    elements.calendarView.hidden = true;
     elements.venuesView.hidden = true;
     elements.standingsView.hidden = true;
+    elements.bracketView.hidden = true;
     elements.errorState.hidden = false;
     elements.lastUpdated.textContent = "Không tải được dữ liệu cache";
   }
