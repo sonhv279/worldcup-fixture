@@ -293,7 +293,7 @@ main {
 
 .phase-metrics {
   display: grid;
-  grid-template-columns: repeat(2, minmax(110px, 1fr));
+  grid-template-columns: minmax(110px, 150px);
   gap: 12px;
 }
 

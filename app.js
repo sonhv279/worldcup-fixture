@@ -24,7 +24,6 @@ const elements = {
   phaseLabel: document.querySelector("#phase-label"),
   phaseDetail: document.querySelector("#phase-detail"),
   phaseProgress: document.querySelector("#phase-progress"),
-  phaseFocus: document.querySelector("#phase-focus"),
   resultCount: document.querySelector("#result-count"),
   venueCount: document.querySelector("#venue-count"),
   standingsCount: document.querySelector("#standings-count"),
@@ -246,7 +245,6 @@ function renderTournamentPhase() {
     elements.phaseLabel.textContent = "Trước giải";
     elements.phaseDetail.textContent = `Trận khai mạc: ${firstMatch.home.name} vs ${firstMatch.away.name}, ${firstMatch.vietnamTime} ${firstMatch.vietnamDate}.`;
     elements.phaseProgress.textContent = "0%";
-    elements.phaseFocus.textContent = "Lịch và sân";
     return;
   }
 
@@ -254,14 +252,12 @@ function renderTournamentPhase() {
     elements.phaseLabel.textContent = "Đang diễn ra";
     elements.phaseDetail.textContent = "Ưu tiên theo dõi trận hôm nay, tỷ số mới và bảng xếp hạng các bảng.";
     elements.phaseProgress.textContent = `${progress}%`;
-    elements.phaseFocus.textContent = completed > 0 ? "BXH và tỷ số" : "Trận sắp tới";
     return;
   }
 
   elements.phaseLabel.textContent = "Đã kết thúc";
   elements.phaseDetail.textContent = `Giải đã kết thúc sau trận chung kết tại ${lastMatch.stadium.name}.`;
   elements.phaseProgress.textContent = "100%";
-  elements.phaseFocus.textContent = "Kết quả";
 }
 
 function teamHtml(team) {
