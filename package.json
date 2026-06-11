@@ -1,0 +1,14 @@
+{
+  "name": "world-cup-2026-vietnam-schedule",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "sync": "node scripts/sync-fifa.mjs",
+    "dev": "node scripts/serve.mjs",
+    "check": "node scripts/check-data.mjs"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

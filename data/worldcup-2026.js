@@ -1,0 +1,5195 @@
+window.__WORLD_CUP_2026_DATA__ = {
+  "generatedAt": "2026-06-11T04:36:52.292Z",
+  "sourceUrl": "https://api.fifa.com/api/v3/calendar/matches?idSeason=285023&language=en&count=200",
+  "idCompetition": "17",
+  "idSeason": "285023",
+  "timezone": "Asia/Ho_Chi_Minh",
+  "matches": [
+    {
+      "id": "400021443",
+      "matchNumber": 1,
+      "stage": "First Stage",
+      "stageVi": "Vòng bảng",
+      "group": "Bảng A",
+      "utcDate": "2026-06-11T19:00:00Z",
+      "localDateAtVenue": "2026-06-11T13:00:00Z",
+      "localTimeAtVenue": "13:00 11/06/2026",
+      "vietnamDate": "Thứ Sáu, 12/06/2026",
+      "vietnamShortDate": "12/06/2026",
+      "vietnamTime": "02:00",
+      "home": {
+        "id": "43911",
+        "name": "Mexico",
+        "shortName": "Mexico",
+        "abbreviation": "MEX",
+        "country": "MEX",
+        "flagUrl": "https://api.fifa.com/api/v3/picture/flags-png-2/MEX",
+        "isPlaceholder": false
+      },
+      "away": {
+        "id": "43883",
+        "name": "South Africa",
+        "shortName": "South Africa",
+        "abbreviation": "RSA",
+        "country": "RSA",
+        "flagUrl": "https://api.fifa.com/api/v3/picture/flags-png-2/RSA",
+        "isPlaceholder": false
+      },
+      "placeholderHome": "A1",
+      "placeholderAway": "A2",
+      "score": null,
+      "status": {
+        "code": 1,
+        "label": "Sắp diễn ra"
+      },
+      "stadium": {
+        "id": "400222084",
+        "name": "Mexico City Stadium",
+        "city": "Mexico City",
+        "country": "MEX",
+        "countryName": "Mexico",
+        "capacity": null,
+        "roof": false
+      }
+    },
+    {
+      "id": "400021441",
+      "matchNumber": 2,
+      "stage": "First Stage",
+      "stageVi": "Vòng bảng",
+      "group": "Bảng A",
+      "utcDate": "2026-06-12T02:00:00Z",
+      "localDateAtVenue": "2026-06-11T20:00:00Z",
+      "localTimeAtVenue": "20:00 11/06/2026",
+      "vietnamDate": "Thứ Sáu, 12/06/2026",
+      "vietnamShortDate": "12/06/2026",
+      "vietnamTime": "09:00",
+      "home": {
+        "id": "43822",
+        "name": "Korea Republic",
+        "shortName": "Korea Republic",
+        "abbreviation": "KOR",
+        "country": "KOR",
+        "flagUrl": "https://api.fifa.com/api/v3/picture/flags-png-2/KOR",
+        "isPlaceholder": false
+      },
+      "away": {
+        "id": "43995",
+        "name": "Czechia",
+        "shortName": "Czechia",
+        "abbreviation": "CZE",
+        "country": "CZE",
+        "flagUrl": "https://api.fifa.com/api/v3/picture/flags-png-2/CZE",
+        "isPlaceholder": false
+      },
+      "placeholderHome": "A3",
+      "placeholderAway": "A4",
+      "score": null,
+      "status": {
+        "code": 1,
+        "label": "Sắp diễn ra"
+      },
+      "stadium": {
+        "id": "400252150",
+        "name": "Guadalajara Stadium",
+        "city": "Guadalajara",
+        "country": "MEX",
+        "countryName": "Mexico",
+        "capacity": null,
+        "roof": false
+      }
+    },
+    {
+      "id": "400021449",
+      "matchNumber": 3,
+      "stage": "First Stage",
+      "stageVi": "Vòng bảng",
+      "group": "Bảng B",
+      "utcDate": "2026-06-12T19:00:00Z",
+      "localDateAtVenue": "2026-06-12T15:00:00Z",
+      "localTimeAtVenue": "15:00 12/06/2026",
+      "vietnamDate": "Thứ Bảy, 13/06/2026",
+      "vietnamShortDate": "13/06/2026",
+      "vietnamTime": "02:00",
+      "home": {
+        "id": "43899",
+        "name": "Canada",
+        "shortName": "Canada",
+        "abbreviation": "CAN",
+        "country": "CAN",
+        "flagUrl": "https://api.fifa.com/api/v3/picture/flags-png-2/CAN",
+        "isPlaceholder": false
+      },
+      "away": {
+        "id": "44037",
+        "name": "Bosnia and Herzegovina",
+        "shortName": "Bosnia and Herzegovina",
+        "abbreviation": "BIH",
+        "country": "BIH",
+        "flagUrl": "https://api.fifa.com/api/v3/picture/flags-png-2/BIH",
+        "isPlaceholder": false
+      },
+      "placeholderHome": "B1",
+      "placeholderAway": "B2",
+      "score": null,
+      "status": {
+        "code": 1,
+        "label": "Sắp diễn ra"
+      },
+      "stadium": {
+        "id": "400242032",
+        "name": "Toronto Stadium",
+        "city": "Toronto",
+        "country": "CAN",
+        "countryName": "Canada",
+        "capacity": null,
+        "roof": false
+      }
+    },
+    {
+      "id": "400021458",
+      "matchNumber": 4,
+      "stage": "First Stage",
+      "stageVi": "Vòng bảng",
+      "group": "Bảng D",
+      "utcDate": "2026-06-13T01:00:00Z",
+      "localDateAtVenue": "2026-06-12T18:00:00Z",
+      "localTimeAtVenue": "18:00 12/06/2026",
+      "vietnamDate": "Thứ Bảy, 13/06/2026",
+      "vietnamShortDate": "13/06/2026",
+      "vietnamTime": "08:00",
+      "home": {
+        "id": "43921",
+        "name": "USA",
+        "shortName": "USA",
+        "abbreviation": "USA",
+        "country": "USA",
+        "flagUrl": "https://api.fifa.com/api/v3/picture/flags-png-2/USA",
+        "isPlaceholder": false
+      },
+      "away": {
+        "id": "43928",
+        "name": "Paraguay",
+        "shortName": "Paraguay",
+        "abbreviation": "PAR",
+        "country": "PAR",
+        "flagUrl": "https://api.fifa.com/api/v3/picture/flags-png-2/PAR",
+        "isPlaceholder": false
+      },
+      "placeholderHome": "D1",
+      "placeholderAway": "D2",
+      "score": null,
+      "status": {
+        "code": 1,
+        "label": "Sắp diễn ra"
+      },
+      "stadium": {
+        "id": "400017978",
+        "name": "Los Angeles Stadium",
+        "city": "Los Angeles",
+        "country": "USA",
+        "countryName": "Mỹ",
+        "capacity": null,
+        "roof": false
+      }
+    },
+    {
+      "id": "400021447",
+      "matchNumber": 8,
+      "stage": "First Stage",
+      "stageVi": "Vòng bảng",
+      "group": "Bảng B",
+      "utcDate": "2026-06-13T19:00:00Z",
+      "localDateAtVenue": "2026-06-13T12:00:00Z",
+      "localTimeAtVenue": "12:00 13/06/2026",
+      "vietnamDate": "Chủ Nhật, 14/06/2026",
+      "vietnamShortDate": "14/06/2026",
+      "vietnamTime": "02:00",
+      "home": {
+        "id": "43834",
+        "name": "Qatar",
+        "shortName": "Qatar",
+        "abbreviation": "QAT",
+        "country": "QAT",
+        "flagUrl": "https://api.fifa.com/api/v3/picture/flags-png-2/QAT",
+        "isPlaceholder": false
+      },
+      "away": {
+        "id": "43971",
+        "name": "Switzerland",
+        "shortName": "Switzerland",
+        "abbreviation": "SUI",
+        "country": "SUI",
+        "flagUrl": "https://api.fifa.com/api/v3/picture/flags-png-2/SUI",
+        "isPlaceholder": false
+      },
+      "placeholderHome": "B3",
+      "placeholderAway": "B4",
+      "score": null,
+      "status": {
+        "code": 1,
+        "label": "Sắp diễn ra"
+      },
+      "stadium": {
+        "id": "400257521",
+        "name": "San Francisco Bay Area Stadium",
+        "city": "San Francisco Bay Area",
+        "country": "USA",
+        "countryName": "Mỹ",
+        "capacity": null,
+        "roof": false
+      }
+    },
+    {
+      "id": "400021456",
+      "matchNumber": 7,
+      "stage": "First Stage",
+      "stageVi": "Vòng bảng",
+      "group": "Bảng C",
+      "utcDate": "2026-06-13T22:00:00Z",
+      "localDateAtVenue": "2026-06-13T18:00:00Z",
+      "localTimeAtVenue": "18:00 13/06/2026",
+      "vietnamDate": "Chủ Nhật, 14/06/2026",
+      "vietnamShortDate": "14/06/2026",
+      "vietnamTime": "05:00",
+      "home": {
+        "id": "43924",
+        "name": "Brazil",
+        "shortName": "Brazil",
+        "abbreviation": "BRA",
+        "country": "BRA",
+        "flagUrl": "https://api.fifa.com/api/v3/picture/flags-png-2/BRA",
+        "isPlaceholder": false
+      },
+      "away": {
+        "id": "43872",
+        "name": "Morocco",
+        "shortName": "Morocco",
+        "abbreviation": "MAR",
+        "country": "MAR",
+        "flagUrl": "https://api.fifa.com/api/v3/picture/flags-png-2/MAR",
+        "isPlaceholder": false
+      },
+      "placeholderHome": "C1",
+      "placeholderAway": "C2",
+      "score": null,
+      "status": {
+        "code": 1,
+        "label": "Sắp diễn ra"
+      },
+      "stadium": {
+        "id": "400257536",
+        "name": "New York/New Jersey Stadium",
+        "city": "New Jersey",
+        "country": "USA",
+        "countryName": "Mỹ",
+        "capacity": null,
+        "roof": false
+      }
+    },
+    {
+      "id": "400021453",
+      "matchNumber": 5,
+      "stage": "First Stage",
+      "stageVi": "Vòng bảng",
+      "group": "Bảng C",
+      "utcDate": "2026-06-14T01:00:00Z",
+      "localDateAtVenue": "2026-06-13T21:00:00Z",
+      "localTimeAtVenue": "21:00 13/06/2026",
+      "vietnamDate": "Chủ Nhật, 14/06/2026",
+      "vietnamShortDate": "14/06/2026",
+      "vietnamTime": "08:00",
+      "home": {
+        "id": "43908",
+        "name": "Haiti",
+        "shortName": "Haiti",
+        "abbreviation": "HAI",
+        "country": "HAI",
+        "flagUrl": "https://api.fifa.com/api/v3/picture/flags-png-2/HAI",
+        "isPlaceholder": false
+      },
+      "away": {
+        "id": "43967",
+        "name": "Scotland",
+        "shortName": "Scotland",
+        "abbreviation": "SCO",
+        "country": "SCO",
+        "flagUrl": "https://api.fifa.com/api/v3/picture/flags-png-2/SCO",
+        "isPlaceholder": false
+      },
+      "placeholderHome": "C3",
+      "placeholderAway": "C4",
+      "score": null,
+      "status": {
+        "code": 1,
+        "label": "Sắp diễn ra"
+      },
+      "stadium": {
+        "id": "400248623",
+        "name": "Boston Stadium",
+        "city": "Boston",
+        "country": "USA",
+        "countryName": "Mỹ",
+        "capacity": null,
+        "roof": false
+      }
+    },
+    {
+      "id": "400021463",
+      "matchNumber": 6,
+      "stage": "First Stage",
+      "stageVi": "Vòng bảng",
+      "group": "Bảng D",
+      "utcDate": "2026-06-14T04:00:00Z",
+      "localDateAtVenue": "2026-06-13T21:00:00Z",
+      "localTimeAtVenue": "21:00 13/06/2026",
+      "vietnamDate": "Chủ Nhật, 14/06/2026",
+      "vietnamShortDate": "14/06/2026",
+      "vietnamTime": "11:00",
+      "home": {
+        "id": "43976",
+        "name": "Australia",
+        "shortName": "Australia",
+        "abbreviation": "AUS",
+        "country": "AUS",
+        "flagUrl": "https://api.fifa.com/api/v3/picture/flags-png-2/AUS",
+        "isPlaceholder": false
+      },
+      "away": {
+        "id": "43972",
+        "name": "Türkiye",
+        "shortName": "Türkiye",
+        "abbreviation": "TUR",
+        "country": "TUR",
+        "flagUrl": "https://api.fifa.com/api/v3/picture/flags-png-2/TUR",
+        "isPlaceholder": false
+      },
+      "placeholderHome": "D3",
+      "placeholderAway": "D4",
+      "score": null,
+      "status": {
+        "code": 1,
+        "label": "Sắp diễn ra"
+      },
+      "stadium": {
+        "id": "400248370",
+        "name": "BC Place Vancouver",
+        "city": "Vancouver",
+        "country": "CAN",
+        "countryName": "Canada",
+        "capacity": null,
+        "roof": false
+      }
+    },
+    {
+      "id": "400021464",
+      "matchNumber": 10,
+      "stage": "First Stage",
+      "stageVi": "Vòng bảng",
+      "group": "Bảng E",
+      "utcDate": "2026-06-14T17:00:00Z",
+      "localDateAtVenue": "2026-06-14T12:00:00Z",
+      "localTimeAtVenue": "12:00 14/06/2026",
+      "vietnamDate": "Thứ Hai, 15/06/2026",
+      "vietnamShortDate": "15/06/2026",
+      "vietnamTime": "00:00",
+      "home": {
+        "id": "43948",
+        "name": "Germany",
+        "shortName": "Germany",
+        "abbreviation": "GER",
+        "country": "GER",
+        "flagUrl": "https://api.fifa.com/api/v3/picture/flags-png-2/GER",
+        "isPlaceholder": false
+      },
+      "away": {
+        "id": "1895293",
+        "name": "Curaçao",
+        "shortName": "Curaçao",
+        "abbreviation": "CUW",
+        "country": "CUW",
+        "flagUrl": "https://api.fifa.com/api/v3/picture/flags-png-2/CUW",
+        "isPlaceholder": false
+      },
+      "placeholderHome": "E1",
+      "placeholderAway": "E2",
+      "score": null,
+      "status": {
+        "code": 1,
+        "label": "Sắp diễn ra"
+      },
+      "stadium": {
+        "id": "400249385",
+        "name": "Houston Stadium",
+        "city": "Houston",
+        "country": "USA",
+        "countryName": "Mỹ",
+        "capacity": null,
+        "roof": false
+      }
+    },
+    {
+      "id": "400021470",
+      "matchNumber": 11,
+      "stage": "First Stage",
+      "stageVi": "Vòng bảng",
+      "group": "Bảng F",
+      "utcDate": "2026-06-14T20:00:00Z",
+      "localDateAtVenue": "2026-06-14T15:00:00Z",
+      "localTimeAtVenue": "15:00 14/06/2026",
+      "vietnamDate": "Thứ Hai, 15/06/2026",
+      "vietnamShortDate": "15/06/2026",
+      "vietnamTime": "03:00",
+      "home": {
+        "id": "43960",
+        "name": "Netherlands",
+        "shortName": "Netherlands",
+        "abbreviation": "NED",
+        "country": "NED",
+        "flagUrl": "https://api.fifa.com/api/v3/picture/flags-png-2/NED",
+        "isPlaceholder": false
+      },
+      "away": {
+        "id": "43819",
+        "name": "Japan",
+        "shortName": "Japan",
+        "abbreviation": "JPN",
+        "country": "JPN",
+        "flagUrl": "https://api.fifa.com/api/v3/picture/flags-png-2/JPN",
+        "isPlaceholder": false
+      },
+      "placeholderHome": "F1",
+      "placeholderAway": "F2",
+      "score": null,
+      "status": {
+        "code": 1,
+        "label": "Sắp diễn ra"
+      },
+      "stadium": {
+        "id": "400257526",
+        "name": "Dallas Stadium",
+        "city": "Dallas",
+        "country": "USA",
+        "countryName": "Mỹ",
+        "capacity": null,
+        "roof": false
+      }
+    },
+    {
+      "id": "400021467",
+      "matchNumber": 9,
+      "stage": "First Stage",
+      "stageVi": "Vòng bảng",
+      "group": "Bảng E",
+      "utcDate": "2026-06-14T23:00:00Z",
+      "localDateAtVenue": "2026-06-14T19:00:00Z",
+      "localTimeAtVenue": "19:00 14/06/2026",
+      "vietnamDate": "Thứ Hai, 15/06/2026",
+      "vietnamShortDate": "15/06/2026",
+      "vietnamTime": "06:00",
+      "home": {
+        "id": "43854",
+        "name": "Côte d'Ivoire",
+        "shortName": "Côte d'Ivoire",
+        "abbreviation": "CIV",
+        "country": "CIV",
+        "flagUrl": "https://api.fifa.com/api/v3/picture/flags-png-2/CIV",
+        "isPlaceholder": false
+      },
+      "away": {
+        "id": "43927",
+        "name": "Ecuador",
+        "shortName": "Ecuador",
+        "abbreviation": "ECU",
+        "country": "ECU",
+        "flagUrl": "https://api.fifa.com/api/v3/picture/flags-png-2/ECU",
+        "isPlaceholder": false
+      },
+      "placeholderHome": "E3",
+      "placeholderAway": "E4",
+      "score": null,
+      "status": {
+        "code": 1,
+        "label": "Sắp diễn ra"
+      },
+      "stadium": {
+        "id": "400248622",
+        "name": "Philadelphia Stadium",
+        "city": "Philadelphia",
+        "country": "USA",
+        "countryName": "Mỹ",
+        "capacity": null,
+        "roof": false
+      }
+    },
+    {
+      "id": "400021474",
+      "matchNumber": 12,
+      "stage": "First Stage",
+      "stageVi": "Vòng bảng",
+      "group": "Bảng F",
+      "utcDate": "2026-06-15T02:00:00Z",
+      "localDateAtVenue": "2026-06-14T20:00:00Z",
+      "localTimeAtVenue": "20:00 14/06/2026",
+      "vietnamDate": "Thứ Hai, 15/06/2026",
+      "vietnamShortDate": "15/06/2026",
+      "vietnamTime": "09:00",
+      "home": {
+        "id": "43970",
+        "name": "Sweden",
+        "shortName": "Sweden",
+        "abbreviation": "SWE",
+        "country": "SWE",
+        "flagUrl": "https://api.fifa.com/api/v3/picture/flags-png-2/SWE",
+        "isPlaceholder": false
+      },
+      "away": {
+        "id": "43888",
+        "name": "Tunisia",
+        "shortName": "Tunisia",
+        "abbreviation": "TUN",
+        "country": "TUN",
+        "flagUrl": "https://api.fifa.com/api/v3/picture/flags-png-2/TUN",
+        "isPlaceholder": false
+      },
+      "placeholderHome": "F3",
+      "placeholderAway": "F4",
+      "score": null,
+      "status": {
+        "code": 1,
+        "label": "Sắp diễn ra"
+      },
+      "stadium": {
+        "id": "400238450",
+        "name": "Monterrey Stadium",
+        "city": "Monterrey",
+        "country": "MEX",
+        "countryName": "Mexico",
+        "capacity": null,
+        "roof": false
+      }
+    },
+    {
+      "id": "400021482",
+      "matchNumber": 14,
+      "stage": "First Stage",
+      "stageVi": "Vòng bảng",
+      "group": "Bảng H",
+      "utcDate": "2026-06-15T16:00:00Z",
+      "localDateAtVenue": "2026-06-15T12:00:00Z",
+      "localTimeAtVenue": "12:00 15/06/2026",
+      "vietnamDate": "Thứ Hai, 15/06/2026",
+      "vietnamShortDate": "15/06/2026",
+      "vietnamTime": "23:00",
+      "home": {
+        "id": "43969",
+        "name": "Spain",
+        "shortName": "Spain",
+        "abbreviation": "ESP",
+        "country": "ESP",
+        "flagUrl": "https://api.fifa.com/api/v3/picture/flags-png-2/ESP",
+        "isPlaceholder": false
+      },
+      "away": {
+        "id": "43850",
+        "name": "Cabo Verde",
+        "shortName": "Cabo Verde",
+        "abbreviation": "CPV",
+        "country": "CPV",
+        "flagUrl": "https://api.fifa.com/api/v3/picture/flags-png-2/CPV",
+        "isPlaceholder": false
+      },
+      "placeholderHome": "H1",
+      "placeholderAway": "H2",
+      "score": null,
+      "status": {
+        "code": 1,
+        "label": "Sắp diễn ra"
+      },
+      "stadium": {
+        "id": "400098290",
+        "name": "Atlanta Stadium",
+        "city": "Atlanta",
+        "country": "USA",
+        "countryName": "Mỹ",
+        "capacity": null,
+        "roof": false
+      }
+    },
+    {
+      "id": "400021478",
+      "matchNumber": 16,
+      "stage": "First Stage",
+      "stageVi": "Vòng bảng",
+      "group": "Bảng G",
+      "utcDate": "2026-06-15T19:00:00Z",
+      "localDateAtVenue": "2026-06-15T12:00:00Z",
+      "localTimeAtVenue": "12:00 15/06/2026",
+      "vietnamDate": "Thứ Ba, 16/06/2026",
+      "vietnamShortDate": "16/06/2026",
+      "vietnamTime": "02:00",
+      "home": {
+        "id": "43935",
+        "name": "Belgium",
+        "shortName": "Belgium",
+        "abbreviation": "BEL",
+        "country": "BEL",
+        "flagUrl": "https://api.fifa.com/api/v3/picture/flags-png-2/BEL",
+        "isPlaceholder": false
+      },
+      "away": {
+        "id": "43855",
+        "name": "Egypt",
+        "shortName": "Egypt",
+        "abbreviation": "EGY",
+        "country": "EGY",
+        "flagUrl": "https://api.fifa.com/api/v3/picture/flags-png-2/EGY",
+        "isPlaceholder": false
+      },
+      "placeholderHome": "G1",
+      "placeholderAway": "G2",
+      "score": null,
+      "status": {
+        "code": 1,
+        "label": "Sắp diễn ra"
+      },
+      "stadium": {
+        "id": "400216606",
+        "name": "Seattle Stadium",
+        "city": "Seattle",
+        "country": "USA",
+        "countryName": "Mỹ",
+        "capacity": null,
+        "roof": false
+      }
+    },
+    {
+      "id": "400021486",
+      "matchNumber": 13,
+      "stage": "First Stage",
+      "stageVi": "Vòng bảng",
+      "group": "Bảng H",
+      "utcDate": "2026-06-15T22:00:00Z",
+      "localDateAtVenue": "2026-06-15T18:00:00Z",
+      "localTimeAtVenue": "18:00 15/06/2026",
+      "vietnamDate": "Thứ Ba, 16/06/2026",
+      "vietnamShortDate": "16/06/2026",
+      "vietnamTime": "05:00",
+      "home": {
+        "id": "43835",
+        "name": "Saudi Arabia",
+        "shortName": "Saudi Arabia",
+        "abbreviation": "KSA",
+        "country": "KSA",
+        "flagUrl": "https://api.fifa.com/api/v3/picture/flags-png-2/KSA",
+        "isPlaceholder": false
+      },
+      "away": {
+        "id": "43930",
+        "name": "Uruguay",
+        "shortName": "Uruguay",
+        "abbreviation": "URU",
+        "country": "URU",
+        "flagUrl": "https://api.fifa.com/api/v3/picture/flags-png-2/URU",
+        "isPlaceholder": false
+      },
+      "placeholderHome": "H3",
+      "placeholderAway": "H4",
+      "score": null,
+      "status": {
+        "code": 1,
+        "label": "Sắp diễn ra"
+      },
+      "stadium": {
+        "id": "400257525",
+        "name": "Miami Stadium",
+        "city": "Miami",
+        "country": "USA",
+        "countryName": "Mỹ",
+        "capacity": null,
+        "roof": false
+      }
+    },
+    {
+      "id": "400021476",
+      "matchNumber": 15,
+      "stage": "First Stage",
+      "stageVi": "Vòng bảng",
+      "group": "Bảng G",
+      "utcDate": "2026-06-16T01:00:00Z",
+      "localDateAtVenue": "2026-06-15T18:00:00Z",
+      "localTimeAtVenue": "18:00 15/06/2026",
+      "vietnamDate": "Thứ Ba, 16/06/2026",
+      "vietnamShortDate": "16/06/2026",
+      "vietnamTime": "08:00",
+      "home": {
+        "id": "43817",
+        "name": "IR Iran",
+        "shortName": "IR Iran",
+        "abbreviation": "IRN",
+        "country": "IRN",
+        "flagUrl": "https://api.fifa.com/api/v3/picture/flags-png-2/IRN",
+        "isPlaceholder": false
+      },
+      "away": {
+        "id": "43978",
+        "name": "New Zealand",
+        "shortName": "New Zealand",
+        "abbreviation": "NZL",
+        "country": "NZL",
+        "flagUrl": "https://api.fifa.com/api/v3/picture/flags-png-2/NZL",
+        "isPlaceholder": false
+      },
+      "placeholderHome": "G3",
+      "placeholderAway": "G4",
+      "score": null,
+      "status": {
+        "code": 1,
+        "label": "Sắp diễn ra"
+      },
+      "stadium": {
+        "id": "400017978",
+        "name": "Los Angeles Stadium",
+        "city": "Los Angeles",
+        "country": "USA",
+        "countryName": "Mỹ",
+        "capacity": null,
+        "roof": false
+      }
+    },
+    {
+      "id": "400021490",
+      "matchNumber": 17,
+      "stage": "First Stage",
+      "stageVi": "Vòng bảng",
+      "group": "Bảng I",
+      "utcDate": "2026-06-16T19:00:00Z",
+      "localDateAtVenue": "2026-06-16T15:00:00Z",
+      "localTimeAtVenue": "15:00 16/06/2026",
+      "vietnamDate": "Thứ Tư, 17/06/2026",
+      "vietnamShortDate": "17/06/2026",
+      "vietnamTime": "02:00",
+      "home": {
+        "id": "43946",
+        "name": "France",
+        "shortName": "France",
+        "abbreviation": "FRA",
+        "country": "FRA",
+        "flagUrl": "https://api.fifa.com/api/v3/picture/flags-png-2/FRA",
+        "isPlaceholder": false
+      },
+      "away": {
+        "id": "43879",
+        "name": "Senegal",
+        "shortName": "Senegal",
+        "abbreviation": "SEN",
+        "country": "SEN",
+        "flagUrl": "https://api.fifa.com/api/v3/picture/flags-png-2/SEN",
+        "isPlaceholder": false
+      },
+      "placeholderHome": "I1",
+      "placeholderAway": "I2",
+      "score": null,
+      "status": {
+        "code": 1,
+        "label": "Sắp diễn ra"
+      },
+      "stadium": {
+        "id": "400257536",
+        "name": "New York/New Jersey Stadium",
+        "city": "New Jersey",
+        "country": "USA",
+        "countryName": "Mỹ",
+        "capacity": null,
+        "roof": false
+      }
+    },
+    {
+      "id": "400021488",
+      "matchNumber": 18,
+      "stage": "First Stage",
+      "stageVi": "Vòng bảng",
+      "group": "Bảng I",
+      "utcDate": "2026-06-16T22:00:00Z",
+      "localDateAtVenue": "2026-06-16T18:00:00Z",
+      "localTimeAtVenue": "18:00 16/06/2026",
+      "vietnamDate": "Thứ Tư, 17/06/2026",
+      "vietnamShortDate": "17/06/2026",
+      "vietnamTime": "05:00",
+      "home": {
+        "id": "43818",
+        "name": "Iraq",
+        "shortName": "Iraq",
+        "abbreviation": "IRQ",
+        "country": "IRQ",
+        "flagUrl": "https://api.fifa.com/api/v3/picture/flags-png-2/IRQ",
+        "isPlaceholder": false
+      },
+      "away": {
+        "id": "43961",
+        "name": "Norway",
+        "shortName": "Norway",
+        "abbreviation": "NOR",
+        "country": "NOR",
+        "flagUrl": "https://api.fifa.com/api/v3/picture/flags-png-2/NOR",
+        "isPlaceholder": false
+      },
+      "placeholderHome": "I3",
+      "placeholderAway": "I4",
+      "score": null,
+      "status": {
+        "code": 1,
+        "label": "Sắp diễn ra"
+      },
+      "stadium": {
+        "id": "400248623",
+        "name": "Boston Stadium",
+        "city": "Boston",
+        "country": "USA",
+        "countryName": "Mỹ",
+        "capacity": null,
+        "roof": false
+      }
+    },
+    {
+      "id": "400021496",
+      "matchNumber": 19,
+      "stage": "First Stage",
+      "stageVi": "Vòng bảng",
+      "group": "Bảng J",
+      "utcDate": "2026-06-17T01:00:00Z",
+      "localDateAtVenue": "2026-06-16T20:00:00Z",
+      "localTimeAtVenue": "20:00 16/06/2026",
+      "vietnamDate": "Thứ Tư, 17/06/2026",
+      "vietnamShortDate": "17/06/2026",
+      "vietnamTime": "08:00",
+      "home": {
+        "id": "43922",
+        "name": "Argentina",
+        "shortName": "Argentina",
+        "abbreviation": "ARG",
+        "country": "ARG",
+        "flagUrl": "https://api.fifa.com/api/v3/picture/flags-png-2/ARG",
+        "isPlaceholder": false
+      },
+      "away": {
+        "id": "43843",
+        "name": "Algeria",
+        "shortName": "Algeria",
+        "abbreviation": "ALG",
+        "country": "ALG",
+        "flagUrl": "https://api.fifa.com/api/v3/picture/flags-png-2/ALG",
+        "isPlaceholder": false
+      },
+      "placeholderHome": "J1",
+      "placeholderAway": "J2",
+      "score": null,
+      "status": {
+        "code": 1,
+        "label": "Sắp diễn ra"
+      },
+      "stadium": {
+        "id": "400254717",
+        "name": "Kansas City Stadium",
+        "city": "Kansas City",
+        "country": "USA",
+        "countryName": "Mỹ",
+        "capacity": null,
+        "roof": false
+      }
+    },
+    {
+      "id": "400021498",
+      "matchNumber": 20,
+      "stage": "First Stage",
+      "stageVi": "Vòng bảng",
+      "group": "Bảng J",
+      "utcDate": "2026-06-17T04:00:00Z",
+      "localDateAtVenue": "2026-06-16T21:00:00Z",
+      "localTimeAtVenue": "21:00 16/06/2026",
+      "vietnamDate": "Thứ Tư, 17/06/2026",
+      "vietnamShortDate": "17/06/2026",
+      "vietnamTime": "11:00",
+      "home": {
+        "id": "43934",
+        "name": "Austria",
+        "shortName": "Austria",
+        "abbreviation": "AUT",
+        "country": "AUT",
+        "flagUrl": "https://api.fifa.com/api/v3/picture/flags-png-2/AUT",
+        "isPlaceholder": false
+      },
+      "away": {
+        "id": "43820",
+        "name": "Jordan",
+        "shortName": "Jordan",
+        "abbreviation": "JOR",
+        "country": "JOR",
+        "flagUrl": "https://api.fifa.com/api/v3/picture/flags-png-2/JOR",
+        "isPlaceholder": false
+      },
+      "placeholderHome": "J3",
+      "placeholderAway": "J4",
+      "score": null,
+      "status": {
+        "code": 1,
+        "label": "Sắp diễn ra"
+      },
+      "stadium": {
+        "id": "400257521",
+        "name": "San Francisco Bay Area Stadium",
+        "city": "San Francisco Bay Area",
+        "country": "USA",
+        "countryName": "Mỹ",
+        "capacity": null,
+        "roof": false
+      }
+    },
+    {
+      "id": "400021502",
+      "matchNumber": 23,
+      "stage": "First Stage",
+      "stageVi": "Vòng bảng",
+      "group": "Bảng K",
+      "utcDate": "2026-06-17T17:00:00Z",
+      "localDateAtVenue": "2026-06-17T12:00:00Z",
+      "localTimeAtVenue": "12:00 17/06/2026",
+      "vietnamDate": "Thứ Năm, 18/06/2026",
+      "vietnamShortDate": "18/06/2026",
+      "vietnamTime": "00:00",
+      "home": {
+        "id": "43963",
+        "name": "Portugal",
+        "shortName": "Portugal",
+        "abbreviation": "POR",
+        "country": "POR",
+        "flagUrl": "https://api.fifa.com/api/v3/picture/flags-png-2/POR",
+        "isPlaceholder": false
+      },
+      "away": {
+        "id": "20014",
+        "name": "Congo DR",
+        "shortName": "Congo DR",
+        "abbreviation": "COD",
+        "country": "COD",
+        "flagUrl": "https://api.fifa.com/api/v3/picture/flags-png-2/COD",
+        "isPlaceholder": false
+      },
+      "placeholderHome": "K1",
+      "placeholderAway": "K2",
+      "score": null,
+      "status": {
+        "code": 1,
+        "label": "Sắp diễn ra"
+      },
+      "stadium": {
+        "id": "400249385",
+        "name": "Houston Stadium",
+        "city": "Houston",
+        "country": "USA",
+        "countryName": "Mỹ",
+        "capacity": null,
+        "roof": false
+      }
+    },
+    {
+      "id": "400021507",
+      "matchNumber": 22,
+      "stage": "First Stage",
+      "stageVi": "Vòng bảng",
+      "group": "Bảng L",
+      "utcDate": "2026-06-17T20:00:00Z",
+      "localDateAtVenue": "2026-06-17T15:00:00Z",
+      "localTimeAtVenue": "15:00 17/06/2026",
+      "vietnamDate": "Thứ Năm, 18/06/2026",
+      "vietnamShortDate": "18/06/2026",
+      "vietnamTime": "03:00",
+      "home": {
+        "id": "43942",
+        "name": "England",
+        "shortName": "England",
+        "abbreviation": "ENG",
+        "country": "ENG",
+        "flagUrl": "https://api.fifa.com/api/v3/picture/flags-png-2/ENG",
+        "isPlaceholder": false
+      },
+      "away": {
+        "id": "43938",
+        "name": "Croatia",
+        "shortName": "Croatia",
+        "abbreviation": "CRO",
+        "country": "CRO",
+        "flagUrl": "https://api.fifa.com/api/v3/picture/flags-png-2/CRO",
+        "isPlaceholder": false
+      },
+      "placeholderHome": "Thua trận 1",
+      "placeholderAway": "Thua trận 2",
+      "score": null,
+      "status": {
+        "code": 1,
+        "label": "Sắp diễn ra"
+      },
+      "stadium": {
+        "id": "400257526",
+        "name": "Dallas Stadium",
+        "city": "Dallas",
+        "country": "USA",
+        "countryName": "Mỹ",
+        "capacity": null,
+        "roof": false
+      }
+    },
+    {
+      "id": "400021510",
+      "matchNumber": 21,
+      "stage": "First Stage",
+      "stageVi": "Vòng bảng",
+      "group": "Bảng L",
+      "utcDate": "2026-06-17T23:00:00Z",
+      "localDateAtVenue": "2026-06-17T19:00:00Z",
+      "localTimeAtVenue": "19:00 17/06/2026",
+      "vietnamDate": "Thứ Năm, 18/06/2026",
+      "vietnamShortDate": "18/06/2026",
+      "vietnamTime": "06:00",
+      "home": {
+        "id": "43860",
+        "name": "Ghana",
+        "shortName": "Ghana",
+        "abbreviation": "GHA",
+        "country": "GHA",
+        "flagUrl": "https://api.fifa.com/api/v3/picture/flags-png-2/GHA",
+        "isPlaceholder": false
+      },
+      "away": {
+        "id": "43914",
+        "name": "Panama",
+        "shortName": "Panama",
+        "abbreviation": "PAN",
+        "country": "PAN",
+        "flagUrl": "https://api.fifa.com/api/v3/picture/flags-png-2/PAN",
+        "isPlaceholder": false
+      },
+      "placeholderHome": "Thua trận 3",
+      "placeholderAway": "Thua trận 4",
+      "score": null,
+      "status": {
+        "code": 1,
+        "label": "Sắp diễn ra"
+      },
+      "stadium": {
+        "id": "400242032",
+        "name": "Toronto Stadium",
+        "city": "Toronto",
+        "country": "CAN",
+        "countryName": "Canada",
+        "capacity": null,
+        "roof": false
+      }
+    },
+    {
+      "id": "400021504",
+      "matchNumber": 24,
+      "stage": "First Stage",
+      "stageVi": "Vòng bảng",
+      "group": "Bảng K",
+      "utcDate": "2026-06-18T02:00:00Z",
+      "localDateAtVenue": "2026-06-17T20:00:00Z",
+      "localTimeAtVenue": "20:00 17/06/2026",
+      "vietnamDate": "Thứ Năm, 18/06/2026",
+      "vietnamShortDate": "18/06/2026",
+      "vietnamTime": "09:00",
+      "home": {
+        "id": "44005",
+        "name": "Uzbekistan",
+        "shortName": "Uzbekistan",
+        "abbreviation": "UZB",
+        "country": "UZB",
+        "flagUrl": "https://api.fifa.com/api/v3/picture/flags-png-2/UZB",
+        "isPlaceholder": false
+      },
+      "away": {
+        "id": "43926",
+        "name": "Colombia",
+        "shortName": "Colombia",
+        "abbreviation": "COL",
+        "country": "COL",
+        "flagUrl": "https://api.fifa.com/api/v3/picture/flags-png-2/COL",
+        "isPlaceholder": false
+      },
+      "placeholderHome": "K3",
+      "placeholderAway": "K4",
+      "score": null,
+      "status": {
+        "code": 1,
+        "label": "Sắp diễn ra"
+      },
+      "stadium": {
+        "id": "400222084",
+        "name": "Mexico City Stadium",
+        "city": "Mexico City",
+        "country": "MEX",
+        "countryName": "Mexico",
+        "capacity": null,
+        "roof": false
+      }
+    },
+    {
+      "id": "400021440",
+      "matchNumber": 25,
+      "stage": "First Stage",
+      "stageVi": "Vòng bảng",
+      "group": "Bảng A",
+      "utcDate": "2026-06-18T16:00:00Z",
+      "localDateAtVenue": "2026-06-18T12:00:00Z",
+      "localTimeAtVenue": "12:00 18/06/2026",
+      "vietnamDate": "Thứ Năm, 18/06/2026",
+      "vietnamShortDate": "18/06/2026",
+      "vietnamTime": "23:00",
+      "home": {
+        "id": "43995",
+        "name": "Czechia",
+        "shortName": "Czechia",
+        "abbreviation": "CZE",
+        "country": "CZE",
+        "flagUrl": "https://api.fifa.com/api/v3/picture/flags-png-2/CZE",
+        "isPlaceholder": false
+      },
+      "away": {
+        "id": "43883",
+        "name": "South Africa",
+        "shortName": "South Africa",
+        "abbreviation": "RSA",
+        "country": "RSA",
+        "flagUrl": "https://api.fifa.com/api/v3/picture/flags-png-2/RSA",
+        "isPlaceholder": false
+      },
+      "placeholderHome": "A4",
+      "placeholderAway": "A2",
+      "score": null,
+      "status": {
+        "code": 1,
+        "label": "Sắp diễn ra"
+      },
+      "stadium": {
+        "id": "400098290",
+        "name": "Atlanta Stadium",
+        "city": "Atlanta",
+        "country": "USA",
+        "countryName": "Mỹ",
+        "capacity": null,
+        "roof": false
+      }
+    },
+    {
+      "id": "400021446",
+      "matchNumber": 26,
+      "stage": "First Stage",
+      "stageVi": "Vòng bảng",
+      "group": "Bảng B",
+      "utcDate": "2026-06-18T19:00:00Z",
+      "localDateAtVenue": "2026-06-18T12:00:00Z",
+      "localTimeAtVenue": "12:00 18/06/2026",
+      "vietnamDate": "Thứ Sáu, 19/06/2026",
+      "vietnamShortDate": "19/06/2026",
+      "vietnamTime": "02:00",
+      "home": {
+        "id": "43971",
+        "name": "Switzerland",
+        "shortName": "Switzerland",
+        "abbreviation": "SUI",
+        "country": "SUI",
+        "flagUrl": "https://api.fifa.com/api/v3/picture/flags-png-2/SUI",
+        "isPlaceholder": false
+      },
+      "away": {
+        "id": "44037",
+        "name": "Bosnia and Herzegovina",
+        "shortName": "Bosnia and Herzegovina",
+        "abbreviation": "BIH",
+        "country": "BIH",
+        "flagUrl": "https://api.fifa.com/api/v3/picture/flags-png-2/BIH",
+        "isPlaceholder": false
+      },
+      "placeholderHome": "B4",
+      "placeholderAway": "B2",
+      "score": null,
+      "status": {
+        "code": 1,
+        "label": "Sắp diễn ra"
+      },
+      "stadium": {
+        "id": "400017978",
+        "name": "Los Angeles Stadium",
+        "city": "Los Angeles",
+        "country": "USA",
+        "countryName": "Mỹ",
+        "capacity": null,
+        "roof": false
+      }
+    },
+    {
+      "id": "400021450",
+      "matchNumber": 27,
+      "stage": "First Stage",
+      "stageVi": "Vòng bảng",
+      "group": "Bảng B",
+      "utcDate": "2026-06-18T22:00:00Z",
+      "localDateAtVenue": "2026-06-18T15:00:00Z",
+      "localTimeAtVenue": "15:00 18/06/2026",
+      "vietnamDate": "Thứ Sáu, 19/06/2026",
+      "vietnamShortDate": "19/06/2026",
+      "vietnamTime": "05:00",
+      "home": {
+        "id": "43899",
+        "name": "Canada",
+        "shortName": "Canada",
+        "abbreviation": "CAN",
+        "country": "CAN",
+        "flagUrl": "https://api.fifa.com/api/v3/picture/flags-png-2/CAN",
+        "isPlaceholder": false
+      },
+      "away": {
+        "id": "43834",
+        "name": "Qatar",
+        "shortName": "Qatar",
+        "abbreviation": "QAT",
+        "country": "QAT",
+        "flagUrl": "https://api.fifa.com/api/v3/picture/flags-png-2/QAT",
+        "isPlaceholder": false
+      },
+      "placeholderHome": "B1",
+      "placeholderAway": "B3",
+      "score": null,
+      "status": {
+        "code": 1,
+        "label": "Sắp diễn ra"
+      },
+      "stadium": {
+        "id": "400248370",
+        "name": "BC Place Vancouver",
+        "city": "Vancouver",
+        "country": "CAN",
+        "countryName": "Canada",
+        "capacity": null,
+        "roof": false
+      }
+    },
+    {
+      "id": "400021442",
+      "matchNumber": 28,
+      "stage": "First Stage",
+      "stageVi": "Vòng bảng",
+      "group": "Bảng A",
+      "utcDate": "2026-06-19T01:00:00Z",
+      "localDateAtVenue": "2026-06-18T19:00:00Z",
+      "localTimeAtVenue": "19:00 18/06/2026",
+      "vietnamDate": "Thứ Sáu, 19/06/2026",
+      "vietnamShortDate": "19/06/2026",
+      "vietnamTime": "08:00",
+      "home": {
+        "id": "43911",
+        "name": "Mexico",
+        "shortName": "Mexico",
+        "abbreviation": "MEX",
+        "country": "MEX",
+        "flagUrl": "https://api.fifa.com/api/v3/picture/flags-png-2/MEX",
+        "isPlaceholder": false
+      },
+      "away": {
+        "id": "43822",
+        "name": "Korea Republic",
+        "shortName": "Korea Republic",
+        "abbreviation": "KOR",
+        "country": "KOR",
+        "flagUrl": "https://api.fifa.com/api/v3/picture/flags-png-2/KOR",
+        "isPlaceholder": false
+      },
+      "placeholderHome": "A1",
+      "placeholderAway": "A3",
+      "score": null,
+      "status": {
+        "code": 1,
+        "label": "Sắp diễn ra"
+      },
+      "stadium": {
+        "id": "400252150",
+        "name": "Guadalajara Stadium",
+        "city": "Guadalajara",
+        "country": "MEX",
+        "countryName": "Mexico",
+        "capacity": null,
+        "roof": false
+      }
+    },
+    {
+      "id": "400021462",
+      "matchNumber": 32,
+      "stage": "First Stage",
+      "stageVi": "Vòng bảng",
+      "group": "Bảng D",
+      "utcDate": "2026-06-19T19:00:00Z",
+      "localDateAtVenue": "2026-06-19T12:00:00Z",
+      "localTimeAtVenue": "12:00 19/06/2026",
+      "vietnamDate": "Thứ Bảy, 20/06/2026",
+      "vietnamShortDate": "20/06/2026",
+      "vietnamTime": "02:00",
+      "home": {
+        "id": "43921",
+        "name": "USA",
+        "shortName": "USA",
+        "abbreviation": "USA",
+        "country": "USA",
+        "flagUrl": "https://api.fifa.com/api/v3/picture/flags-png-2/USA",
+        "isPlaceholder": false
+      },
+      "away": {
+        "id": "43976",
+        "name": "Australia",
+        "shortName": "Australia",
+        "abbreviation": "AUS",
+        "country": "AUS",
+        "flagUrl": "https://api.fifa.com/api/v3/picture/flags-png-2/AUS",
+        "isPlaceholder": false
+      },
+      "placeholderHome": "D1",
+      "placeholderAway": "D3",
+      "score": null,
+      "status": {
+        "code": 1,
+        "label": "Sắp diễn ra"
+      },
+      "stadium": {
+        "id": "400216606",
+        "name": "Seattle Stadium",
+        "city": "Seattle",
+        "country": "USA",
+        "countryName": "Mỹ",
+        "capacity": null,
+        "roof": false
+      }
+    },
+    {
+      "id": "400021454",
+      "matchNumber": 30,
+      "stage": "First Stage",
+      "stageVi": "Vòng bảng",
+      "group": "Bảng C",
+      "utcDate": "2026-06-19T22:00:00Z",
+      "localDateAtVenue": "2026-06-19T18:00:00Z",
+      "localTimeAtVenue": "18:00 19/06/2026",
+      "vietnamDate": "Thứ Bảy, 20/06/2026",
+      "vietnamShortDate": "20/06/2026",
+      "vietnamTime": "05:00",
+      "home": {
+        "id": "43967",
+        "name": "Scotland",
+        "shortName": "Scotland",
+        "abbreviation": "SCO",
+        "country": "SCO",
+        "flagUrl": "https://api.fifa.com/api/v3/picture/flags-png-2/SCO",
+        "isPlaceholder": false
+      },
+      "away": {
+        "id": "43872",
+        "name": "Morocco",
+        "shortName": "Morocco",
+        "abbreviation": "MAR",
+        "country": "MAR",
+        "flagUrl": "https://api.fifa.com/api/v3/picture/flags-png-2/MAR",
+        "isPlaceholder": false
+      },
+      "placeholderHome": "C4",
+      "placeholderAway": "C2",
+      "score": null,
+      "status": {
+        "code": 1,
+        "label": "Sắp diễn ra"
+      },
+      "stadium": {
+        "id": "400248623",
+        "name": "Boston Stadium",
+        "city": "Boston",
+        "country": "USA",
+        "countryName": "Mỹ",
+        "capacity": null,
+        "roof": false
+      }
+    },
+    {
+      "id": "400021457",
+      "matchNumber": 29,
+      "stage": "First Stage",
+      "stageVi": "Vòng bảng",
+      "group": "Bảng C",
+      "utcDate": "2026-06-20T00:30:00Z",
+      "localDateAtVenue": "2026-06-19T20:30:00Z",
+      "localTimeAtVenue": "20:30 19/06/2026",
+      "vietnamDate": "Thứ Bảy, 20/06/2026",
+      "vietnamShortDate": "20/06/2026",
+      "vietnamTime": "07:30",
+      "home": {
+        "id": "43924",
+        "name": "Brazil",
+        "shortName": "Brazil",
+        "abbreviation": "BRA",
+        "country": "BRA",
+        "flagUrl": "https://api.fifa.com/api/v3/picture/flags-png-2/BRA",
+        "isPlaceholder": false
+      },
+      "away": {
+        "id": "43908",
+        "name": "Haiti",
+        "shortName": "Haiti",
+        "abbreviation": "HAI",
+        "country": "HAI",
+        "flagUrl": "https://api.fifa.com/api/v3/picture/flags-png-2/HAI",
+        "isPlaceholder": false
+      },
+      "placeholderHome": "C1",
+      "placeholderAway": "C3",
+      "score": null,
+      "status": {
+        "code": 1,
+        "label": "Sắp diễn ra"
+      },
+      "stadium": {
+        "id": "400248622",
+        "name": "Philadelphia Stadium",
+        "city": "Philadelphia",
+        "country": "USA",
+        "countryName": "Mỹ",
+        "capacity": null,
+        "roof": false
+      }
+    },
+    {
+      "id": "400021460",
+      "matchNumber": 31,
+      "stage": "First Stage",
+      "stageVi": "Vòng bảng",
+      "group": "Bảng D",
+      "utcDate": "2026-06-20T03:00:00Z",
+      "localDateAtVenue": "2026-06-19T20:00:00Z",
+      "localTimeAtVenue": "20:00 19/06/2026",
+      "vietnamDate": "Thứ Bảy, 20/06/2026",
+      "vietnamShortDate": "20/06/2026",
+      "vietnamTime": "10:00",
+      "home": {
+        "id": "43972",
+        "name": "Türkiye",
+        "shortName": "Türkiye",
+        "abbreviation": "TUR",
+        "country": "TUR",
+        "flagUrl": "https://api.fifa.com/api/v3/picture/flags-png-2/TUR",
+        "isPlaceholder": false
+      },
+      "away": {
+        "id": "43928",
+        "name": "Paraguay",
+        "shortName": "Paraguay",
+        "abbreviation": "PAR",
+        "country": "PAR",
+        "flagUrl": "https://api.fifa.com/api/v3/picture/flags-png-2/PAR",
+        "isPlaceholder": false
+      },
+      "placeholderHome": "D4",
+      "placeholderAway": "D2",
+      "score": null,
+      "status": {
+        "code": 1,
+        "label": "Sắp diễn ra"
+      },
+      "stadium": {
+        "id": "400257521",
+        "name": "San Francisco Bay Area Stadium",
+        "city": "San Francisco Bay Area",
+        "country": "USA",
+        "countryName": "Mỹ",
+        "capacity": null,
+        "roof": false
+      }
+    },
+    {
+      "id": "400021472",
+      "matchNumber": 35,
+      "stage": "First Stage",
+      "stageVi": "Vòng bảng",
+      "group": "Bảng F",
+      "utcDate": "2026-06-20T17:00:00Z",
+      "localDateAtVenue": "2026-06-20T12:00:00Z",
+      "localTimeAtVenue": "12:00 20/06/2026",
+      "vietnamDate": "Chủ Nhật, 21/06/2026",
+      "vietnamShortDate": "21/06/2026",
+      "vietnamTime": "00:00",
+      "home": {
+        "id": "43960",
+        "name": "Netherlands",
+        "shortName": "Netherlands",
+        "abbreviation": "NED",
+        "country": "NED",
+        "flagUrl": "https://api.fifa.com/api/v3/picture/flags-png-2/NED",
+        "isPlaceholder": false
+      },
+      "away": {
+        "id": "43970",
+        "name": "Sweden",
+        "shortName": "Sweden",
+        "abbreviation": "SWE",
+        "country": "SWE",
+        "flagUrl": "https://api.fifa.com/api/v3/picture/flags-png-2/SWE",
+        "isPlaceholder": false
+      },
+      "placeholderHome": "F1",
+      "placeholderAway": "F3",
+      "score": null,
+      "status": {
+        "code": 1,
+        "label": "Sắp diễn ra"
+      },
+      "stadium": {
+        "id": "400249385",
+        "name": "Houston Stadium",
+        "city": "Houston",
+        "country": "USA",
+        "countryName": "Mỹ",
+        "capacity": null,
+        "roof": false
+      }
+    },
+    {
+      "id": "400021469",
+      "matchNumber": 33,
+      "stage": "First Stage",
+      "stageVi": "Vòng bảng",
+      "group": "Bảng E",
+      "utcDate": "2026-06-20T20:00:00Z",
+      "localDateAtVenue": "2026-06-20T16:00:00Z",
+      "localTimeAtVenue": "16:00 20/06/2026",
+      "vietnamDate": "Chủ Nhật, 21/06/2026",
+      "vietnamShortDate": "21/06/2026",
+      "vietnamTime": "03:00",
+      "home": {
+        "id": "43948",
+        "name": "Germany",
+        "shortName": "Germany",
+        "abbreviation": "GER",
+        "country": "GER",
+        "flagUrl": "https://api.fifa.com/api/v3/picture/flags-png-2/GER",
+        "isPlaceholder": false
+      },
+      "away": {
+        "id": "43854",
+        "name": "Côte d'Ivoire",
+        "shortName": "Côte d'Ivoire",
+        "abbreviation": "CIV",
+        "country": "CIV",
+        "flagUrl": "https://api.fifa.com/api/v3/picture/flags-png-2/CIV",
+        "isPlaceholder": false
+      },
+      "placeholderHome": "E1",
+      "placeholderAway": "E3",
+      "score": null,
+      "status": {
+        "code": 1,
+        "label": "Sắp diễn ra"
+      },
+      "stadium": {
+        "id": "400242032",
+        "name": "Toronto Stadium",
+        "city": "Toronto",
+        "country": "CAN",
+        "countryName": "Canada",
+        "capacity": null,
+        "roof": false
+      }
+    },
+    {
+      "id": "400021465",
+      "matchNumber": 34,
+      "stage": "First Stage",
+      "stageVi": "Vòng bảng",
+      "group": "Bảng E",
+      "utcDate": "2026-06-21T00:00:00Z",
+      "localDateAtVenue": "2026-06-20T19:00:00Z",
+      "localTimeAtVenue": "19:00 20/06/2026",
+      "vietnamDate": "Chủ Nhật, 21/06/2026",
+      "vietnamShortDate": "21/06/2026",
+      "vietnamTime": "07:00",
+      "home": {
+        "id": "43927",
+        "name": "Ecuador",
+        "shortName": "Ecuador",
+        "abbreviation": "ECU",
+        "country": "ECU",
+        "flagUrl": "https://api.fifa.com/api/v3/picture/flags-png-2/ECU",
+        "isPlaceholder": false
+      },
+      "away": {
+        "id": "1895293",
+        "name": "Curaçao",
+        "shortName": "Curaçao",
+        "abbreviation": "CUW",
+        "country": "CUW",
+        "flagUrl": "https://api.fifa.com/api/v3/picture/flags-png-2/CUW",
+        "isPlaceholder": false
+      },
+      "placeholderHome": "E4",
+      "placeholderAway": "E2",
+      "score": null,
+      "status": {
+        "code": 1,
+        "label": "Sắp diễn ra"
+      },
+      "stadium": {
+        "id": "400254717",
+        "name": "Kansas City Stadium",
+        "city": "Kansas City",
+        "country": "USA",
+        "countryName": "Mỹ",
+        "capacity": null,
+        "roof": false
+      }
+    },
+    {
+      "id": "400021475",
+      "matchNumber": 36,
+      "stage": "First Stage",
+      "stageVi": "Vòng bảng",
+      "group": "Bảng F",
+      "utcDate": "2026-06-21T04:00:00Z",
+      "localDateAtVenue": "2026-06-20T22:00:00Z",
+      "localTimeAtVenue": "22:00 20/06/2026",
+      "vietnamDate": "Chủ Nhật, 21/06/2026",
+      "vietnamShortDate": "21/06/2026",
+      "vietnamTime": "11:00",
+      "home": {
+        "id": "43888",
+        "name": "Tunisia",
+        "shortName": "Tunisia",
+        "abbreviation": "TUN",
+        "country": "TUN",
+        "flagUrl": "https://api.fifa.com/api/v3/picture/flags-png-2/TUN",
+        "isPlaceholder": false
+      },
+      "away": {
+        "id": "43819",
+        "name": "Japan",
+        "shortName": "Japan",
+        "abbreviation": "JPN",
+        "country": "JPN",
+        "flagUrl": "https://api.fifa.com/api/v3/picture/flags-png-2/JPN",
+        "isPlaceholder": false
+      },
+      "placeholderHome": "F4",
+      "placeholderAway": "F2",
+      "score": null,
+      "status": {
+        "code": 1,
+        "label": "Sắp diễn ra"
+      },
+      "stadium": {
+        "id": "400238450",
+        "name": "Monterrey Stadium",
+        "city": "Monterrey",
+        "country": "MEX",
+        "countryName": "Mexico",
+        "capacity": null,
+        "roof": false
+      }
+    },
+    {
+      "id": "400021483",
+      "matchNumber": 38,
+      "stage": "First Stage",
+      "stageVi": "Vòng bảng",
+      "group": "Bảng H",
+      "utcDate": "2026-06-21T16:00:00Z",
+      "localDateAtVenue": "2026-06-21T12:00:00Z",
+      "localTimeAtVenue": "12:00 21/06/2026",
+      "vietnamDate": "Chủ Nhật, 21/06/2026",
+      "vietnamShortDate": "21/06/2026",
+      "vietnamTime": "23:00",
+      "home": {
+        "id": "43969",
+        "name": "Spain",
+        "shortName": "Spain",
+        "abbreviation": "ESP",
+        "country": "ESP",
+        "flagUrl": "https://api.fifa.com/api/v3/picture/flags-png-2/ESP",
+        "isPlaceholder": false
+      },
+      "away": {
+        "id": "43835",
+        "name": "Saudi Arabia",
+        "shortName": "Saudi Arabia",
+        "abbreviation": "KSA",
+        "country": "KSA",
+        "flagUrl": "https://api.fifa.com/api/v3/picture/flags-png-2/KSA",
+        "isPlaceholder": false
+      },
+      "placeholderHome": "H1",
+      "placeholderAway": "H3",
+      "score": null,
+      "status": {
+        "code": 1,
+        "label": "Sắp diễn ra"
+      },
+      "stadium": {
+        "id": "400098290",
+        "name": "Atlanta Stadium",
+        "city": "Atlanta",
+        "country": "USA",
+        "countryName": "Mỹ",
+        "capacity": null,
+        "roof": false
+      }
+    },
+    {
+      "id": "400021477",
+      "matchNumber": 39,
+      "stage": "First Stage",
+      "stageVi": "Vòng bảng",
+      "group": "Bảng G",
+      "utcDate": "2026-06-21T19:00:00Z",
+      "localDateAtVenue": "2026-06-21T12:00:00Z",
+      "localTimeAtVenue": "12:00 21/06/2026",
+      "vietnamDate": "Thứ Hai, 22/06/2026",
+      "vietnamShortDate": "22/06/2026",
+      "vietnamTime": "02:00",
+      "home": {
+        "id": "43935",
+        "name": "Belgium",
+        "shortName": "Belgium",
+        "abbreviation": "BEL",
+        "country": "BEL",
+        "flagUrl": "https://api.fifa.com/api/v3/picture/flags-png-2/BEL",
+        "isPlaceholder": false
+      },
+      "away": {
+        "id": "43817",
+        "name": "IR Iran",
+        "shortName": "IR Iran",
+        "abbreviation": "IRN",
+        "country": "IRN",
+        "flagUrl": "https://api.fifa.com/api/v3/picture/flags-png-2/IRN",
+        "isPlaceholder": false
+      },
+      "placeholderHome": "G1",
+      "placeholderAway": "G3",
+      "score": null,
+      "status": {
+        "code": 1,
+        "label": "Sắp diễn ra"
+      },
+      "stadium": {
+        "id": "400017978",
+        "name": "Los Angeles Stadium",
+        "city": "Los Angeles",
+        "country": "USA",
+        "countryName": "Mỹ",
+        "capacity": null,
+        "roof": false
+      }
+    },
+    {
+      "id": "400021487",
+      "matchNumber": 37,
+      "stage": "First Stage",
+      "stageVi": "Vòng bảng",
+      "group": "Bảng H",
+      "utcDate": "2026-06-21T22:00:00Z",
+      "localDateAtVenue": "2026-06-21T18:00:00Z",
+      "localTimeAtVenue": "18:00 21/06/2026",
+      "vietnamDate": "Thứ Hai, 22/06/2026",
+      "vietnamShortDate": "22/06/2026",
+      "vietnamTime": "05:00",
+      "home": {
+        "id": "43930",
+        "name": "Uruguay",
+        "shortName": "Uruguay",
+        "abbreviation": "URU",
+        "country": "URU",
+        "flagUrl": "https://api.fifa.com/api/v3/picture/flags-png-2/URU",
+        "isPlaceholder": false
+      },
+      "away": {
+        "id": "43850",
+        "name": "Cabo Verde",
+        "shortName": "Cabo Verde",
+        "abbreviation": "CPV",
+        "country": "CPV",
+        "flagUrl": "https://api.fifa.com/api/v3/picture/flags-png-2/CPV",
+        "isPlaceholder": false
+      },
+      "placeholderHome": "H4",
+      "placeholderAway": "H2",
+      "score": null,
+      "status": {
+        "code": 1,
+        "label": "Sắp diễn ra"
+      },
+      "stadium": {
+        "id": "400257525",
+        "name": "Miami Stadium",
+        "city": "Miami",
+        "country": "USA",
+        "countryName": "Mỹ",
+        "capacity": null,
+        "roof": false
+      }
+    },
+    {
+      "id": "400021480",
+      "matchNumber": 40,
+      "stage": "First Stage",
+      "stageVi": "Vòng bảng",
+      "group": "Bảng G",
+      "utcDate": "2026-06-22T01:00:00Z",
+      "localDateAtVenue": "2026-06-21T18:00:00Z",
+      "localTimeAtVenue": "18:00 21/06/2026",
+      "vietnamDate": "Thứ Hai, 22/06/2026",
+      "vietnamShortDate": "22/06/2026",
+      "vietnamTime": "08:00",
+      "home": {
+        "id": "43978",
+        "name": "New Zealand",
+        "shortName": "New Zealand",
+        "abbreviation": "NZL",
+        "country": "NZL",
+        "flagUrl": "https://api.fifa.com/api/v3/picture/flags-png-2/NZL",
+        "isPlaceholder": false
+      },
+      "away": {
+        "id": "43855",
+        "name": "Egypt",
+        "shortName": "Egypt",
+        "abbreviation": "EGY",
+        "country": "EGY",
+        "flagUrl": "https://api.fifa.com/api/v3/picture/flags-png-2/EGY",
+        "isPlaceholder": false
+      },
+      "placeholderHome": "G4",
+      "placeholderAway": "G2",
+      "score": null,
+      "status": {
+        "code": 1,
+        "label": "Sắp diễn ra"
+      },
+      "stadium": {
+        "id": "400248370",
+        "name": "BC Place Vancouver",
+        "city": "Vancouver",
+        "country": "CAN",
+        "countryName": "Canada",
+        "capacity": null,
+        "roof": false
+      }
+    },
+    {
+      "id": "400021494",
+      "matchNumber": 43,
+      "stage": "First Stage",
+      "stageVi": "Vòng bảng",
+      "group": "Bảng J",
+      "utcDate": "2026-06-22T17:00:00Z",
+      "localDateAtVenue": "2026-06-22T12:00:00Z",
+      "localTimeAtVenue": "12:00 22/06/2026",
+      "vietnamDate": "Thứ Ba, 23/06/2026",
+      "vietnamShortDate": "23/06/2026",
+      "vietnamTime": "00:00",
+      "home": {
+        "id": "43922",
+        "name": "Argentina",
+        "shortName": "Argentina",
+        "abbreviation": "ARG",
+        "country": "ARG",
+        "flagUrl": "https://api.fifa.com/api/v3/picture/flags-png-2/ARG",
+        "isPlaceholder": false
+      },
+      "away": {
+        "id": "43934",
+        "name": "Austria",
+        "shortName": "Austria",
+        "abbreviation": "AUT",
+        "country": "AUT",
+        "flagUrl": "https://api.fifa.com/api/v3/picture/flags-png-2/AUT",
+        "isPlaceholder": false
+      },
+      "placeholderHome": "J1",
+      "placeholderAway": "J3",
+      "score": null,
+      "status": {
+        "code": 1,
+        "label": "Sắp diễn ra"
+      },
+      "stadium": {
+        "id": "400257526",
+        "name": "Dallas Stadium",
+        "city": "Dallas",
+        "country": "USA",
+        "countryName": "Mỹ",
+        "capacity": null,
+        "roof": false
+      }
+    },
+    {
+      "id": "400021492",
+      "matchNumber": 42,
+      "stage": "First Stage",
+      "stageVi": "Vòng bảng",
+      "group": "Bảng I",
+      "utcDate": "2026-06-22T21:00:00Z",
+      "localDateAtVenue": "2026-06-22T17:00:00Z",
+      "localTimeAtVenue": "17:00 22/06/2026",
+      "vietnamDate": "Thứ Ba, 23/06/2026",
+      "vietnamShortDate": "23/06/2026",
+      "vietnamTime": "04:00",
+      "home": {
+        "id": "43946",
+        "name": "France",
+        "shortName": "France",
+        "abbreviation": "FRA",
+        "country": "FRA",
+        "flagUrl": "https://api.fifa.com/api/v3/picture/flags-png-2/FRA",
+        "isPlaceholder": false
+      },
+      "away": {
+        "id": "43818",
+        "name": "Iraq",
+        "shortName": "Iraq",
+        "abbreviation": "IRQ",
+        "country": "IRQ",
+        "flagUrl": "https://api.fifa.com/api/v3/picture/flags-png-2/IRQ",
+        "isPlaceholder": false
+      },
+      "placeholderHome": "I1",
+      "placeholderAway": "I3",
+      "score": null,
+      "status": {
+        "code": 1,
+        "label": "Sắp diễn ra"
+      },
+      "stadium": {
+        "id": "400248622",
+        "name": "Philadelphia Stadium",
+        "city": "Philadelphia",
+        "country": "USA",
+        "countryName": "Mỹ",
+        "capacity": null,
+        "roof": false
+      }
+    },
+    {
+      "id": "400021491",
+      "matchNumber": 41,
+      "stage": "First Stage",
+      "stageVi": "Vòng bảng",
+      "group": "Bảng I",
+      "utcDate": "2026-06-23T00:00:00Z",
+      "localDateAtVenue": "2026-06-22T20:00:00Z",
+      "localTimeAtVenue": "20:00 22/06/2026",
+      "vietnamDate": "Thứ Ba, 23/06/2026",
+      "vietnamShortDate": "23/06/2026",
+      "vietnamTime": "07:00",
+      "home": {
+        "id": "43961",
+        "name": "Norway",
+        "shortName": "Norway",
+        "abbreviation": "NOR",
+        "country": "NOR",
+        "flagUrl": "https://api.fifa.com/api/v3/picture/flags-png-2/NOR",
+        "isPlaceholder": false
+      },
+      "away": {
+        "id": "43879",
+        "name": "Senegal",
+        "shortName": "Senegal",
+        "abbreviation": "SEN",
+        "country": "SEN",
+        "flagUrl": "https://api.fifa.com/api/v3/picture/flags-png-2/SEN",
+        "isPlaceholder": false
+      },
+      "placeholderHome": "I4",
+      "placeholderAway": "I2",
+      "score": null,
+      "status": {
+        "code": 1,
+        "label": "Sắp diễn ra"
+      },
+      "stadium": {
+        "id": "400257536",
+        "name": "New York/New Jersey Stadium",
+        "city": "New Jersey",
+        "country": "USA",
+        "countryName": "Mỹ",
+        "capacity": null,
+        "roof": false
+      }
+    },
+    {
+      "id": "400021499",
+      "matchNumber": 44,
+      "stage": "First Stage",
+      "stageVi": "Vòng bảng",
+      "group": "Bảng J",
+      "utcDate": "2026-06-23T03:00:00Z",
+      "localDateAtVenue": "2026-06-22T20:00:00Z",
+      "localTimeAtVenue": "20:00 22/06/2026",
+      "vietnamDate": "Thứ Ba, 23/06/2026",
+      "vietnamShortDate": "23/06/2026",
+      "vietnamTime": "10:00",
+      "home": {
+        "id": "43820",
+        "name": "Jordan",
+        "shortName": "Jordan",
+        "abbreviation": "JOR",
+        "country": "JOR",
+        "flagUrl": "https://api.fifa.com/api/v3/picture/flags-png-2/JOR",
+        "isPlaceholder": false
+      },
+      "away": {
+        "id": "43843",
+        "name": "Algeria",
+        "shortName": "Algeria",
+        "abbreviation": "ALG",
+        "country": "ALG",
+        "flagUrl": "https://api.fifa.com/api/v3/picture/flags-png-2/ALG",
+        "isPlaceholder": false
+      },
+      "placeholderHome": "J4",
+      "placeholderAway": "J2",
+      "score": null,
+      "status": {
+        "code": 1,
+        "label": "Sắp diễn ra"
+      },
+      "stadium": {
+        "id": "400257521",
+        "name": "San Francisco Bay Area Stadium",
+        "city": "San Francisco Bay Area",
+        "country": "USA",
+        "countryName": "Mỹ",
+        "capacity": null,
+        "roof": false
+      }
+    },
+    {
+      "id": "400021503",
+      "matchNumber": 47,
+      "stage": "First Stage",
+      "stageVi": "Vòng bảng",
+      "group": "Bảng K",
+      "utcDate": "2026-06-23T17:00:00Z",
+      "localDateAtVenue": "2026-06-23T12:00:00Z",
+      "localTimeAtVenue": "12:00 23/06/2026",
+      "vietnamDate": "Thứ Tư, 24/06/2026",
+      "vietnamShortDate": "24/06/2026",
+      "vietnamTime": "00:00",
+      "home": {
+        "id": "43963",
+        "name": "Portugal",
+        "shortName": "Portugal",
+        "abbreviation": "POR",
+        "country": "POR",
+        "flagUrl": "https://api.fifa.com/api/v3/picture/flags-png-2/POR",
+        "isPlaceholder": false
+      },
+      "away": {
+        "id": "44005",
+        "name": "Uzbekistan",
+        "shortName": "Uzbekistan",
+        "abbreviation": "UZB",
+        "country": "UZB",
+        "flagUrl": "https://api.fifa.com/api/v3/picture/flags-png-2/UZB",
+        "isPlaceholder": false
+      },
+      "placeholderHome": "K1",
+      "placeholderAway": "K3",
+      "score": null,
+      "status": {
+        "code": 1,
+        "label": "Sắp diễn ra"
+      },
+      "stadium": {
+        "id": "400249385",
+        "name": "Houston Stadium",
+        "city": "Houston",
+        "country": "USA",
+        "countryName": "Mỹ",
+        "capacity": null,
+        "roof": false
+      }
+    },
+    {
+      "id": "400021506",
+      "matchNumber": 45,
+      "stage": "First Stage",
+      "stageVi": "Vòng bảng",
+      "group": "Bảng L",
+      "utcDate": "2026-06-23T20:00:00Z",
+      "localDateAtVenue": "2026-06-23T16:00:00Z",
+      "localTimeAtVenue": "16:00 23/06/2026",
+      "vietnamDate": "Thứ Tư, 24/06/2026",
+      "vietnamShortDate": "24/06/2026",
+      "vietnamTime": "03:00",
+      "home": {
+        "id": "43942",
+        "name": "England",
+        "shortName": "England",
+        "abbreviation": "ENG",
+        "country": "ENG",
+        "flagUrl": "https://api.fifa.com/api/v3/picture/flags-png-2/ENG",
+        "isPlaceholder": false
+      },
+      "away": {
+        "id": "43860",
+        "name": "Ghana",
+        "shortName": "Ghana",
+        "abbreviation": "GHA",
+        "country": "GHA",
+        "flagUrl": "https://api.fifa.com/api/v3/picture/flags-png-2/GHA",
+        "isPlaceholder": false
+      },
+      "placeholderHome": "Thua trận 1",
+      "placeholderAway": "Thua trận 3",
+      "score": null,
+      "status": {
+        "code": 1,
+        "label": "Sắp diễn ra"
+      },
+      "stadium": {
+        "id": "400248623",
+        "name": "Boston Stadium",
+        "city": "Boston",
+        "country": "USA",
+        "countryName": "Mỹ",
+        "capacity": null,
+        "roof": false
+      }
+    },
+    {
+      "id": "400021511",
+      "matchNumber": 46,
+      "stage": "First Stage",
+      "stageVi": "Vòng bảng",
+      "group": "Bảng L",
+      "utcDate": "2026-06-23T23:00:00Z",
+      "localDateAtVenue": "2026-06-23T19:00:00Z",
+      "localTimeAtVenue": "19:00 23/06/2026",
+      "vietnamDate": "Thứ Tư, 24/06/2026",
+      "vietnamShortDate": "24/06/2026",
+      "vietnamTime": "06:00",
+      "home": {
+        "id": "43914",
+        "name": "Panama",
+        "shortName": "Panama",
+        "abbreviation": "PAN",
+        "country": "PAN",
+        "flagUrl": "https://api.fifa.com/api/v3/picture/flags-png-2/PAN",
+        "isPlaceholder": false
+      },
+      "away": {
+        "id": "43938",
+        "name": "Croatia",
+        "shortName": "Croatia",
+        "abbreviation": "CRO",
+        "country": "CRO",
+        "flagUrl": "https://api.fifa.com/api/v3/picture/flags-png-2/CRO",
+        "isPlaceholder": false
+      },
+      "placeholderHome": "Thua trận 4",
+      "placeholderAway": "Thua trận 2",
+      "score": null,
+      "status": {
+        "code": 1,
+        "label": "Sắp diễn ra"
+      },
+      "stadium": {
+        "id": "400242032",
+        "name": "Toronto Stadium",
+        "city": "Toronto",
+        "country": "CAN",
+        "countryName": "Canada",
+        "capacity": null,
+        "roof": false
+      }
+    },
+    {
+      "id": "400021501",
+      "matchNumber": 48,
+      "stage": "First Stage",
+      "stageVi": "Vòng bảng",
+      "group": "Bảng K",
+      "utcDate": "2026-06-24T02:00:00Z",
+      "localDateAtVenue": "2026-06-23T20:00:00Z",
+      "localTimeAtVenue": "20:00 23/06/2026",
+      "vietnamDate": "Thứ Tư, 24/06/2026",
+      "vietnamShortDate": "24/06/2026",
+      "vietnamTime": "09:00",
+      "home": {
+        "id": "43926",
+        "name": "Colombia",
+        "shortName": "Colombia",
+        "abbreviation": "COL",
+        "country": "COL",
+        "flagUrl": "https://api.fifa.com/api/v3/picture/flags-png-2/COL",
+        "isPlaceholder": false
+      },
+      "away": {
+        "id": "20014",
+        "name": "Congo DR",
+        "shortName": "Congo DR",
+        "abbreviation": "COD",
+        "country": "COD",
+        "flagUrl": "https://api.fifa.com/api/v3/picture/flags-png-2/COD",
+        "isPlaceholder": false
+      },
+      "placeholderHome": "K4",
+      "placeholderAway": "K2",
+      "score": null,
+      "status": {
+        "code": 1,
+        "label": "Sắp diễn ra"
+      },
+      "stadium": {
+        "id": "400252150",
+        "name": "Guadalajara Stadium",
+        "city": "Guadalajara",
+        "country": "MEX",
+        "countryName": "Mexico",
+        "capacity": null,
+        "roof": false
+      }
+    },
+    {
+      "id": "400021451",
+      "matchNumber": 51,
+      "stage": "First Stage",
+      "stageVi": "Vòng bảng",
+      "group": "Bảng B",
+      "utcDate": "2026-06-24T19:00:00Z",
+      "localDateAtVenue": "2026-06-24T12:00:00Z",
+      "localTimeAtVenue": "12:00 24/06/2026",
+      "vietnamDate": "Thứ Năm, 25/06/2026",
+      "vietnamShortDate": "25/06/2026",
+      "vietnamTime": "02:00",
+      "home": {
+        "id": "43971",
+        "name": "Switzerland",
+        "shortName": "Switzerland",
+        "abbreviation": "SUI",
+        "country": "SUI",
+        "flagUrl": "https://api.fifa.com/api/v3/picture/flags-png-2/SUI",
+        "isPlaceholder": false
+      },
+      "away": {
+        "id": "43899",
+        "name": "Canada",
+        "shortName": "Canada",
+        "abbreviation": "CAN",
+        "country": "CAN",
+        "flagUrl": "https://api.fifa.com/api/v3/picture/flags-png-2/CAN",
+        "isPlaceholder": false
+      },
+      "placeholderHome": "B4",
+      "placeholderAway": "B1",
+      "score": null,
+      "status": {
+        "code": 1,
+        "label": "Sắp diễn ra"
+      },
+      "stadium": {
+        "id": "400248370",
+        "name": "BC Place Vancouver",
+        "city": "Vancouver",
+        "country": "CAN",
+        "countryName": "Canada",
+        "capacity": null,
+        "roof": false
+      }
+    },
+    {
+      "id": "400021448",
+      "matchNumber": 52,
+      "stage": "First Stage",
+      "stageVi": "Vòng bảng",
+      "group": "Bảng B",
+      "utcDate": "2026-06-24T19:00:00Z",
+      "localDateAtVenue": "2026-06-24T12:00:00Z",
+      "localTimeAtVenue": "12:00 24/06/2026",
+      "vietnamDate": "Thứ Năm, 25/06/2026",
+      "vietnamShortDate": "25/06/2026",
+      "vietnamTime": "02:00",
+      "home": {
+        "id": "44037",
+        "name": "Bosnia and Herzegovina",
+        "shortName": "Bosnia and Herzegovina",
+        "abbreviation": "BIH",
+        "country": "BIH",
+        "flagUrl": "https://api.fifa.com/api/v3/picture/flags-png-2/BIH",
+        "isPlaceholder": false
+      },
+      "away": {
+        "id": "43834",
+        "name": "Qatar",
+        "shortName": "Qatar",
+        "abbreviation": "QAT",
+        "country": "QAT",
+        "flagUrl": "https://api.fifa.com/api/v3/picture/flags-png-2/QAT",
+        "isPlaceholder": false
+      },
+      "placeholderHome": "B2",
+      "placeholderAway": "B3",
+      "score": null,
+      "status": {
+        "code": 1,
+        "label": "Sắp diễn ra"
+      },
+      "stadium": {
+        "id": "400216606",
+        "name": "Seattle Stadium",
+        "city": "Seattle",
+        "country": "USA",
+        "countryName": "Mỹ",
+        "capacity": null,
+        "roof": false
+      }
+    },
+    {
+      "id": "400021455",
+      "matchNumber": 49,
+      "stage": "First Stage",
+      "stageVi": "Vòng bảng",
+      "group": "Bảng C",
+      "utcDate": "2026-06-24T22:00:00Z",
+      "localDateAtVenue": "2026-06-24T18:00:00Z",
+      "localTimeAtVenue": "18:00 24/06/2026",
+      "vietnamDate": "Thứ Năm, 25/06/2026",
+      "vietnamShortDate": "25/06/2026",
+      "vietnamTime": "05:00",
+      "home": {
+        "id": "43967",
+        "name": "Scotland",
+        "shortName": "Scotland",
+        "abbreviation": "SCO",
+        "country": "SCO",
+        "flagUrl": "https://api.fifa.com/api/v3/picture/flags-png-2/SCO",
+        "isPlaceholder": false
+      },
+      "away": {
+        "id": "43924",
+        "name": "Brazil",
+        "shortName": "Brazil",
+        "abbreviation": "BRA",
+        "country": "BRA",
+        "flagUrl": "https://api.fifa.com/api/v3/picture/flags-png-2/BRA",
+        "isPlaceholder": false
+      },
+      "placeholderHome": "C4",
+      "placeholderAway": "C1",
+      "score": null,
+      "status": {
+        "code": 1,
+        "label": "Sắp diễn ra"
+      },
+      "stadium": {
+        "id": "400257525",
+        "name": "Miami Stadium",
+        "city": "Miami",
+        "country": "USA",
+        "countryName": "Mỹ",
+        "capacity": null,
+        "roof": false
+      }
+    },
+    {
+      "id": "400021452",
+      "matchNumber": 50,
+      "stage": "First Stage",
+      "stageVi": "Vòng bảng",
+      "group": "Bảng C",
+      "utcDate": "2026-06-24T22:00:00Z",
+      "localDateAtVenue": "2026-06-24T18:00:00Z",
+      "localTimeAtVenue": "18:00 24/06/2026",
+      "vietnamDate": "Thứ Năm, 25/06/2026",
+      "vietnamShortDate": "25/06/2026",
+      "vietnamTime": "05:00",
+      "home": {
+        "id": "43872",
+        "name": "Morocco",
+        "shortName": "Morocco",
+        "abbreviation": "MAR",
+        "country": "MAR",
+        "flagUrl": "https://api.fifa.com/api/v3/picture/flags-png-2/MAR",
+        "isPlaceholder": false
+      },
+      "away": {
+        "id": "43908",
+        "name": "Haiti",
+        "shortName": "Haiti",
+        "abbreviation": "HAI",
+        "country": "HAI",
+        "flagUrl": "https://api.fifa.com/api/v3/picture/flags-png-2/HAI",
+        "isPlaceholder": false
+      },
+      "placeholderHome": "C2",
+      "placeholderAway": "C3",
+      "score": null,
+      "status": {
+        "code": 1,
+        "label": "Sắp diễn ra"
+      },
+      "stadium": {
+        "id": "400098290",
+        "name": "Atlanta Stadium",
+        "city": "Atlanta",
+        "country": "USA",
+        "countryName": "Mỹ",
+        "capacity": null,
+        "roof": false
+      }
+    },
+    {
+      "id": "400021444",
+      "matchNumber": 53,
+      "stage": "First Stage",
+      "stageVi": "Vòng bảng",
+      "group": "Bảng A",
+      "utcDate": "2026-06-25T01:00:00Z",
+      "localDateAtVenue": "2026-06-24T19:00:00Z",
+      "localTimeAtVenue": "19:00 24/06/2026",
+      "vietnamDate": "Thứ Năm, 25/06/2026",
+      "vietnamShortDate": "25/06/2026",
+      "vietnamTime": "08:00",
+      "home": {
+        "id": "43995",
+        "name": "Czechia",
+        "shortName": "Czechia",
+        "abbreviation": "CZE",
+        "country": "CZE",
+        "flagUrl": "https://api.fifa.com/api/v3/picture/flags-png-2/CZE",
+        "isPlaceholder": false
+      },
+      "away": {
+        "id": "43911",
+        "name": "Mexico",
+        "shortName": "Mexico",
+        "abbreviation": "MEX",
+        "country": "MEX",
+        "flagUrl": "https://api.fifa.com/api/v3/picture/flags-png-2/MEX",
+        "isPlaceholder": false
+      },
+      "placeholderHome": "A4",
+      "placeholderAway": "A1",
+      "score": null,
+      "status": {
+        "code": 1,
+        "label": "Sắp diễn ra"
+      },
+      "stadium": {
+        "id": "400222084",
+        "name": "Mexico City Stadium",
+        "city": "Mexico City",
+        "country": "MEX",
+        "countryName": "Mexico",
+        "capacity": null,
+        "roof": false
+      }
+    },
+    {
+      "id": "400021445",
+      "matchNumber": 54,
+      "stage": "First Stage",
+      "stageVi": "Vòng bảng",
+      "group": "Bảng A",
+      "utcDate": "2026-06-25T01:00:00Z",
+      "localDateAtVenue": "2026-06-24T19:00:00Z",
+      "localTimeAtVenue": "19:00 24/06/2026",
+      "vietnamDate": "Thứ Năm, 25/06/2026",
+      "vietnamShortDate": "25/06/2026",
+      "vietnamTime": "08:00",
+      "home": {
+        "id": "43883",
+        "name": "South Africa",
+        "shortName": "South Africa",
+        "abbreviation": "RSA",
+        "country": "RSA",
+        "flagUrl": "https://api.fifa.com/api/v3/picture/flags-png-2/RSA",
+        "isPlaceholder": false
+      },
+      "away": {
+        "id": "43822",
+        "name": "Korea Republic",
+        "shortName": "Korea Republic",
+        "abbreviation": "KOR",
+        "country": "KOR",
+        "flagUrl": "https://api.fifa.com/api/v3/picture/flags-png-2/KOR",
+        "isPlaceholder": false
+      },
+      "placeholderHome": "A2",
+      "placeholderAway": "A3",
+      "score": null,
+      "status": {
+        "code": 1,
+        "label": "Sắp diễn ra"
+      },
+      "stadium": {
+        "id": "400238450",
+        "name": "Monterrey Stadium",
+        "city": "Monterrey",
+        "country": "MEX",
+        "countryName": "Mexico",
+        "capacity": null,
+        "roof": false
+      }
+    },
+    {
+      "id": "400021468",
+      "matchNumber": 55,
+      "stage": "First Stage",
+      "stageVi": "Vòng bảng",
+      "group": "Bảng E",
+      "utcDate": "2026-06-25T20:00:00Z",
+      "localDateAtVenue": "2026-06-25T16:00:00Z",
+      "localTimeAtVenue": "16:00 25/06/2026",
+      "vietnamDate": "Thứ Sáu, 26/06/2026",
+      "vietnamShortDate": "26/06/2026",
+      "vietnamTime": "03:00",
+      "home": {
+        "id": "1895293",
+        "name": "Curaçao",
+        "shortName": "Curaçao",
+        "abbreviation": "CUW",
+        "country": "CUW",
+        "flagUrl": "https://api.fifa.com/api/v3/picture/flags-png-2/CUW",
+        "isPlaceholder": false
+      },
+      "away": {
+        "id": "43854",
+        "name": "Côte d'Ivoire",
+        "shortName": "Côte d'Ivoire",
+        "abbreviation": "CIV",
+        "country": "CIV",
+        "flagUrl": "https://api.fifa.com/api/v3/picture/flags-png-2/CIV",
+        "isPlaceholder": false
+      },
+      "placeholderHome": "E2",
+      "placeholderAway": "E3",
+      "score": null,
+      "status": {
+        "code": 1,
+        "label": "Sắp diễn ra"
+      },
+      "stadium": {
+        "id": "400248622",
+        "name": "Philadelphia Stadium",
+        "city": "Philadelphia",
+        "country": "USA",
+        "countryName": "Mỹ",
+        "capacity": null,
+        "roof": false
+      }
+    },
+    {
+      "id": "400021466",
+      "matchNumber": 56,
+      "stage": "First Stage",
+      "stageVi": "Vòng bảng",
+      "group": "Bảng E",
+      "utcDate": "2026-06-25T20:00:00Z",
+      "localDateAtVenue": "2026-06-25T16:00:00Z",
+      "localTimeAtVenue": "16:00 25/06/2026",
+      "vietnamDate": "Thứ Sáu, 26/06/2026",
+      "vietnamShortDate": "26/06/2026",
+      "vietnamTime": "03:00",
+      "home": {
+        "id": "43927",
+        "name": "Ecuador",
+        "shortName": "Ecuador",
+        "abbreviation": "ECU",
+        "country": "ECU",
+        "flagUrl": "https://api.fifa.com/api/v3/picture/flags-png-2/ECU",
+        "isPlaceholder": false
+      },
+      "away": {
+        "id": "43948",
+        "name": "Germany",
+        "shortName": "Germany",
+        "abbreviation": "GER",
+        "country": "GER",
+        "flagUrl": "https://api.fifa.com/api/v3/picture/flags-png-2/GER",
+        "isPlaceholder": false
+      },
+      "placeholderHome": "E4",
+      "placeholderAway": "E1",
+      "score": null,
+      "status": {
+        "code": 1,
+        "label": "Sắp diễn ra"
+      },
+      "stadium": {
+        "id": "400257536",
+        "name": "New York/New Jersey Stadium",
+        "city": "New Jersey",
+        "country": "USA",
+        "countryName": "Mỹ",
+        "capacity": null,
+        "roof": false
+      }
+    },
+    {
+      "id": "400021471",
+      "matchNumber": 57,
+      "stage": "First Stage",
+      "stageVi": "Vòng bảng",
+      "group": "Bảng F",
+      "utcDate": "2026-06-25T23:00:00Z",
+      "localDateAtVenue": "2026-06-25T18:00:00Z",
+      "localTimeAtVenue": "18:00 25/06/2026",
+      "vietnamDate": "Thứ Sáu, 26/06/2026",
+      "vietnamShortDate": "26/06/2026",
+      "vietnamTime": "06:00",
+      "home": {
+        "id": "43819",
+        "name": "Japan",
+        "shortName": "Japan",
+        "abbreviation": "JPN",
+        "country": "JPN",
+        "flagUrl": "https://api.fifa.com/api/v3/picture/flags-png-2/JPN",
+        "isPlaceholder": false
+      },
+      "away": {
+        "id": "43970",
+        "name": "Sweden",
+        "shortName": "Sweden",
+        "abbreviation": "SWE",
+        "country": "SWE",
+        "flagUrl": "https://api.fifa.com/api/v3/picture/flags-png-2/SWE",
+        "isPlaceholder": false
+      },
+      "placeholderHome": "F2",
+      "placeholderAway": "F3",
+      "score": null,
+      "status": {
+        "code": 1,
+        "label": "Sắp diễn ra"
+      },
+      "stadium": {
+        "id": "400257526",
+        "name": "Dallas Stadium",
+        "city": "Dallas",
+        "country": "USA",
+        "countryName": "Mỹ",
+        "capacity": null,
+        "roof": false
+      }
+    },
+    {
+      "id": "400021473",
+      "matchNumber": 58,
+      "stage": "First Stage",
+      "stageVi": "Vòng bảng",
+      "group": "Bảng F",
+      "utcDate": "2026-06-25T23:00:00Z",
+      "localDateAtVenue": "2026-06-25T18:00:00Z",
+      "localTimeAtVenue": "18:00 25/06/2026",
+      "vietnamDate": "Thứ Sáu, 26/06/2026",
+      "vietnamShortDate": "26/06/2026",
+      "vietnamTime": "06:00",
+      "home": {
+        "id": "43888",
+        "name": "Tunisia",
+        "shortName": "Tunisia",
+        "abbreviation": "TUN",
+        "country": "TUN",
+        "flagUrl": "https://api.fifa.com/api/v3/picture/flags-png-2/TUN",
+        "isPlaceholder": false
+      },
+      "away": {
+        "id": "43960",
+        "name": "Netherlands",
+        "shortName": "Netherlands",
+        "abbreviation": "NED",
+        "country": "NED",
+        "flagUrl": "https://api.fifa.com/api/v3/picture/flags-png-2/NED",
+        "isPlaceholder": false
+      },
+      "placeholderHome": "F4",
+      "placeholderAway": "F1",
+      "score": null,
+      "status": {
+        "code": 1,
+        "label": "Sắp diễn ra"
+      },
+      "stadium": {
+        "id": "400254717",
+        "name": "Kansas City Stadium",
+        "city": "Kansas City",
+        "country": "USA",
+        "countryName": "Mỹ",
+        "capacity": null,
+        "roof": false
+      }
+    },
+    {
+      "id": "400021459",
+      "matchNumber": 59,
+      "stage": "First Stage",
+      "stageVi": "Vòng bảng",
+      "group": "Bảng D",
+      "utcDate": "2026-06-26T02:00:00Z",
+      "localDateAtVenue": "2026-06-25T19:00:00Z",
+      "localTimeAtVenue": "19:00 25/06/2026",
+      "vietnamDate": "Thứ Sáu, 26/06/2026",
+      "vietnamShortDate": "26/06/2026",
+      "vietnamTime": "09:00",
+      "home": {
+        "id": "43972",
+        "name": "Türkiye",
+        "shortName": "Türkiye",
+        "abbreviation": "TUR",
+        "country": "TUR",
+        "flagUrl": "https://api.fifa.com/api/v3/picture/flags-png-2/TUR",
+        "isPlaceholder": false
+      },
+      "away": {
+        "id": "43921",
+        "name": "USA",
+        "shortName": "USA",
+        "abbreviation": "USA",
+        "country": "USA",
+        "flagUrl": "https://api.fifa.com/api/v3/picture/flags-png-2/USA",
+        "isPlaceholder": false
+      },
+      "placeholderHome": "D4",
+      "placeholderAway": "D1",
+      "score": null,
+      "status": {
+        "code": 1,
+        "label": "Sắp diễn ra"
+      },
+      "stadium": {
+        "id": "400017978",
+        "name": "Los Angeles Stadium",
+        "city": "Los Angeles",
+        "country": "USA",
+        "countryName": "Mỹ",
+        "capacity": null,
+        "roof": false
+      }
+    },
+    {
+      "id": "400021461",
+      "matchNumber": 60,
+      "stage": "First Stage",
+      "stageVi": "Vòng bảng",
+      "group": "Bảng D",
+      "utcDate": "2026-06-26T02:00:00Z",
+      "localDateAtVenue": "2026-06-25T19:00:00Z",
+      "localTimeAtVenue": "19:00 25/06/2026",
+      "vietnamDate": "Thứ Sáu, 26/06/2026",
+      "vietnamShortDate": "26/06/2026",
+      "vietnamTime": "09:00",
+      "home": {
+        "id": "43928",
+        "name": "Paraguay",
+        "shortName": "Paraguay",
+        "abbreviation": "PAR",
+        "country": "PAR",
+        "flagUrl": "https://api.fifa.com/api/v3/picture/flags-png-2/PAR",
+        "isPlaceholder": false
+      },
+      "away": {
+        "id": "43976",
+        "name": "Australia",
+        "shortName": "Australia",
+        "abbreviation": "AUS",
+        "country": "AUS",
+        "flagUrl": "https://api.fifa.com/api/v3/picture/flags-png-2/AUS",
+        "isPlaceholder": false
+      },
+      "placeholderHome": "D2",
+      "placeholderAway": "D3",
+      "score": null,
+      "status": {
+        "code": 1,
+        "label": "Sắp diễn ra"
+      },
+      "stadium": {
+        "id": "400257521",
+        "name": "San Francisco Bay Area Stadium",
+        "city": "San Francisco Bay Area",
+        "country": "USA",
+        "countryName": "Mỹ",
+        "capacity": null,
+        "roof": false
+      }
+    },
+    {
+      "id": "400021489",
+      "matchNumber": 61,
+      "stage": "First Stage",
+      "stageVi": "Vòng bảng",
+      "group": "Bảng I",
+      "utcDate": "2026-06-26T19:00:00Z",
+      "localDateAtVenue": "2026-06-26T15:00:00Z",
+      "localTimeAtVenue": "15:00 26/06/2026",
+      "vietnamDate": "Thứ Bảy, 27/06/2026",
+      "vietnamShortDate": "27/06/2026",
+      "vietnamTime": "02:00",
+      "home": {
+        "id": "43961",
+        "name": "Norway",
+        "shortName": "Norway",
+        "abbreviation": "NOR",
+        "country": "NOR",
+        "flagUrl": "https://api.fifa.com/api/v3/picture/flags-png-2/NOR",
+        "isPlaceholder": false
+      },
+      "away": {
+        "id": "43946",
+        "name": "France",
+        "shortName": "France",
+        "abbreviation": "FRA",
+        "country": "FRA",
+        "flagUrl": "https://api.fifa.com/api/v3/picture/flags-png-2/FRA",
+        "isPlaceholder": false
+      },
+      "placeholderHome": "I4",
+      "placeholderAway": "I1",
+      "score": null,
+      "status": {
+        "code": 1,
+        "label": "Sắp diễn ra"
+      },
+      "stadium": {
+        "id": "400248623",
+        "name": "Boston Stadium",
+        "city": "Boston",
+        "country": "USA",
+        "countryName": "Mỹ",
+        "capacity": null,
+        "roof": false
+      }
+    },
+    {
+      "id": "400021493",
+      "matchNumber": 62,
+      "stage": "First Stage",
+      "stageVi": "Vòng bảng",
+      "group": "Bảng I",
+      "utcDate": "2026-06-26T19:00:00Z",
+      "localDateAtVenue": "2026-06-26T15:00:00Z",
+      "localTimeAtVenue": "15:00 26/06/2026",
+      "vietnamDate": "Thứ Bảy, 27/06/2026",
+      "vietnamShortDate": "27/06/2026",
+      "vietnamTime": "02:00",
+      "home": {
+        "id": "43879",
+        "name": "Senegal",
+        "shortName": "Senegal",
+        "abbreviation": "SEN",
+        "country": "SEN",
+        "flagUrl": "https://api.fifa.com/api/v3/picture/flags-png-2/SEN",
+        "isPlaceholder": false
+      },
+      "away": {
+        "id": "43818",
+        "name": "Iraq",
+        "shortName": "Iraq",
+        "abbreviation": "IRQ",
+        "country": "IRQ",
+        "flagUrl": "https://api.fifa.com/api/v3/picture/flags-png-2/IRQ",
+        "isPlaceholder": false
+      },
+      "placeholderHome": "I2",
+      "placeholderAway": "I3",
+      "score": null,
+      "status": {
+        "code": 1,
+        "label": "Sắp diễn ra"
+      },
+      "stadium": {
+        "id": "400242032",
+        "name": "Toronto Stadium",
+        "city": "Toronto",
+        "country": "CAN",
+        "countryName": "Canada",
+        "capacity": null,
+        "roof": false
+      }
+    },
+    {
+      "id": "400021485",
+      "matchNumber": 65,
+      "stage": "First Stage",
+      "stageVi": "Vòng bảng",
+      "group": "Bảng H",
+      "utcDate": "2026-06-27T00:00:00Z",
+      "localDateAtVenue": "2026-06-26T19:00:00Z",
+      "localTimeAtVenue": "19:00 26/06/2026",
+      "vietnamDate": "Thứ Bảy, 27/06/2026",
+      "vietnamShortDate": "27/06/2026",
+      "vietnamTime": "07:00",
+      "home": {
+        "id": "43850",
+        "name": "Cabo Verde",
+        "shortName": "Cabo Verde",
+        "abbreviation": "CPV",
+        "country": "CPV",
+        "flagUrl": "https://api.fifa.com/api/v3/picture/flags-png-2/CPV",
+        "isPlaceholder": false
+      },
+      "away": {
+        "id": "43835",
+        "name": "Saudi Arabia",
+        "shortName": "Saudi Arabia",
+        "abbreviation": "KSA",
+        "country": "KSA",
+        "flagUrl": "https://api.fifa.com/api/v3/picture/flags-png-2/KSA",
+        "isPlaceholder": false
+      },
+      "placeholderHome": "H2",
+      "placeholderAway": "H3",
+      "score": null,
+      "status": {
+        "code": 1,
+        "label": "Sắp diễn ra"
+      },
+      "stadium": {
+        "id": "400249385",
+        "name": "Houston Stadium",
+        "city": "Houston",
+        "country": "USA",
+        "countryName": "Mỹ",
+        "capacity": null,
+        "roof": false
+      }
+    },
+    {
+      "id": "400021484",
+      "matchNumber": 66,
+      "stage": "First Stage",
+      "stageVi": "Vòng bảng",
+      "group": "Bảng H",
+      "utcDate": "2026-06-27T00:00:00Z",
+      "localDateAtVenue": "2026-06-26T18:00:00Z",
+      "localTimeAtVenue": "18:00 26/06/2026",
+      "vietnamDate": "Thứ Bảy, 27/06/2026",
+      "vietnamShortDate": "27/06/2026",
+      "vietnamTime": "07:00",
+      "home": {
+        "id": "43930",
+        "name": "Uruguay",
+        "shortName": "Uruguay",
+        "abbreviation": "URU",
+        "country": "URU",
+        "flagUrl": "https://api.fifa.com/api/v3/picture/flags-png-2/URU",
+        "isPlaceholder": false
+      },
+      "away": {
+        "id": "43969",
+        "name": "Spain",
+        "shortName": "Spain",
+        "abbreviation": "ESP",
+        "country": "ESP",
+        "flagUrl": "https://api.fifa.com/api/v3/picture/flags-png-2/ESP",
+        "isPlaceholder": false
+      },
+      "placeholderHome": "H4",
+      "placeholderAway": "H1",
+      "score": null,
+      "status": {
+        "code": 1,
+        "label": "Sắp diễn ra"
+      },
+      "stadium": {
+        "id": "400252150",
+        "name": "Guadalajara Stadium",
+        "city": "Guadalajara",
+        "country": "MEX",
+        "countryName": "Mexico",
+        "capacity": null,
+        "roof": false
+      }
+    },
+    {
+      "id": "400021479",
+      "matchNumber": 63,
+      "stage": "First Stage",
+      "stageVi": "Vòng bảng",
+      "group": "Bảng G",
+      "utcDate": "2026-06-27T03:00:00Z",
+      "localDateAtVenue": "2026-06-26T20:00:00Z",
+      "localTimeAtVenue": "20:00 26/06/2026",
+      "vietnamDate": "Thứ Bảy, 27/06/2026",
+      "vietnamShortDate": "27/06/2026",
+      "vietnamTime": "10:00",
+      "home": {
+        "id": "43855",
+        "name": "Egypt",
+        "shortName": "Egypt",
+        "abbreviation": "EGY",
+        "country": "EGY",
+        "flagUrl": "https://api.fifa.com/api/v3/picture/flags-png-2/EGY",
+        "isPlaceholder": false
+      },
+      "away": {
+        "id": "43817",
+        "name": "IR Iran",
+        "shortName": "IR Iran",
+        "abbreviation": "IRN",
+        "country": "IRN",
+        "flagUrl": "https://api.fifa.com/api/v3/picture/flags-png-2/IRN",
+        "isPlaceholder": false
+      },
+      "placeholderHome": "G2",
+      "placeholderAway": "G3",
+      "score": null,
+      "status": {
+        "code": 1,
+        "label": "Sắp diễn ra"
+      },
+      "stadium": {
+        "id": "400216606",
+        "name": "Seattle Stadium",
+        "city": "Seattle",
+        "country": "USA",
+        "countryName": "Mỹ",
+        "capacity": null,
+        "roof": false
+      }
+    },
+    {
+      "id": "400021481",
+      "matchNumber": 64,
+      "stage": "First Stage",
+      "stageVi": "Vòng bảng",
+      "group": "Bảng G",
+      "utcDate": "2026-06-27T03:00:00Z",
+      "localDateAtVenue": "2026-06-26T20:00:00Z",
+      "localTimeAtVenue": "20:00 26/06/2026",
+      "vietnamDate": "Thứ Bảy, 27/06/2026",
+      "vietnamShortDate": "27/06/2026",
+      "vietnamTime": "10:00",
+      "home": {
+        "id": "43978",
+        "name": "New Zealand",
+        "shortName": "New Zealand",
+        "abbreviation": "NZL",
+        "country": "NZL",
+        "flagUrl": "https://api.fifa.com/api/v3/picture/flags-png-2/NZL",
+        "isPlaceholder": false
+      },
+      "away": {
+        "id": "43935",
+        "name": "Belgium",
+        "shortName": "Belgium",
+        "abbreviation": "BEL",
+        "country": "BEL",
+        "flagUrl": "https://api.fifa.com/api/v3/picture/flags-png-2/BEL",
+        "isPlaceholder": false
+      },
+      "placeholderHome": "G4",
+      "placeholderAway": "G1",
+      "score": null,
+      "status": {
+        "code": 1,
+        "label": "Sắp diễn ra"
+      },
+      "stadium": {
+        "id": "400248370",
+        "name": "BC Place Vancouver",
+        "city": "Vancouver",
+        "country": "CAN",
+        "countryName": "Canada",
+        "capacity": null,
+        "roof": false
+      }
+    },
+    {
+      "id": "400021508",
+      "matchNumber": 67,
+      "stage": "First Stage",
+      "stageVi": "Vòng bảng",
+      "group": "Bảng L",
+      "utcDate": "2026-06-27T21:00:00Z",
+      "localDateAtVenue": "2026-06-27T17:00:00Z",
+      "localTimeAtVenue": "17:00 27/06/2026",
+      "vietnamDate": "Chủ Nhật, 28/06/2026",
+      "vietnamShortDate": "28/06/2026",
+      "vietnamTime": "04:00",
+      "home": {
+        "id": "43914",
+        "name": "Panama",
+        "shortName": "Panama",
+        "abbreviation": "PAN",
+        "country": "PAN",
+        "flagUrl": "https://api.fifa.com/api/v3/picture/flags-png-2/PAN",
+        "isPlaceholder": false
+      },
+      "away": {
+        "id": "43942",
+        "name": "England",
+        "shortName": "England",
+        "abbreviation": "ENG",
+        "country": "ENG",
+        "flagUrl": "https://api.fifa.com/api/v3/picture/flags-png-2/ENG",
+        "isPlaceholder": false
+      },
+      "placeholderHome": "Thua trận 4",
+      "placeholderAway": "Thua trận 1",
+      "score": null,
+      "status": {
+        "code": 1,
+        "label": "Sắp diễn ra"
+      },
+      "stadium": {
+        "id": "400257536",
+        "name": "New York/New Jersey Stadium",
+        "city": "New Jersey",
+        "country": "USA",
+        "countryName": "Mỹ",
+        "capacity": null,
+        "roof": false
+      }
+    },
+    {
+      "id": "400021509",
+      "matchNumber": 68,
+      "stage": "First Stage",
+      "stageVi": "Vòng bảng",
+      "group": "Bảng L",
+      "utcDate": "2026-06-27T21:00:00Z",
+      "localDateAtVenue": "2026-06-27T17:00:00Z",
+      "localTimeAtVenue": "17:00 27/06/2026",
+      "vietnamDate": "Chủ Nhật, 28/06/2026",
+      "vietnamShortDate": "28/06/2026",
+      "vietnamTime": "04:00",
+      "home": {
+        "id": "43938",
+        "name": "Croatia",
+        "shortName": "Croatia",
+        "abbreviation": "CRO",
+        "country": "CRO",
+        "flagUrl": "https://api.fifa.com/api/v3/picture/flags-png-2/CRO",
+        "isPlaceholder": false
+      },
+      "away": {
+        "id": "43860",
+        "name": "Ghana",
+        "shortName": "Ghana",
+        "abbreviation": "GHA",
+        "country": "GHA",
+        "flagUrl": "https://api.fifa.com/api/v3/picture/flags-png-2/GHA",
+        "isPlaceholder": false
+      },
+      "placeholderHome": "Thua trận 2",
+      "placeholderAway": "Thua trận 3",
+      "score": null,
+      "status": {
+        "code": 1,
+        "label": "Sắp diễn ra"
+      },
+      "stadium": {
+        "id": "400248622",
+        "name": "Philadelphia Stadium",
+        "city": "Philadelphia",
+        "country": "USA",
+        "countryName": "Mỹ",
+        "capacity": null,
+        "roof": false
+      }
+    },
+    {
+      "id": "400021505",
+      "matchNumber": 71,
+      "stage": "First Stage",
+      "stageVi": "Vòng bảng",
+      "group": "Bảng K",
+      "utcDate": "2026-06-27T23:30:00Z",
+      "localDateAtVenue": "2026-06-27T19:30:00Z",
+      "localTimeAtVenue": "19:30 27/06/2026",
+      "vietnamDate": "Chủ Nhật, 28/06/2026",
+      "vietnamShortDate": "28/06/2026",
+      "vietnamTime": "06:30",
+      "home": {
+        "id": "43926",
+        "name": "Colombia",
+        "shortName": "Colombia",
+        "abbreviation": "COL",
+        "country": "COL",
+        "flagUrl": "https://api.fifa.com/api/v3/picture/flags-png-2/COL",
+        "isPlaceholder": false
+      },
+      "away": {
+        "id": "43963",
+        "name": "Portugal",
+        "shortName": "Portugal",
+        "abbreviation": "POR",
+        "country": "POR",
+        "flagUrl": "https://api.fifa.com/api/v3/picture/flags-png-2/POR",
+        "isPlaceholder": false
+      },
+      "placeholderHome": "K4",
+      "placeholderAway": "K1",
+      "score": null,
+      "status": {
+        "code": 1,
+        "label": "Sắp diễn ra"
+      },
+      "stadium": {
+        "id": "400257525",
+        "name": "Miami Stadium",
+        "city": "Miami",
+        "country": "USA",
+        "countryName": "Mỹ",
+        "capacity": null,
+        "roof": false
+      }
+    },
+    {
+      "id": "400021500",
+      "matchNumber": 72,
+      "stage": "First Stage",
+      "stageVi": "Vòng bảng",
+      "group": "Bảng K",
+      "utcDate": "2026-06-27T23:30:00Z",
+      "localDateAtVenue": "2026-06-27T19:30:00Z",
+      "localTimeAtVenue": "19:30 27/06/2026",
+      "vietnamDate": "Chủ Nhật, 28/06/2026",
+      "vietnamShortDate": "28/06/2026",
+      "vietnamTime": "06:30",
+      "home": {
+        "id": "20014",
+        "name": "Congo DR",
+        "shortName": "Congo DR",
+        "abbreviation": "COD",
+        "country": "COD",
+        "flagUrl": "https://api.fifa.com/api/v3/picture/flags-png-2/COD",
+        "isPlaceholder": false
+      },
+      "away": {
+        "id": "44005",
+        "name": "Uzbekistan",
+        "shortName": "Uzbekistan",
+        "abbreviation": "UZB",
+        "country": "UZB",
+        "flagUrl": "https://api.fifa.com/api/v3/picture/flags-png-2/UZB",
+        "isPlaceholder": false
+      },
+      "placeholderHome": "K2",
+      "placeholderAway": "K3",
+      "score": null,
+      "status": {
+        "code": 1,
+        "label": "Sắp diễn ra"
+      },
+      "stadium": {
+        "id": "400098290",
+        "name": "Atlanta Stadium",
+        "city": "Atlanta",
+        "country": "USA",
+        "countryName": "Mỹ",
+        "capacity": null,
+        "roof": false
+      }
+    },
+    {
+      "id": "400021497",
+      "matchNumber": 69,
+      "stage": "First Stage",
+      "stageVi": "Vòng bảng",
+      "group": "Bảng J",
+      "utcDate": "2026-06-28T02:00:00Z",
+      "localDateAtVenue": "2026-06-27T21:00:00Z",
+      "localTimeAtVenue": "21:00 27/06/2026",
+      "vietnamDate": "Chủ Nhật, 28/06/2026",
+      "vietnamShortDate": "28/06/2026",
+      "vietnamTime": "09:00",
+      "home": {
+        "id": "43843",
+        "name": "Algeria",
+        "shortName": "Algeria",
+        "abbreviation": "ALG",
+        "country": "ALG",
+        "flagUrl": "https://api.fifa.com/api/v3/picture/flags-png-2/ALG",
+        "isPlaceholder": false
+      },
+      "away": {
+        "id": "43934",
+        "name": "Austria",
+        "shortName": "Austria",
+        "abbreviation": "AUT",
+        "country": "AUT",
+        "flagUrl": "https://api.fifa.com/api/v3/picture/flags-png-2/AUT",
+        "isPlaceholder": false
+      },
+      "placeholderHome": "J2",
+      "placeholderAway": "J3",
+      "score": null,
+      "status": {
+        "code": 1,
+        "label": "Sắp diễn ra"
+      },
+      "stadium": {
+        "id": "400254717",
+        "name": "Kansas City Stadium",
+        "city": "Kansas City",
+        "country": "USA",
+        "countryName": "Mỹ",
+        "capacity": null,
+        "roof": false
+      }
+    },
+    {
+      "id": "400021495",
+      "matchNumber": 70,
+      "stage": "First Stage",
+      "stageVi": "Vòng bảng",
+      "group": "Bảng J",
+      "utcDate": "2026-06-28T02:00:00Z",
+      "localDateAtVenue": "2026-06-27T21:00:00Z",
+      "localTimeAtVenue": "21:00 27/06/2026",
+      "vietnamDate": "Chủ Nhật, 28/06/2026",
+      "vietnamShortDate": "28/06/2026",
+      "vietnamTime": "09:00",
+      "home": {
+        "id": "43820",
+        "name": "Jordan",
+        "shortName": "Jordan",
+        "abbreviation": "JOR",
+        "country": "JOR",
+        "flagUrl": "https://api.fifa.com/api/v3/picture/flags-png-2/JOR",
+        "isPlaceholder": false
+      },
+      "away": {
+        "id": "43922",
+        "name": "Argentina",
+        "shortName": "Argentina",
+        "abbreviation": "ARG",
+        "country": "ARG",
+        "flagUrl": "https://api.fifa.com/api/v3/picture/flags-png-2/ARG",
+        "isPlaceholder": false
+      },
+      "placeholderHome": "J4",
+      "placeholderAway": "J1",
+      "score": null,
+      "status": {
+        "code": 1,
+        "label": "Sắp diễn ra"
+      },
+      "stadium": {
+        "id": "400257526",
+        "name": "Dallas Stadium",
+        "city": "Dallas",
+        "country": "USA",
+        "countryName": "Mỹ",
+        "capacity": null,
+        "roof": false
+      }
+    },
+    {
+      "id": "400021518",
+      "matchNumber": 73,
+      "stage": "Round of 32",
+      "stageVi": "Vòng 1/32",
+      "group": "",
+      "utcDate": "2026-06-28T19:00:00Z",
+      "localDateAtVenue": "2026-06-28T12:00:00Z",
+      "localTimeAtVenue": "12:00 28/06/2026",
+      "vietnamDate": "Thứ Hai, 29/06/2026",
+      "vietnamShortDate": "29/06/2026",
+      "vietnamTime": "02:00",
+      "home": {
+        "id": null,
+        "name": "2A",
+        "shortName": "2A",
+        "abbreviation": "",
+        "country": "",
+        "flagUrl": null,
+        "isPlaceholder": true
+      },
+      "away": {
+        "id": null,
+        "name": "2B",
+        "shortName": "2B",
+        "abbreviation": "",
+        "country": "",
+        "flagUrl": null,
+        "isPlaceholder": true
+      },
+      "placeholderHome": "2A",
+      "placeholderAway": "2B",
+      "score": null,
+      "status": {
+        "code": 1,
+        "label": "Sắp diễn ra"
+      },
+      "stadium": {
+        "id": "400017978",
+        "name": "Los Angeles Stadium",
+        "city": "Los Angeles",
+        "country": "USA",
+        "countryName": "Mỹ",
+        "capacity": null,
+        "roof": false
+      }
+    },
+    {
+      "id": "400021516",
+      "matchNumber": 76,
+      "stage": "Round of 32",
+      "stageVi": "Vòng 1/32",
+      "group": "",
+      "utcDate": "2026-06-29T17:00:00Z",
+      "localDateAtVenue": "2026-06-29T12:00:00Z",
+      "localTimeAtVenue": "12:00 29/06/2026",
+      "vietnamDate": "Thứ Ba, 30/06/2026",
+      "vietnamShortDate": "30/06/2026",
+      "vietnamTime": "00:00",
+      "home": {
+        "id": null,
+        "name": "1C",
+        "shortName": "1C",
+        "abbreviation": "",
+        "country": "",
+        "flagUrl": null,
+        "isPlaceholder": true
+      },
+      "away": {
+        "id": null,
+        "name": "2F",
+        "shortName": "2F",
+        "abbreviation": "",
+        "country": "",
+        "flagUrl": null,
+        "isPlaceholder": true
+      },
+      "placeholderHome": "1C",
+      "placeholderAway": "2F",
+      "score": null,
+      "status": {
+        "code": 1,
+        "label": "Sắp diễn ra"
+      },
+      "stadium": {
+        "id": "400249385",
+        "name": "Houston Stadium",
+        "city": "Houston",
+        "country": "USA",
+        "countryName": "Mỹ",
+        "capacity": null,
+        "roof": false
+      }
+    },
+    {
+      "id": "400021513",
+      "matchNumber": 74,
+      "stage": "Round of 32",
+      "stageVi": "Vòng 1/32",
+      "group": "",
+      "utcDate": "2026-06-29T20:30:00Z",
+      "localDateAtVenue": "2026-06-29T16:30:00Z",
+      "localTimeAtVenue": "16:30 29/06/2026",
+      "vietnamDate": "Thứ Ba, 30/06/2026",
+      "vietnamShortDate": "30/06/2026",
+      "vietnamTime": "03:30",
+      "home": {
+        "id": null,
+        "name": "1E",
+        "shortName": "1E",
+        "abbreviation": "",
+        "country": "",
+        "flagUrl": null,
+        "isPlaceholder": true
+      },
+      "away": {
+        "id": null,
+        "name": "3ABCDF",
+        "shortName": "3ABCDF",
+        "abbreviation": "",
+        "country": "",
+        "flagUrl": null,
+        "isPlaceholder": true
+      },
+      "placeholderHome": "1E",
+      "placeholderAway": "3ABCDF",
+      "score": null,
+      "status": {
+        "code": 1,
+        "label": "Sắp diễn ra"
+      },
+      "stadium": {
+        "id": "400248623",
+        "name": "Boston Stadium",
+        "city": "Boston",
+        "country": "USA",
+        "countryName": "Mỹ",
+        "capacity": null,
+        "roof": false
+      }
+    },
+    {
+      "id": "400021522",
+      "matchNumber": 75,
+      "stage": "Round of 32",
+      "stageVi": "Vòng 1/32",
+      "group": "",
+      "utcDate": "2026-06-30T01:00:00Z",
+      "localDateAtVenue": "2026-06-29T19:00:00Z",
+      "localTimeAtVenue": "19:00 29/06/2026",
+      "vietnamDate": "Thứ Ba, 30/06/2026",
+      "vietnamShortDate": "30/06/2026",
+      "vietnamTime": "08:00",
+      "home": {
+        "id": null,
+        "name": "1F",
+        "shortName": "1F",
+        "abbreviation": "",
+        "country": "",
+        "flagUrl": null,
+        "isPlaceholder": true
+      },
+      "away": {
+        "id": null,
+        "name": "2C",
+        "shortName": "2C",
+        "abbreviation": "",
+        "country": "",
+        "flagUrl": null,
+        "isPlaceholder": true
+      },
+      "placeholderHome": "1F",
+      "placeholderAway": "2C",
+      "score": null,
+      "status": {
+        "code": 1,
+        "label": "Sắp diễn ra"
+      },
+      "stadium": {
+        "id": "400238450",
+        "name": "Monterrey Stadium",
+        "city": "Monterrey",
+        "country": "MEX",
+        "countryName": "Mexico",
+        "capacity": null,
+        "roof": false
+      }
+    },
+    {
+      "id": "400021514",
+      "matchNumber": 78,
+      "stage": "Round of 32",
+      "stageVi": "Vòng 1/32",
+      "group": "",
+      "utcDate": "2026-06-30T17:00:00Z",
+      "localDateAtVenue": "2026-06-30T12:00:00Z",
+      "localTimeAtVenue": "12:00 30/06/2026",
+      "vietnamDate": "Thứ Tư, 01/07/2026",
+      "vietnamShortDate": "01/07/2026",
+      "vietnamTime": "00:00",
+      "home": {
+        "id": null,
+        "name": "2E",
+        "shortName": "2E",
+        "abbreviation": "",
+        "country": "",
+        "flagUrl": null,
+        "isPlaceholder": true
+      },
+      "away": {
+        "id": null,
+        "name": "2I",
+        "shortName": "2I",
+        "abbreviation": "",
+        "country": "",
+        "flagUrl": null,
+        "isPlaceholder": true
+      },
+      "placeholderHome": "2E",
+      "placeholderAway": "2I",
+      "score": null,
+      "status": {
+        "code": 1,
+        "label": "Sắp diễn ra"
+      },
+      "stadium": {
+        "id": "400257526",
+        "name": "Dallas Stadium",
+        "city": "Dallas",
+        "country": "USA",
+        "countryName": "Mỹ",
+        "capacity": null,
+        "roof": false
+      }
+    },
+    {
+      "id": "400021523",
+      "matchNumber": 77,
+      "stage": "Round of 32",
+      "stageVi": "Vòng 1/32",
+      "group": "",
+      "utcDate": "2026-06-30T21:00:00Z",
+      "localDateAtVenue": "2026-06-30T17:00:00Z",
+      "localTimeAtVenue": "17:00 30/06/2026",
+      "vietnamDate": "Thứ Tư, 01/07/2026",
+      "vietnamShortDate": "01/07/2026",
+      "vietnamTime": "04:00",
+      "home": {
+        "id": null,
+        "name": "1I",
+        "shortName": "1I",
+        "abbreviation": "",
+        "country": "",
+        "flagUrl": null,
+        "isPlaceholder": true
+      },
+      "away": {
+        "id": null,
+        "name": "3CDFGH",
+        "shortName": "3CDFGH",
+        "abbreviation": "",
+        "country": "",
+        "flagUrl": null,
+        "isPlaceholder": true
+      },
+      "placeholderHome": "1I",
+      "placeholderAway": "3CDFGH",
+      "score": null,
+      "status": {
+        "code": 1,
+        "label": "Sắp diễn ra"
+      },
+      "stadium": {
+        "id": "400257536",
+        "name": "New York/New Jersey Stadium",
+        "city": "New Jersey",
+        "country": "USA",
+        "countryName": "Mỹ",
+        "capacity": null,
+        "roof": false
+      }
+    },
+    {
+      "id": "400021520",
+      "matchNumber": 79,
+      "stage": "Round of 32",
+      "stageVi": "Vòng 1/32",
+      "group": "",
+      "utcDate": "2026-07-01T01:00:00Z",
+      "localDateAtVenue": "2026-06-30T19:00:00Z",
+      "localTimeAtVenue": "19:00 30/06/2026",
+      "vietnamDate": "Thứ Tư, 01/07/2026",
+      "vietnamShortDate": "01/07/2026",
+      "vietnamTime": "08:00",
+      "home": {
+        "id": null,
+        "name": "1A",
+        "shortName": "1A",
+        "abbreviation": "",
+        "country": "",
+        "flagUrl": null,
+        "isPlaceholder": true
+      },
+      "away": {
+        "id": null,
+        "name": "3CEFHI",
+        "shortName": "3CEFHI",
+        "abbreviation": "",
+        "country": "",
+        "flagUrl": null,
+        "isPlaceholder": true
+      },
+      "placeholderHome": "1A",
+      "placeholderAway": "3CEFHI",
+      "score": null,
+      "status": {
+        "code": 1,
+        "label": "Sắp diễn ra"
+      },
+      "stadium": {
+        "id": "400222084",
+        "name": "Mexico City Stadium",
+        "city": "Mexico City",
+        "country": "MEX",
+        "countryName": "Mexico",
+        "capacity": null,
+        "roof": false
+      }
+    },
+    {
+      "id": "400021512",
+      "matchNumber": 80,
+      "stage": "Round of 32",
+      "stageVi": "Vòng 1/32",
+      "group": "",
+      "utcDate": "2026-07-01T16:00:00Z",
+      "localDateAtVenue": "2026-07-01T12:00:00Z",
+      "localTimeAtVenue": "12:00 01/07/2026",
+      "vietnamDate": "Thứ Tư, 01/07/2026",
+      "vietnamShortDate": "01/07/2026",
+      "vietnamTime": "23:00",
+      "home": {
+        "id": null,
+        "name": "1L",
+        "shortName": "1L",
+        "abbreviation": "",
+        "country": "",
+        "flagUrl": null,
+        "isPlaceholder": true
+      },
+      "away": {
+        "id": null,
+        "name": "3EHIJK",
+        "shortName": "3EHIJK",
+        "abbreviation": "",
+        "country": "",
+        "flagUrl": null,
+        "isPlaceholder": true
+      },
+      "placeholderHome": "1L",
+      "placeholderAway": "3EHIJK",
+      "score": null,
+      "status": {
+        "code": 1,
+        "label": "Sắp diễn ra"
+      },
+      "stadium": {
+        "id": "400098290",
+        "name": "Atlanta Stadium",
+        "city": "Atlanta",
+        "country": "USA",
+        "countryName": "Mỹ",
+        "capacity": null,
+        "roof": false
+      }
+    },
+    {
+      "id": "400021525",
+      "matchNumber": 82,
+      "stage": "Round of 32",
+      "stageVi": "Vòng 1/32",
+      "group": "",
+      "utcDate": "2026-07-01T20:00:00Z",
+      "localDateAtVenue": "2026-07-01T13:00:00Z",
+      "localTimeAtVenue": "13:00 01/07/2026",
+      "vietnamDate": "Thứ Năm, 02/07/2026",
+      "vietnamShortDate": "02/07/2026",
+      "vietnamTime": "03:00",
+      "home": {
+        "id": null,
+        "name": "1G",
+        "shortName": "1G",
+        "abbreviation": "",
+        "country": "",
+        "flagUrl": null,
+        "isPlaceholder": true
+      },
+      "away": {
+        "id": null,
+        "name": "3AEHIJ",
+        "shortName": "3AEHIJ",
+        "abbreviation": "",
+        "country": "",
+        "flagUrl": null,
+        "isPlaceholder": true
+      },
+      "placeholderHome": "1G",
+      "placeholderAway": "3AEHIJ",
+      "score": null,
+      "status": {
+        "code": 1,
+        "label": "Sắp diễn ra"
+      },
+      "stadium": {
+        "id": "400216606",
+        "name": "Seattle Stadium",
+        "city": "Seattle",
+        "country": "USA",
+        "countryName": "Mỹ",
+        "capacity": null,
+        "roof": false
+      }
+    },
+    {
+      "id": "400021524",
+      "matchNumber": 81,
+      "stage": "Round of 32",
+      "stageVi": "Vòng 1/32",
+      "group": "",
+      "utcDate": "2026-07-02T00:00:00Z",
+      "localDateAtVenue": "2026-07-01T17:00:00Z",
+      "localTimeAtVenue": "17:00 01/07/2026",
+      "vietnamDate": "Thứ Năm, 02/07/2026",
+      "vietnamShortDate": "02/07/2026",
+      "vietnamTime": "07:00",
+      "home": {
+        "id": null,
+        "name": "1D",
+        "shortName": "1D",
+        "abbreviation": "",
+        "country": "",
+        "flagUrl": null,
+        "isPlaceholder": true
+      },
+      "away": {
+        "id": null,
+        "name": "3BEFIJ",
+        "shortName": "3BEFIJ",
+        "abbreviation": "",
+        "country": "",
+        "flagUrl": null,
+        "isPlaceholder": true
+      },
+      "placeholderHome": "1D",
+      "placeholderAway": "3BEFIJ",
+      "score": null,
+      "status": {
+        "code": 1,
+        "label": "Sắp diễn ra"
+      },
+      "stadium": {
+        "id": "400257521",
+        "name": "San Francisco Bay Area Stadium",
+        "city": "San Francisco Bay Area",
+        "country": "USA",
+        "countryName": "Mỹ",
+        "capacity": null,
+        "roof": false
+      }
+    },
+    {
+      "id": "400021519",
+      "matchNumber": 84,
+      "stage": "Round of 32",
+      "stageVi": "Vòng 1/32",
+      "group": "",
+      "utcDate": "2026-07-02T19:00:00Z",
+      "localDateAtVenue": "2026-07-02T12:00:00Z",
+      "localTimeAtVenue": "12:00 02/07/2026",
+      "vietnamDate": "Thứ Sáu, 03/07/2026",
+      "vietnamShortDate": "03/07/2026",
+      "vietnamTime": "02:00",
+      "home": {
+        "id": null,
+        "name": "1H",
+        "shortName": "1H",
+        "abbreviation": "",
+        "country": "",
+        "flagUrl": null,
+        "isPlaceholder": true
+      },
+      "away": {
+        "id": null,
+        "name": "2J",
+        "shortName": "2J",
+        "abbreviation": "",
+        "country": "",
+        "flagUrl": null,
+        "isPlaceholder": true
+      },
+      "placeholderHome": "1H",
+      "placeholderAway": "2J",
+      "score": null,
+      "status": {
+        "code": 1,
+        "label": "Sắp diễn ra"
+      },
+      "stadium": {
+        "id": "400017978",
+        "name": "Los Angeles Stadium",
+        "city": "Los Angeles",
+        "country": "USA",
+        "countryName": "Mỹ",
+        "capacity": null,
+        "roof": false
+      }
+    },
+    {
+      "id": "400021526",
+      "matchNumber": 83,
+      "stage": "Round of 32",
+      "stageVi": "Vòng 1/32",
+      "group": "",
+      "utcDate": "2026-07-02T23:00:00Z",
+      "localDateAtVenue": "2026-07-02T19:00:00Z",
+      "localTimeAtVenue": "19:00 02/07/2026",
+      "vietnamDate": "Thứ Sáu, 03/07/2026",
+      "vietnamShortDate": "03/07/2026",
+      "vietnamTime": "06:00",
+      "home": {
+        "id": null,
+        "name": "2K",
+        "shortName": "2K",
+        "abbreviation": "",
+        "country": "",
+        "flagUrl": null,
+        "isPlaceholder": true
+      },
+      "away": {
+        "id": null,
+        "name": "2L",
+        "shortName": "2L",
+        "abbreviation": "",
+        "country": "",
+        "flagUrl": null,
+        "isPlaceholder": true
+      },
+      "placeholderHome": "2K",
+      "placeholderAway": "2L",
+      "score": null,
+      "status": {
+        "code": 1,
+        "label": "Sắp diễn ra"
+      },
+      "stadium": {
+        "id": "400242032",
+        "name": "Toronto Stadium",
+        "city": "Toronto",
+        "country": "CAN",
+        "countryName": "Canada",
+        "capacity": null,
+        "roof": false
+      }
+    },
+    {
+      "id": "400021527",
+      "matchNumber": 85,
+      "stage": "Round of 32",
+      "stageVi": "Vòng 1/32",
+      "group": "",
+      "utcDate": "2026-07-03T03:00:00Z",
+      "localDateAtVenue": "2026-07-02T20:00:00Z",
+      "localTimeAtVenue": "20:00 02/07/2026",
+      "vietnamDate": "Thứ Sáu, 03/07/2026",
+      "vietnamShortDate": "03/07/2026",
+      "vietnamTime": "10:00",
+      "home": {
+        "id": null,
+        "name": "1B",
+        "shortName": "1B",
+        "abbreviation": "",
+        "country": "",
+        "flagUrl": null,
+        "isPlaceholder": true
+      },
+      "away": {
+        "id": null,
+        "name": "3EFGIJ",
+        "shortName": "3EFGIJ",
+        "abbreviation": "",
+        "country": "",
+        "flagUrl": null,
+        "isPlaceholder": true
+      },
+      "placeholderHome": "1B",
+      "placeholderAway": "3EFGIJ",
+      "score": null,
+      "status": {
+        "code": 1,
+        "label": "Sắp diễn ra"
+      },
+      "stadium": {
+        "id": "400248370",
+        "name": "BC Place Vancouver",
+        "city": "Vancouver",
+        "country": "CAN",
+        "countryName": "Canada",
+        "capacity": null,
+        "roof": false
+      }
+    },
+    {
+      "id": "400021515",
+      "matchNumber": 88,
+      "stage": "Round of 32",
+      "stageVi": "Vòng 1/32",
+      "group": "",
+      "utcDate": "2026-07-03T18:00:00Z",
+      "localDateAtVenue": "2026-07-03T13:00:00Z",
+      "localTimeAtVenue": "13:00 03/07/2026",
+      "vietnamDate": "Thứ Bảy, 04/07/2026",
+      "vietnamShortDate": "04/07/2026",
+      "vietnamTime": "01:00",
+      "home": {
+        "id": null,
+        "name": "2D",
+        "shortName": "2D",
+        "abbreviation": "",
+        "country": "",
+        "flagUrl": null,
+        "isPlaceholder": true
+      },
+      "away": {
+        "id": null,
+        "name": "2G",
+        "shortName": "2G",
+        "abbreviation": "",
+        "country": "",
+        "flagUrl": null,
+        "isPlaceholder": true
+      },
+      "placeholderHome": "2D",
+      "placeholderAway": "2G",
+      "score": null,
+      "status": {
+        "code": 1,
+        "label": "Sắp diễn ra"
+      },
+      "stadium": {
+        "id": "400257526",
+        "name": "Dallas Stadium",
+        "city": "Dallas",
+        "country": "USA",
+        "countryName": "Mỹ",
+        "capacity": null,
+        "roof": false
+      }
+    },
+    {
+      "id": "400021521",
+      "matchNumber": 86,
+      "stage": "Round of 32",
+      "stageVi": "Vòng 1/32",
+      "group": "",
+      "utcDate": "2026-07-03T22:00:00Z",
+      "localDateAtVenue": "2026-07-03T18:00:00Z",
+      "localTimeAtVenue": "18:00 03/07/2026",
+      "vietnamDate": "Thứ Bảy, 04/07/2026",
+      "vietnamShortDate": "04/07/2026",
+      "vietnamTime": "05:00",
+      "home": {
+        "id": null,
+        "name": "1J",
+        "shortName": "1J",
+        "abbreviation": "",
+        "country": "",
+        "flagUrl": null,
+        "isPlaceholder": true
+      },
+      "away": {
+        "id": null,
+        "name": "2H",
+        "shortName": "2H",
+        "abbreviation": "",
+        "country": "",
+        "flagUrl": null,
+        "isPlaceholder": true
+      },
+      "placeholderHome": "1J",
+      "placeholderAway": "2H",
+      "score": null,
+      "status": {
+        "code": 1,
+        "label": "Sắp diễn ra"
+      },
+      "stadium": {
+        "id": "400257525",
+        "name": "Miami Stadium",
+        "city": "Miami",
+        "country": "USA",
+        "countryName": "Mỹ",
+        "capacity": null,
+        "roof": false
+      }
+    },
+    {
+      "id": "400021517",
+      "matchNumber": 87,
+      "stage": "Round of 32",
+      "stageVi": "Vòng 1/32",
+      "group": "",
+      "utcDate": "2026-07-04T01:30:00Z",
+      "localDateAtVenue": "2026-07-03T20:30:00Z",
+      "localTimeAtVenue": "20:30 03/07/2026",
+      "vietnamDate": "Thứ Bảy, 04/07/2026",
+      "vietnamShortDate": "04/07/2026",
+      "vietnamTime": "08:30",
+      "home": {
+        "id": null,
+        "name": "1K",
+        "shortName": "1K",
+        "abbreviation": "",
+        "country": "",
+        "flagUrl": null,
+        "isPlaceholder": true
+      },
+      "away": {
+        "id": null,
+        "name": "3DEIJL",
+        "shortName": "3DEIJL",
+        "abbreviation": "",
+        "country": "",
+        "flagUrl": null,
+        "isPlaceholder": true
+      },
+      "placeholderHome": "1K",
+      "placeholderAway": "3DEIJL",
+      "score": null,
+      "status": {
+        "code": 1,
+        "label": "Sắp diễn ra"
+      },
+      "stadium": {
+        "id": "400254717",
+        "name": "Kansas City Stadium",
+        "city": "Kansas City",
+        "country": "USA",
+        "countryName": "Mỹ",
+        "capacity": null,
+        "roof": false
+      }
+    },
+    {
+      "id": "400021530",
+      "matchNumber": 90,
+      "stage": "Round of 16",
+      "stageVi": "Vòng 1/8",
+      "group": "",
+      "utcDate": "2026-07-04T17:00:00Z",
+      "localDateAtVenue": "2026-07-04T12:00:00Z",
+      "localTimeAtVenue": "12:00 04/07/2026",
+      "vietnamDate": "Chủ Nhật, 05/07/2026",
+      "vietnamShortDate": "05/07/2026",
+      "vietnamTime": "00:00",
+      "home": {
+        "id": null,
+        "name": "Thắng trận 73",
+        "shortName": "Thắng trận 73",
+        "abbreviation": "",
+        "country": "",
+        "flagUrl": null,
+        "isPlaceholder": true
+      },
+      "away": {
+        "id": null,
+        "name": "Thắng trận 75",
+        "shortName": "Thắng trận 75",
+        "abbreviation": "",
+        "country": "",
+        "flagUrl": null,
+        "isPlaceholder": true
+      },
+      "placeholderHome": "Thắng trận 73",
+      "placeholderAway": "Thắng trận 75",
+      "score": null,
+      "status": {
+        "code": 1,
+        "label": "Sắp diễn ra"
+      },
+      "stadium": {
+        "id": "400249385",
+        "name": "Houston Stadium",
+        "city": "Houston",
+        "country": "USA",
+        "countryName": "Mỹ",
+        "capacity": null,
+        "roof": false
+      }
+    },
+    {
+      "id": "400021533",
+      "matchNumber": 89,
+      "stage": "Round of 16",
+      "stageVi": "Vòng 1/8",
+      "group": "",
+      "utcDate": "2026-07-04T21:00:00Z",
+      "localDateAtVenue": "2026-07-04T17:00:00Z",
+      "localTimeAtVenue": "17:00 04/07/2026",
+      "vietnamDate": "Chủ Nhật, 05/07/2026",
+      "vietnamShortDate": "05/07/2026",
+      "vietnamTime": "04:00",
+      "home": {
+        "id": null,
+        "name": "Thắng trận 74",
+        "shortName": "Thắng trận 74",
+        "abbreviation": "",
+        "country": "",
+        "flagUrl": null,
+        "isPlaceholder": true
+      },
+      "away": {
+        "id": null,
+        "name": "Thắng trận 77",
+        "shortName": "Thắng trận 77",
+        "abbreviation": "",
+        "country": "",
+        "flagUrl": null,
+        "isPlaceholder": true
+      },
+      "placeholderHome": "Thắng trận 74",
+      "placeholderAway": "Thắng trận 77",
+      "score": null,
+      "status": {
+        "code": 1,
+        "label": "Sắp diễn ra"
+      },
+      "stadium": {
+        "id": "400248622",
+        "name": "Philadelphia Stadium",
+        "city": "Philadelphia",
+        "country": "USA",
+        "countryName": "Mỹ",
+        "capacity": null,
+        "roof": false
+      }
+    },
+    {
+      "id": "400021532",
+      "matchNumber": 91,
+      "stage": "Round of 16",
+      "stageVi": "Vòng 1/8",
+      "group": "",
+      "utcDate": "2026-07-05T20:00:00Z",
+      "localDateAtVenue": "2026-07-05T16:00:00Z",
+      "localTimeAtVenue": "16:00 05/07/2026",
+      "vietnamDate": "Thứ Hai, 06/07/2026",
+      "vietnamShortDate": "06/07/2026",
+      "vietnamTime": "03:00",
+      "home": {
+        "id": null,
+        "name": "Thắng trận 76",
+        "shortName": "Thắng trận 76",
+        "abbreviation": "",
+        "country": "",
+        "flagUrl": null,
+        "isPlaceholder": true
+      },
+      "away": {
+        "id": null,
+        "name": "Thắng trận 78",
+        "shortName": "Thắng trận 78",
+        "abbreviation": "",
+        "country": "",
+        "flagUrl": null,
+        "isPlaceholder": true
+      },
+      "placeholderHome": "Thắng trận 76",
+      "placeholderAway": "Thắng trận 78",
+      "score": null,
+      "status": {
+        "code": 1,
+        "label": "Sắp diễn ra"
+      },
+      "stadium": {
+        "id": "400257536",
+        "name": "New York/New Jersey Stadium",
+        "city": "New Jersey",
+        "country": "USA",
+        "countryName": "Mỹ",
+        "capacity": null,
+        "roof": false
+      }
+    },
+    {
+      "id": "400021531",
+      "matchNumber": 92,
+      "stage": "Round of 16",
+      "stageVi": "Vòng 1/8",
+      "group": "",
+      "utcDate": "2026-07-06T00:00:00Z",
+      "localDateAtVenue": "2026-07-05T18:00:00Z",
+      "localTimeAtVenue": "18:00 05/07/2026",
+      "vietnamDate": "Thứ Hai, 06/07/2026",
+      "vietnamShortDate": "06/07/2026",
+      "vietnamTime": "07:00",
+      "home": {
+        "id": null,
+        "name": "Thắng trận 79",
+        "shortName": "Thắng trận 79",
+        "abbreviation": "",
+        "country": "",
+        "flagUrl": null,
+        "isPlaceholder": true
+      },
+      "away": {
+        "id": null,
+        "name": "Thắng trận 80",
+        "shortName": "Thắng trận 80",
+        "abbreviation": "",
+        "country": "",
+        "flagUrl": null,
+        "isPlaceholder": true
+      },
+      "placeholderHome": "Thắng trận 79",
+      "placeholderAway": "Thắng trận 80",
+      "score": null,
+      "status": {
+        "code": 1,
+        "label": "Sắp diễn ra"
+      },
+      "stadium": {
+        "id": "400222084",
+        "name": "Mexico City Stadium",
+        "city": "Mexico City",
+        "country": "MEX",
+        "countryName": "Mexico",
+        "capacity": null,
+        "roof": false
+      }
+    },
+    {
+      "id": "400021529",
+      "matchNumber": 93,
+      "stage": "Round of 16",
+      "stageVi": "Vòng 1/8",
+      "group": "",
+      "utcDate": "2026-07-06T19:00:00Z",
+      "localDateAtVenue": "2026-07-06T14:00:00Z",
+      "localTimeAtVenue": "14:00 06/07/2026",
+      "vietnamDate": "Thứ Ba, 07/07/2026",
+      "vietnamShortDate": "07/07/2026",
+      "vietnamTime": "02:00",
+      "home": {
+        "id": null,
+        "name": "Thắng trận 83",
+        "shortName": "Thắng trận 83",
+        "abbreviation": "",
+        "country": "",
+        "flagUrl": null,
+        "isPlaceholder": true
+      },
+      "away": {
+        "id": null,
+        "name": "Thắng trận 84",
+        "shortName": "Thắng trận 84",
+        "abbreviation": "",
+        "country": "",
+        "flagUrl": null,
+        "isPlaceholder": true
+      },
+      "placeholderHome": "Thắng trận 83",
+      "placeholderAway": "Thắng trận 84",
+      "score": null,
+      "status": {
+        "code": 1,
+        "label": "Sắp diễn ra"
+      },
+      "stadium": {
+        "id": "400257526",
+        "name": "Dallas Stadium",
+        "city": "Dallas",
+        "country": "USA",
+        "countryName": "Mỹ",
+        "capacity": null,
+        "roof": false
+      }
+    },
+    {
+      "id": "400021534",
+      "matchNumber": 94,
+      "stage": "Round of 16",
+      "stageVi": "Vòng 1/8",
+      "group": "",
+      "utcDate": "2026-07-07T00:00:00Z",
+      "localDateAtVenue": "2026-07-06T17:00:00Z",
+      "localTimeAtVenue": "17:00 06/07/2026",
+      "vietnamDate": "Thứ Ba, 07/07/2026",
+      "vietnamShortDate": "07/07/2026",
+      "vietnamTime": "07:00",
+      "home": {
+        "id": null,
+        "name": "Thắng trận 81",
+        "shortName": "Thắng trận 81",
+        "abbreviation": "",
+        "country": "",
+        "flagUrl": null,
+        "isPlaceholder": true
+      },
+      "away": {
+        "id": null,
+        "name": "Thắng trận 82",
+        "shortName": "Thắng trận 82",
+        "abbreviation": "",
+        "country": "",
+        "flagUrl": null,
+        "isPlaceholder": true
+      },
+      "placeholderHome": "Thắng trận 81",
+      "placeholderAway": "Thắng trận 82",
+      "score": null,
+      "status": {
+        "code": 1,
+        "label": "Sắp diễn ra"
+      },
+      "stadium": {
+        "id": "400216606",
+        "name": "Seattle Stadium",
+        "city": "Seattle",
+        "country": "USA",
+        "countryName": "Mỹ",
+        "capacity": null,
+        "roof": false
+      }
+    },
+    {
+      "id": "400021528",
+      "matchNumber": 95,
+      "stage": "Round of 16",
+      "stageVi": "Vòng 1/8",
+      "group": "",
+      "utcDate": "2026-07-07T16:00:00Z",
+      "localDateAtVenue": "2026-07-07T12:00:00Z",
+      "localTimeAtVenue": "12:00 07/07/2026",
+      "vietnamDate": "Thứ Ba, 07/07/2026",
+      "vietnamShortDate": "07/07/2026",
+      "vietnamTime": "23:00",
+      "home": {
+        "id": null,
+        "name": "Thắng trận 86",
+        "shortName": "Thắng trận 86",
+        "abbreviation": "",
+        "country": "",
+        "flagUrl": null,
+        "isPlaceholder": true
+      },
+      "away": {
+        "id": null,
+        "name": "Thắng trận 88",
+        "shortName": "Thắng trận 88",
+        "abbreviation": "",
+        "country": "",
+        "flagUrl": null,
+        "isPlaceholder": true
+      },
+      "placeholderHome": "Thắng trận 86",
+      "placeholderAway": "Thắng trận 88",
+      "score": null,
+      "status": {
+        "code": 1,
+        "label": "Sắp diễn ra"
+      },
+      "stadium": {
+        "id": "400098290",
+        "name": "Atlanta Stadium",
+        "city": "Atlanta",
+        "country": "USA",
+        "countryName": "Mỹ",
+        "capacity": null,
+        "roof": false
+      }
+    },
+    {
+      "id": "400021535",
+      "matchNumber": 96,
+      "stage": "Round of 16",
+      "stageVi": "Vòng 1/8",
+      "group": "",
+      "utcDate": "2026-07-07T20:00:00Z",
+      "localDateAtVenue": "2026-07-07T13:00:00Z",
+      "localTimeAtVenue": "13:00 07/07/2026",
+      "vietnamDate": "Thứ Tư, 08/07/2026",
+      "vietnamShortDate": "08/07/2026",
+      "vietnamTime": "03:00",
+      "home": {
+        "id": null,
+        "name": "Thắng trận 85",
+        "shortName": "Thắng trận 85",
+        "abbreviation": "",
+        "country": "",
+        "flagUrl": null,
+        "isPlaceholder": true
+      },
+      "away": {
+        "id": null,
+        "name": "Thắng trận 87",
+        "shortName": "Thắng trận 87",
+        "abbreviation": "",
+        "country": "",
+        "flagUrl": null,
+        "isPlaceholder": true
+      },
+      "placeholderHome": "Thắng trận 85",
+      "placeholderAway": "Thắng trận 87",
+      "score": null,
+      "status": {
+        "code": 1,
+        "label": "Sắp diễn ra"
+      },
+      "stadium": {
+        "id": "400248370",
+        "name": "BC Place Vancouver",
+        "city": "Vancouver",
+        "country": "CAN",
+        "countryName": "Canada",
+        "capacity": null,
+        "roof": false
+      }
+    },
+    {
+      "id": "400021536",
+      "matchNumber": 97,
+      "stage": "Quarter-final",
+      "stageVi": "Tứ kết",
+      "group": "",
+      "utcDate": "2026-07-09T20:00:00Z",
+      "localDateAtVenue": "2026-07-09T16:00:00Z",
+      "localTimeAtVenue": "16:00 09/07/2026",
+      "vietnamDate": "Thứ Sáu, 10/07/2026",
+      "vietnamShortDate": "10/07/2026",
+      "vietnamTime": "03:00",
+      "home": {
+        "id": null,
+        "name": "Thắng trận 89",
+        "shortName": "Thắng trận 89",
+        "abbreviation": "",
+        "country": "",
+        "flagUrl": null,
+        "isPlaceholder": true
+      },
+      "away": {
+        "id": null,
+        "name": "Thắng trận 90",
+        "shortName": "Thắng trận 90",
+        "abbreviation": "",
+        "country": "",
+        "flagUrl": null,
+        "isPlaceholder": true
+      },
+      "placeholderHome": "Thắng trận 89",
+      "placeholderAway": "Thắng trận 90",
+      "score": null,
+      "status": {
+        "code": 1,
+        "label": "Sắp diễn ra"
+      },
+      "stadium": {
+        "id": "400248623",
+        "name": "Boston Stadium",
+        "city": "Boston",
+        "country": "USA",
+        "countryName": "Mỹ",
+        "capacity": null,
+        "roof": false
+      }
+    },
+    {
+      "id": "400021538",
+      "matchNumber": 98,
+      "stage": "Quarter-final",
+      "stageVi": "Tứ kết",
+      "group": "",
+      "utcDate": "2026-07-10T19:00:00Z",
+      "localDateAtVenue": "2026-07-10T12:00:00Z",
+      "localTimeAtVenue": "12:00 10/07/2026",
+      "vietnamDate": "Thứ Bảy, 11/07/2026",
+      "vietnamShortDate": "11/07/2026",
+      "vietnamTime": "02:00",
+      "home": {
+        "id": null,
+        "name": "Thắng trận 93",
+        "shortName": "Thắng trận 93",
+        "abbreviation": "",
+        "country": "",
+        "flagUrl": null,
+        "isPlaceholder": true
+      },
+      "away": {
+        "id": null,
+        "name": "Thắng trận 94",
+        "shortName": "Thắng trận 94",
+        "abbreviation": "",
+        "country": "",
+        "flagUrl": null,
+        "isPlaceholder": true
+      },
+      "placeholderHome": "Thắng trận 93",
+      "placeholderAway": "Thắng trận 94",
+      "score": null,
+      "status": {
+        "code": 1,
+        "label": "Sắp diễn ra"
+      },
+      "stadium": {
+        "id": "400017978",
+        "name": "Los Angeles Stadium",
+        "city": "Los Angeles",
+        "country": "USA",
+        "countryName": "Mỹ",
+        "capacity": null,
+        "roof": false
+      }
+    },
+    {
+      "id": "400021539",
+      "matchNumber": 99,
+      "stage": "Quarter-final",
+      "stageVi": "Tứ kết",
+      "group": "",
+      "utcDate": "2026-07-11T21:00:00Z",
+      "localDateAtVenue": "2026-07-11T17:00:00Z",
+      "localTimeAtVenue": "17:00 11/07/2026",
+      "vietnamDate": "Chủ Nhật, 12/07/2026",
+      "vietnamShortDate": "12/07/2026",
+      "vietnamTime": "04:00",
+      "home": {
+        "id": null,
+        "name": "Thắng trận 91",
+        "shortName": "Thắng trận 91",
+        "abbreviation": "",
+        "country": "",
+        "flagUrl": null,
+        "isPlaceholder": true
+      },
+      "away": {
+        "id": null,
+        "name": "Thắng trận 92",
+        "shortName": "Thắng trận 92",
+        "abbreviation": "",
+        "country": "",
+        "flagUrl": null,
+        "isPlaceholder": true
+      },
+      "placeholderHome": "Thắng trận 91",
+      "placeholderAway": "Thắng trận 92",
+      "score": null,
+      "status": {
+        "code": 1,
+        "label": "Sắp diễn ra"
+      },
+      "stadium": {
+        "id": "400257525",
+        "name": "Miami Stadium",
+        "city": "Miami",
+        "country": "USA",
+        "countryName": "Mỹ",
+        "capacity": null,
+        "roof": false
+      }
+    },
+    {
+      "id": "400021537",
+      "matchNumber": 100,
+      "stage": "Quarter-final",
+      "stageVi": "Tứ kết",
+      "group": "",
+      "utcDate": "2026-07-12T01:00:00Z",
+      "localDateAtVenue": "2026-07-11T20:00:00Z",
+      "localTimeAtVenue": "20:00 11/07/2026",
+      "vietnamDate": "Chủ Nhật, 12/07/2026",
+      "vietnamShortDate": "12/07/2026",
+      "vietnamTime": "08:00",
+      "home": {
+        "id": null,
+        "name": "Thắng trận 95",
+        "shortName": "Thắng trận 95",
+        "abbreviation": "",
+        "country": "",
+        "flagUrl": null,
+        "isPlaceholder": true
+      },
+      "away": {
+        "id": null,
+        "name": "Thắng trận 96",
+        "shortName": "Thắng trận 96",
+        "abbreviation": "",
+        "country": "",
+        "flagUrl": null,
+        "isPlaceholder": true
+      },
+      "placeholderHome": "Thắng trận 95",
+      "placeholderAway": "Thắng trận 96",
+      "score": null,
+      "status": {
+        "code": 1,
+        "label": "Sắp diễn ra"
+      },
+      "stadium": {
+        "id": "400254717",
+        "name": "Kansas City Stadium",
+        "city": "Kansas City",
+        "country": "USA",
+        "countryName": "Mỹ",
+        "capacity": null,
+        "roof": false
+      }
+    },
+    {
+      "id": "400021541",
+      "matchNumber": 101,
+      "stage": "Semi-final",
+      "stageVi": "Bán kết",
+      "group": "",
+      "utcDate": "2026-07-14T19:00:00Z",
+      "localDateAtVenue": "2026-07-14T14:00:00Z",
+      "localTimeAtVenue": "14:00 14/07/2026",
+      "vietnamDate": "Thứ Tư, 15/07/2026",
+      "vietnamShortDate": "15/07/2026",
+      "vietnamTime": "02:00",
+      "home": {
+        "id": null,
+        "name": "Thắng trận 97",
+        "shortName": "Thắng trận 97",
+        "abbreviation": "",
+        "country": "",
+        "flagUrl": null,
+        "isPlaceholder": true
+      },
+      "away": {
+        "id": null,
+        "name": "Thắng trận 98",
+        "shortName": "Thắng trận 98",
+        "abbreviation": "",
+        "country": "",
+        "flagUrl": null,
+        "isPlaceholder": true
+      },
+      "placeholderHome": "Thắng trận 97",
+      "placeholderAway": "Thắng trận 98",
+      "score": null,
+      "status": {
+        "code": 1,
+        "label": "Sắp diễn ra"
+      },
+      "stadium": {
+        "id": "400257526",
+        "name": "Dallas Stadium",
+        "city": "Dallas",
+        "country": "USA",
+        "countryName": "Mỹ",
+        "capacity": null,
+        "roof": false
+      }
+    },
+    {
+      "id": "400021540",
+      "matchNumber": 102,
+      "stage": "Semi-final",
+      "stageVi": "Bán kết",
+      "group": "",
+      "utcDate": "2026-07-15T19:00:00Z",
+      "localDateAtVenue": "2026-07-15T15:00:00Z",
+      "localTimeAtVenue": "15:00 15/07/2026",
+      "vietnamDate": "Thứ Năm, 16/07/2026",
+      "vietnamShortDate": "16/07/2026",
+      "vietnamTime": "02:00",
+      "home": {
+        "id": null,
+        "name": "Thắng trận 99",
+        "shortName": "Thắng trận 99",
+        "abbreviation": "",
+        "country": "",
+        "flagUrl": null,
+        "isPlaceholder": true
+      },
+      "away": {
+        "id": null,
+        "name": "Thắng trận 100",
+        "shortName": "Thắng trận 100",
+        "abbreviation": "",
+        "country": "",
+        "flagUrl": null,
+        "isPlaceholder": true
+      },
+      "placeholderHome": "Thắng trận 99",
+      "placeholderAway": "Thắng trận 100",
+      "score": null,
+      "status": {
+        "code": 1,
+        "label": "Sắp diễn ra"
+      },
+      "stadium": {
+        "id": "400098290",
+        "name": "Atlanta Stadium",
+        "city": "Atlanta",
+        "country": "USA",
+        "countryName": "Mỹ",
+        "capacity": null,
+        "roof": false
+      }
+    },
+    {
+      "id": "400021542",
+      "matchNumber": 103,
+      "stage": "Play-off for third place",
+      "stageVi": "Tranh hạng ba",
+      "group": "",
+      "utcDate": "2026-07-18T21:00:00Z",
+      "localDateAtVenue": "2026-07-18T17:00:00Z",
+      "localTimeAtVenue": "17:00 18/07/2026",
+      "vietnamDate": "Chủ Nhật, 19/07/2026",
+      "vietnamShortDate": "19/07/2026",
+      "vietnamTime": "04:00",
+      "home": {
+        "id": null,
+        "name": "Thua trận 101",
+        "shortName": "Thua trận 101",
+        "abbreviation": "",
+        "country": "",
+        "flagUrl": null,
+        "isPlaceholder": true
+      },
+      "away": {
+        "id": null,
+        "name": "Thua trận 102",
+        "shortName": "Thua trận 102",
+        "abbreviation": "",
+        "country": "",
+        "flagUrl": null,
+        "isPlaceholder": true
+      },
+      "placeholderHome": "Thua trận 101",
+      "placeholderAway": "Thua trận 102",
+      "score": null,
+      "status": {
+        "code": 1,
+        "label": "Sắp diễn ra"
+      },
+      "stadium": {
+        "id": "400257525",
+        "name": "Miami Stadium",
+        "city": "Miami",
+        "country": "USA",
+        "countryName": "Mỹ",
+        "capacity": null,
+        "roof": false
+      }
+    },
+    {
+      "id": "400021543",
+      "matchNumber": 104,
+      "stage": "Final",
+      "stageVi": "Chung kết",
+      "group": "",
+      "utcDate": "2026-07-19T19:00:00Z",
+      "localDateAtVenue": "2026-07-19T15:00:00Z",
+      "localTimeAtVenue": "15:00 19/07/2026",
+      "vietnamDate": "Thứ Hai, 20/07/2026",
+      "vietnamShortDate": "20/07/2026",
+      "vietnamTime": "02:00",
+      "home": {
+        "id": null,
+        "name": "Thắng trận 101",
+        "shortName": "Thắng trận 101",
+        "abbreviation": "",
+        "country": "",
+        "flagUrl": null,
+        "isPlaceholder": true
+      },
+      "away": {
+        "id": null,
+        "name": "Thắng trận 102",
+        "shortName": "Thắng trận 102",
+        "abbreviation": "",
+        "country": "",
+        "flagUrl": null,
+        "isPlaceholder": true
+      },
+      "placeholderHome": "Thắng trận 101",
+      "placeholderAway": "Thắng trận 102",
+      "score": null,
+      "status": {
+        "code": 1,
+        "label": "Sắp diễn ra"
+      },
+      "stadium": {
+        "id": "400257536",
+        "name": "New York/New Jersey Stadium",
+        "city": "New Jersey",
+        "country": "USA",
+        "countryName": "Mỹ",
+        "capacity": null,
+        "roof": false
+      }
+    }
+  ],
+  "venues": [
+    {
+      "id": "400257526",
+      "name": "Dallas Stadium",
+      "city": "Dallas",
+      "country": "USA",
+      "countryName": "Mỹ",
+      "capacity": null,
+      "roof": false,
+      "matchCount": 9,
+      "matchNumbers": [
+        11,
+        22,
+        43,
+        57,
+        70,
+        78,
+        88,
+        93,
+        101
+      ]
+    },
+    {
+      "id": "400098290",
+      "name": "Atlanta Stadium",
+      "city": "Atlanta",
+      "country": "USA",
+      "countryName": "Mỹ",
+      "capacity": null,
+      "roof": false,
+      "matchCount": 8,
+      "matchNumbers": [
+        14,
+        25,
+        38,
+        50,
+        72,
+        80,
+        95,
+        102
+      ]
+    },
+    {
+      "id": "400017978",
+      "name": "Los Angeles Stadium",
+      "city": "Los Angeles",
+      "country": "USA",
+      "countryName": "Mỹ",
+      "capacity": null,
+      "roof": false,
+      "matchCount": 8,
+      "matchNumbers": [
+        4,
+        15,
+        26,
+        39,
+        59,
+        73,
+        84,
+        98
+      ]
+    },
+    {
+      "id": "400257536",
+      "name": "New York/New Jersey Stadium",
+      "city": "New Jersey",
+      "country": "USA",
+      "countryName": "Mỹ",
+      "capacity": null,
+      "roof": false,
+      "matchCount": 8,
+      "matchNumbers": [
+        7,
+        17,
+        41,
+        56,
+        67,
+        77,
+        91,
+        104
+      ]
+    },
+    {
+      "id": "400248370",
+      "name": "BC Place Vancouver",
+      "city": "Vancouver",
+      "country": "CAN",
+      "countryName": "Canada",
+      "capacity": null,
+      "roof": false,
+      "matchCount": 7,
+      "matchNumbers": [
+        6,
+        27,
+        40,
+        51,
+        64,
+        85,
+        96
+      ]
+    },
+    {
+      "id": "400248623",
+      "name": "Boston Stadium",
+      "city": "Boston",
+      "country": "USA",
+      "countryName": "Mỹ",
+      "capacity": null,
+      "roof": false,
+      "matchCount": 7,
+      "matchNumbers": [
+        5,
+        18,
+        30,
+        45,
+        61,
+        74,
+        97
+      ]
+    },
+    {
+      "id": "400249385",
+      "name": "Houston Stadium",
+      "city": "Houston",
+      "country": "USA",
+      "countryName": "Mỹ",
+      "capacity": null,
+      "roof": false,
+      "matchCount": 7,
+      "matchNumbers": [
+        10,
+        23,
+        35,
+        47,
+        65,
+        76,
+        90
+      ]
+    },
+    {
+      "id": "400257525",
+      "name": "Miami Stadium",
+      "city": "Miami",
+      "country": "USA",
+      "countryName": "Mỹ",
+      "capacity": null,
+      "roof": false,
+      "matchCount": 7,
+      "matchNumbers": [
+        13,
+        37,
+        49,
+        71,
+        86,
+        99,
+        103
+      ]
+    },
+    {
+      "id": "400254717",
+      "name": "Kansas City Stadium",
+      "city": "Kansas City",
+      "country": "USA",
+      "countryName": "Mỹ",
+      "capacity": null,
+      "roof": false,
+      "matchCount": 6,
+      "matchNumbers": [
+        19,
+        34,
+        58,
+        69,
+        87,
+        100
+      ]
+    },
+    {
+      "id": "400248622",
+      "name": "Philadelphia Stadium",
+      "city": "Philadelphia",
+      "country": "USA",
+      "countryName": "Mỹ",
+      "capacity": null,
+      "roof": false,
+      "matchCount": 6,
+      "matchNumbers": [
+        9,
+        29,
+        42,
+        55,
+        68,
+        89
+      ]
+    },
+    {
+      "id": "400257521",
+      "name": "San Francisco Bay Area Stadium",
+      "city": "San Francisco Bay Area",
+      "country": "USA",
+      "countryName": "Mỹ",
+      "capacity": null,
+      "roof": false,
+      "matchCount": 6,
+      "matchNumbers": [
+        8,
+        20,
+        31,
+        44,
+        60,
+        81
+      ]
+    },
+    {
+      "id": "400216606",
+      "name": "Seattle Stadium",
+      "city": "Seattle",
+      "country": "USA",
+      "countryName": "Mỹ",
+      "capacity": null,
+      "roof": false,
+      "matchCount": 6,
+      "matchNumbers": [
+        16,
+        32,
+        52,
+        63,
+        82,
+        94
+      ]
+    },
+    {
+      "id": "400242032",
+      "name": "Toronto Stadium",
+      "city": "Toronto",
+      "country": "CAN",
+      "countryName": "Canada",
+      "capacity": null,
+      "roof": false,
+      "matchCount": 6,
+      "matchNumbers": [
+        3,
+        21,
+        33,
+        46,
+        62,
+        83
+      ]
+    },
+    {
+      "id": "400222084",
+      "name": "Mexico City Stadium",
+      "city": "Mexico City",
+      "country": "MEX",
+      "countryName": "Mexico",
+      "capacity": null,
+      "roof": false,
+      "matchCount": 5,
+      "matchNumbers": [
+        1,
+        24,
+        53,
+        79,
+        92
+      ]
+    },
+    {
+      "id": "400252150",
+      "name": "Guadalajara Stadium",
+      "city": "Guadalajara",
+      "country": "MEX",
+      "countryName": "Mexico",
+      "capacity": null,
+      "roof": false,
+      "matchCount": 4,
+      "matchNumbers": [
+        2,
+        28,
+        48,
+        66
+      ]
+    },
+    {
+      "id": "400238450",
+      "name": "Monterrey Stadium",
+      "city": "Monterrey",
+      "country": "MEX",
+      "countryName": "Mexico",
+      "capacity": null,
+      "roof": false,
+      "matchCount": 4,
+      "matchNumbers": [
+        12,
+        36,
+        54,
+        75
+      ]
+    }
+  ]
+};

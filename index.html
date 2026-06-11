@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#0b4f3a">
+    <title>Lịch World Cup 2026 theo giờ Việt Nam</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="topbar" aria-label="Điều hướng chính">
+        <a class="brand" href="#">
+          <span class="brand-mark" aria-hidden="true">
+            <img src="assets/world-cup-2026-logo.png" alt="">
+          </span>
+          <span>
+            <strong>World Cup 2026</strong>
+          </span>
+        </a>
+        <div class="nav-tabs" role="tablist" aria-label="Chọn chế độ xem">
+          <button class="nav-tab is-active" type="button" data-view="schedule" role="tab" aria-selected="true">Lịch thi đấu</button>
+          <button class="nav-tab" type="button" data-view="venues" role="tab" aria-selected="false">Sân vận động</button>
+        </div>
+      </nav>
+
+      <section class="hero" aria-labelledby="page-title">
+        <div>
+          <h1 id="page-title">LỊCH THI ĐẤU</h1>
+        </div>
+        <aside class="source-panel" aria-label="Thông tin nguồn dữ liệu">
+          <span>Nguồn dữ liệu</span>
+          <strong>FIFA API</strong>
+          <small id="last-updated">Đang tải dữ liệu...</small>
+        </aside>
+      </section>
+    </header>
+
+    <main>
+      <section class="stats-grid" aria-label="Tổng quan giải đấu">
+        <article class="stat">
+          <span>Trận đấu</span>
+          <strong id="stat-matches">--</strong>
+        </article>
+        <article class="stat">
+          <span>Sân vận động</span>
+          <strong id="stat-venues">--</strong>
+        </article>
+        <article class="stat">
+          <span>Ngày thi đấu tại VN</span>
+          <strong id="stat-days">--</strong>
+        </article>
+        <article class="stat">
+          <span>Múi giờ</span>
+          <strong>GMT+7</strong>
+        </article>
+      </section>
+
+      <section class="next-card" aria-labelledby="next-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Sắp tới</p>
+            <h2 id="next-title">Trận gần nhất</h2>
+          </div>
+          <button class="ghost-button" id="reset-filters" type="button">Xóa lọc</button>
+        </div>
+        <div id="next-match" class="next-match skeleton">Đang tải trận gần nhất...</div>
+      </section>
+
+      <section id="schedule-view" class="view-section is-active" aria-labelledby="schedule-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Dashboard</p>
+            <h2 id="schedule-title">Lịch thi đấu</h2>
+          </div>
+          <div class="result-count" id="result-count">-- trận</div>
+        </div>
+
+        <form class="filters" id="filters" aria-label="Bộ lọc lịch thi đấu">
+          <label>
+            Tìm kiếm
+            <input id="search-input" type="search" placeholder="Đội, sân, thành phố, bảng...">
+          </label>
+          <label>
+            Ngày tại Việt Nam
+            <select id="date-filter">
+              <option value="">Tất cả ngày</option>
+            </select>
+          </label>
+          <label>
+            Vòng đấu
+            <select id="stage-filter">
+              <option value="">Tất cả vòng</option>
+            </select>
+          </label>
+          <label>
+            Bảng
+            <select id="group-filter">
+              <option value="">Tất cả bảng</option>
+            </select>
+          </label>
+          <label>
+            Sân
+            <select id="venue-filter">
+              <option value="">Tất cả sân</option>
+            </select>
+          </label>
+          <label>
+            Quốc gia
+            <select id="country-filter">
+              <option value="">Tất cả nước</option>
+            </select>
+          </label>
+        </form>
+
+        <div id="schedule-list" class="schedule-list" aria-live="polite"></div>
+      </section>
+
+      <section id="venues-view" class="view-section" aria-labelledby="venues-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Host cities</p>
+            <h2 id="venues-title">Sân vận động</h2>
+          </div>
+          <div class="result-count" id="venue-count">-- sân</div>
+        </div>
+        <div id="venues-list" class="venues-grid" aria-live="polite"></div>
+      </section>
+
+      <section id="error-state" class="error-state" hidden>
+        <h2>Không tải được dữ liệu</h2>
+        <p>Hãy chạy <code>npm run sync</code> để tạo lại <code>data/worldcup-2026.json</code> và <code>data/worldcup-2026.js</code>, rồi tải lại trang.</p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Dữ liệu được cache từ FIFA API và format sang giờ Việt Nam bằng <code>Asia/Ho_Chi_Minh</code>.</p>
+    </footer>
+
+    <script src="data/worldcup-2026.js" defer></script>
+    <script src="app.js" defer></script>
+  </body>
+</html>
