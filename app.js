@@ -41,7 +41,7 @@ const elements = {
   calendarView: document.querySelector("#calendar-view"),
   bracketView: document.querySelector("#bracket-view"),
   errorState: document.querySelector("#error-state"),
-  backgroundToggle: document.querySelector("#background-toggle"),
+  themeToggle: document.querySelector("#theme-toggle"),
   resetFilters: document.querySelector("#reset-filters"),
   searchInput: document.querySelector("#search-input"),
   dateFilter: document.querySelector("#date-filter"),
@@ -745,12 +745,12 @@ function setView(view) {
   elements.bracketView.classList.toggle("is-active", view === "bracket");
 }
 
-function applyBackgroundMode(mode) {
-  const soft = mode === "soft";
-  document.body.classList.toggle("bg-soft", soft);
-  elements.backgroundToggle.textContent = soft ? "Nền dịu" : "Nền rõ";
-  elements.backgroundToggle.setAttribute("aria-pressed", String(!soft));
-  window.localStorage.setItem("backgroundMode", mode);
+function applyTheme(mode) {
+  const dark = mode === "dark";
+  document.body.classList.toggle("theme-dark", dark);
+  elements.themeToggle.textContent = dark ? "Light mode" : "Dark mode";
+  elements.themeToggle.setAttribute("aria-pressed", String(dark));
+  window.localStorage.setItem("themeMode", mode);
 }
 
 function bindEvents() {
@@ -758,10 +758,10 @@ function bindEvents() {
     button.addEventListener("click", () => setView(button.dataset.view));
   });
 
-  const savedBackgroundMode = window.localStorage.getItem("backgroundMode") || "clear";
-  applyBackgroundMode(savedBackgroundMode);
-  elements.backgroundToggle.addEventListener("click", () => {
-    applyBackgroundMode(document.body.classList.contains("bg-soft") ? "clear" : "soft");
+  const savedThemeMode = window.localStorage.getItem("themeMode") || "light";
+  applyTheme(savedThemeMode);
+  elements.themeToggle.addEventListener("click", () => {
+    applyTheme(document.body.classList.contains("theme-dark") ? "light" : "dark");
   });
 
   elements.resetFilters.addEventListener("click", resetFilters);

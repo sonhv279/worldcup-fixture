@@ -12,7 +12,7 @@ Website tinh gon de theo doi lich 104 tran FIFA World Cup 2026 theo gio Viet Nam
 - Tab "Bang xep hang" tinh diem cac bang tu ty so FIFA.
 - Tab "Nhanh dau" hien thi knockout bracket theo tung vong.
 - Tab "San van dong" gom 16 san, thanh pho/quoc gia, so tran, suc chua neu API co du lieu va link ban do.
-- Toggle "Nen ro/Nen diu" de dieu chinh do ro cua anh background.
+- Toggle light mode / dark mode, luu lua chon bang `localStorage`.
 - Du lieu cache tu FIFA API vao `data/worldcup-2026.json`.
 - Ho tro mo truc tiep `index.html` bang Chrome nho file cache `data/worldcup-2026.js`.
 

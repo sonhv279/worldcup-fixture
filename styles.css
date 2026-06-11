@@ -3,6 +3,8 @@
   --bg: #f3f6ef;
   --surface: rgba(255, 255, 255, 0.94);
   --surface-soft: rgba(238, 245, 237, 0.92);
+  --card: rgba(255, 255, 255, 0.96);
+  --field: #ffffff;
   --ink: #14211d;
   --muted: #66736e;
   --line: #dbe4db;
@@ -11,6 +13,8 @@
   --red: #c73831;
   --gold: #d9a928;
   --shadow: 0 18px 45px rgba(10, 40, 28, 0.12);
+  --body-overlay: linear-gradient(rgba(243, 246, 239, 0.52), rgba(243, 246, 239, 0.64));
+  --nav-active-ink: #063826;
 }
 
 * {
@@ -21,7 +25,7 @@ body {
   margin: 0;
   min-width: 320px;
   background:
-    linear-gradient(rgba(243, 246, 239, 0.52), rgba(243, 246, 239, 0.64)),
+    var(--body-overlay),
     url("assets/hero-stadium-bg.png");
   background-attachment: fixed;
   background-position: center;
@@ -31,13 +35,23 @@ body {
   line-height: 1.5;
 }
 
-body.bg-soft {
-  background:
-    linear-gradient(rgba(243, 246, 239, 0.82), rgba(243, 246, 239, 0.9)),
-    url("assets/hero-stadium-bg.png");
-  background-attachment: fixed;
-  background-position: center;
-  background-size: cover;
+body.theme-dark {
+  color-scheme: dark;
+  --bg: #071611;
+  --surface: rgba(11, 28, 22, 0.88);
+  --surface-soft: rgba(21, 55, 43, 0.84);
+  --card: rgba(9, 24, 19, 0.92);
+  --field: rgba(7, 20, 16, 0.94);
+  --ink: #f1fbf6;
+  --muted: #a8bbb3;
+  --line: rgba(205, 226, 216, 0.18);
+  --green: #35b47c;
+  --green-dark: #d8f6e8;
+  --red: #ff6b61;
+  --gold: #f0c34f;
+  --shadow: 0 18px 45px rgba(0, 0, 0, 0.28);
+  --body-overlay: linear-gradient(rgba(5, 16, 12, 0.58), rgba(5, 16, 12, 0.72));
+  --nav-active-ink: #063826;
 }
 
 button,
@@ -112,7 +126,7 @@ main,
   background: rgba(255, 255, 255, 0.12);
 }
 
-.background-toggle {
+.theme-toggle {
   border: 1px solid rgba(255, 255, 255, 0.28);
   border-radius: 8px;
   background: rgba(255, 255, 255, 0.14);
@@ -121,8 +135,8 @@ main,
   font-weight: 800;
 }
 
-.background-toggle:hover,
-.background-toggle:focus-visible {
+.theme-toggle:hover,
+.theme-toggle:focus-visible {
   background: rgba(255, 255, 255, 0.24);
 }
 
@@ -137,7 +151,7 @@ main,
 
 .nav-tab.is-active {
   background: #fff;
-  color: var(--green-dark);
+  color: var(--nav-active-ink);
 }
 
 .hero {
@@ -325,7 +339,7 @@ main {
 .ghost-button {
   border: 1px solid var(--line);
   border-radius: 6px;
-  background: #fff;
+  background: var(--field);
   color: var(--green);
   padding: 9px 13px;
   font-weight: 800;
@@ -400,7 +414,7 @@ main {
   overflow: hidden;
   border: 1px solid var(--line);
   border-radius: 4px;
-  background: #fff;
+  background: var(--field);
   color: var(--green-dark);
   font-size: 0.68rem;
   font-weight: 800;
@@ -451,7 +465,7 @@ main {
   min-height: 42px;
   border: 1px solid var(--line);
   border-radius: 6px;
-  background: #fff;
+  background: var(--field);
   color: var(--ink);
   padding: 9px 11px;
 }
@@ -491,7 +505,7 @@ main {
   border: 1px solid var(--line);
   border-radius: 8px;
   padding: 14px;
-  background: #fff;
+  background: var(--card);
 }
 
 .match-number {
@@ -531,7 +545,7 @@ main {
 }
 
 .badge.red {
-  background: #fff0ee;
+  background: rgba(199, 56, 49, 0.12);
   color: var(--red);
 }
 
@@ -569,7 +583,7 @@ main {
   gap: 12px;
   border: 1px solid var(--line);
   border-radius: 8px;
-  background: #fff;
+  background: var(--card);
   padding: 16px;
 }
 
@@ -675,7 +689,7 @@ main {
   border: 1px solid var(--line);
   border-radius: 8px;
   overflow: hidden;
-  background: #fff;
+  background: var(--card);
 }
 
 .calendar-month h3 {
@@ -707,7 +721,7 @@ main {
   border-right: 1px solid var(--line);
   border-bottom: 1px solid var(--line);
   padding: 9px;
-  background: rgba(255, 255, 255, 0.86);
+  background: var(--card);
 }
 
 .calendar-day:nth-child(7n) {
@@ -727,11 +741,11 @@ main {
 }
 
 .calendar-day.has-matches {
-  background: rgba(238, 245, 237, 0.95);
+  background: var(--surface-soft);
 }
 
 .calendar-day.is-empty {
-  background: rgba(255, 255, 255, 0.48);
+  background: rgba(255, 255, 255, 0.24);
 }
 
 .calendar-matches {
@@ -752,7 +766,7 @@ main {
   overflow: hidden;
   border: 1px solid var(--line);
   border-radius: 8px;
-  background: #fff;
+  background: var(--card);
 }
 
 .standings-card h3 {
@@ -840,7 +854,7 @@ main {
   gap: 9px;
   border: 1px solid var(--line);
   border-radius: 8px;
-  background: #fff;
+  background: var(--card);
   padding: 12px;
 }
 
@@ -963,7 +977,7 @@ main {
     flex: 1;
   }
 
-  .background-toggle {
+  .theme-toggle {
     width: 100%;
   }
 
