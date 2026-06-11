@@ -21,10 +21,13 @@ const elements = {
   nextMatch: document.querySelector("#next-match"),
   resultCount: document.querySelector("#result-count"),
   venueCount: document.querySelector("#venue-count"),
+  standingsCount: document.querySelector("#standings-count"),
   scheduleList: document.querySelector("#schedule-list"),
   venuesList: document.querySelector("#venues-list"),
+  standingsList: document.querySelector("#standings-list"),
   scheduleView: document.querySelector("#schedule-view"),
   venuesView: document.querySelector("#venues-view"),
+  standingsView: document.querySelector("#standings-view"),
   errorState: document.querySelector("#error-state"),
   resetFilters: document.querySelector("#reset-filters"),
   searchInput: document.querySelector("#search-input"),
@@ -176,6 +179,19 @@ function teamHtml(team) {
 
   return `
     <div class="team">
+      <span class="flag ${isEmojiFlag ? "is-emoji" : ""}" title="${escapeHtml(team.abbreviation || team.name)}">${escapeHtml(flag)}</span>
+      <span>${escapeHtml(team.name)}</span>
+    </div>
+  `;
+}
+
+function compactTeamHtml(team) {
+  const fallback = escapeHtml(team.abbreviation || "TBD");
+  const flag = flagEmojiByCountry[team.country] || flagEmojiByCountry[team.abbreviation] || fallback;
+  const isEmojiFlag = flag !== fallback;
+
+  return `
+    <div class="standing-team">
       <span class="flag ${isEmojiFlag ? "is-emoji" : ""}" title="${escapeHtml(team.abbreviation || team.name)}">${escapeHtml(flag)}</span>
       <span>${escapeHtml(team.name)}</span>
     </div>
@@ -348,6 +364,136 @@ function renderVenues() {
     .join("");
 }
 
+function createStandingTeam(team, group, order) {
+  return {
+    id: team.id || `${group}-${team.name}`,
+    group,
+    order,
+    team,
+    played: 0,
+    won: 0,
+    drawn: 0,
+    lost: 0,
+    goalsFor: 0,
+    goalsAgainst: 0,
+    goalDiff: 0,
+    points: 0
+  };
+}
+
+function buildStandings() {
+  const groupMatches = state.data.matches.filter((match) => match.group);
+  const groups = new Map();
+
+  for (const match of groupMatches) {
+    if (!groups.has(match.group)) {
+      groups.set(match.group, new Map());
+    }
+
+    const table = groups.get(match.group);
+    for (const team of [match.home, match.away]) {
+      if (!team.isPlaceholder && !table.has(team.id || team.name)) {
+        table.set(team.id || team.name, createStandingTeam(team, match.group, table.size + 1));
+      }
+    }
+
+    if (!match.score) {
+      continue;
+    }
+
+    const home = table.get(match.home.id || match.home.name);
+    const away = table.get(match.away.id || match.away.name);
+    if (!home || !away) {
+      continue;
+    }
+
+    const homeGoals = Number(match.score.home);
+    const awayGoals = Number(match.score.away);
+    home.played += 1;
+    away.played += 1;
+    home.goalsFor += homeGoals;
+    home.goalsAgainst += awayGoals;
+    away.goalsFor += awayGoals;
+    away.goalsAgainst += homeGoals;
+
+    if (homeGoals > awayGoals) {
+      home.won += 1;
+      home.points += 3;
+      away.lost += 1;
+    } else if (homeGoals < awayGoals) {
+      away.won += 1;
+      away.points += 3;
+      home.lost += 1;
+    } else {
+      home.drawn += 1;
+      away.drawn += 1;
+      home.points += 1;
+      away.points += 1;
+    }
+
+    home.goalDiff = home.goalsFor - home.goalsAgainst;
+    away.goalDiff = away.goalsFor - away.goalsAgainst;
+  }
+
+  return [...groups.entries()]
+    .map(([group, table]) => ({
+      group,
+      teams: [...table.values()].sort((a, b) =>
+        b.points - a.points ||
+        b.goalDiff - a.goalDiff ||
+        b.goalsFor - a.goalsFor ||
+        a.order - b.order
+      )
+    }))
+    .sort((a, b) => collator.compare(a.group, b.group));
+}
+
+function renderStandings() {
+  const standings = buildStandings();
+  elements.standingsCount.textContent = `${standings.length} bảng`;
+  elements.standingsList.innerHTML = standings
+    .map((group) => `
+      <article class="standings-card">
+        <h3>${escapeHtml(group.group)}</h3>
+        <div class="standings-table-wrap">
+          <table class="standings-table">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Đội</th>
+                <th scope="col">Tr</th>
+                <th scope="col">T</th>
+                <th scope="col">H</th>
+                <th scope="col">B</th>
+                <th scope="col">BT</th>
+                <th scope="col">BB</th>
+                <th scope="col">HS</th>
+                <th scope="col">Đ</th>
+              </tr>
+            </thead>
+            <tbody>
+              ${group.teams.map((team, index) => `
+                <tr>
+                  <td>${index + 1}</td>
+                  <td>${compactTeamHtml(team.team)}</td>
+                  <td>${team.played}</td>
+                  <td>${team.won}</td>
+                  <td>${team.drawn}</td>
+                  <td>${team.lost}</td>
+                  <td>${team.goalsFor}</td>
+                  <td>${team.goalsAgainst}</td>
+                  <td>${team.goalDiff > 0 ? "+" : ""}${team.goalDiff}</td>
+                  <td><strong>${team.points}</strong></td>
+                </tr>
+              `).join("")}
+            </tbody>
+          </table>
+        </div>
+      </article>
+    `)
+    .join("");
+}
+
 function updateFilterFromInputs() {
   state.filters.query = elements.searchInput.value.trim();
   state.filters.date = elements.dateFilter.value;
@@ -378,6 +524,7 @@ function setView(view) {
 
   elements.scheduleView.classList.toggle("is-active", view === "schedule");
   elements.venuesView.classList.toggle("is-active", view === "venues");
+  elements.standingsView.classList.toggle("is-active", view === "standings");
 }
 
 function bindEvents() {
@@ -419,11 +566,13 @@ async function init() {
     renderNextMatch();
     renderSchedule();
     renderVenues();
+    renderStandings();
   } catch (error) {
     console.error(error);
     elements.nextMatch.hidden = true;
     elements.scheduleView.hidden = true;
     elements.venuesView.hidden = true;
+    elements.standingsView.hidden = true;
     elements.errorState.hidden = false;
     elements.lastUpdated.textContent = "Không tải được dữ liệu cache";
   }
