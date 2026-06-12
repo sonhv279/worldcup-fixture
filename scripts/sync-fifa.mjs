@@ -15,7 +15,7 @@ const TIMEZONE = "Asia/Ho_Chi_Minh";
 const SOURCE_URL = `${API_BASE}/calendar/matches?idSeason=${ID_SEASON}&language=en&count=200`;
 
 const statusLabels = {
-  0: "Không rõ",
+  0: "Kết thúc",
   1: "Sắp diễn ra",
   2: "Trước trận",
   3: "Hiệp 1",

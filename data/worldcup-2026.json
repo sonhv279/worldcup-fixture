@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-11T04:36:52.292Z",
+  "generatedAt": "2026-06-12T01:55:01.109Z",
   "sourceUrl": "https://api.fifa.com/api/v3/calendar/matches?idSeason=285023&language=en&count=200",
   "idCompetition": "17",
   "idSeason": "285023",
@@ -37,10 +37,15 @@
       },
       "placeholderHome": "A1",
       "placeholderAway": "A2",
-      "score": null,
+      "score": {
+        "home": 2,
+        "away": 0,
+        "penaltyHome": null,
+        "penaltyAway": null
+      },
       "status": {
-        "code": 1,
-        "label": "Sắp diễn ra"
+        "code": 0,
+        "label": "Kết thúc"
       },
       "stadium": {
         "id": "400222084",
