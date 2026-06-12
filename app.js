@@ -21,9 +21,6 @@ const elements = {
   statVenues: document.querySelector("#stat-venues"),
   statDays: document.querySelector("#stat-days"),
   nextMatch: document.querySelector("#next-match"),
-  phaseLabel: document.querySelector("#phase-label"),
-  phaseDetail: document.querySelector("#phase-detail"),
-  phaseProgress: document.querySelector("#phase-progress"),
   resultCount: document.querySelector("#result-count"),
   venueCount: document.querySelector("#venue-count"),
   standingsCount: document.querySelector("#standings-count"),
@@ -69,6 +66,7 @@ const monthFormatter = new Intl.DateTimeFormat("vi-VN", {
 const shortWeekdays = ["T2", "T3", "T4", "T5", "T6", "T7", "CN"];
 
 const knockoutStages = ["Vòng 1/32", "Vòng 1/8", "Tứ kết", "Bán kết", "Tranh hạng ba", "Chung kết"];
+const liveMatchWindowMs = 135 * 60 * 1000;
 
 const flagEmojiByCountry = {
   ALG: "🇩🇿",
@@ -233,33 +231,6 @@ function renderStats() {
   elements.statDays.textContent = days.size;
 }
 
-function renderTournamentPhase() {
-  const matches = state.data.matches;
-  const now = new Date();
-  const firstMatch = matches[0];
-  const lastMatch = matches[matches.length - 1];
-  const completed = matches.filter((match) => match.score || Number(match.status?.code) >= 10).length;
-  const progress = Math.round((completed / matches.length) * 100);
-
-  if (now < new Date(firstMatch.utcDate)) {
-    elements.phaseLabel.textContent = "Trước giải";
-    elements.phaseDetail.textContent = `Trận khai mạc: ${firstMatch.home.name} vs ${firstMatch.away.name}, ${firstMatch.vietnamTime} ${firstMatch.vietnamDate}.`;
-    elements.phaseProgress.textContent = "0%";
-    return;
-  }
-
-  if (now <= new Date(lastMatch.utcDate)) {
-    elements.phaseLabel.textContent = "Đang diễn ra";
-    elements.phaseDetail.textContent = "Ưu tiên theo dõi trận hôm nay, tỷ số mới và bảng xếp hạng các bảng.";
-    elements.phaseProgress.textContent = `${progress}%`;
-    return;
-  }
-
-  elements.phaseLabel.textContent = "Đã kết thúc";
-  elements.phaseDetail.textContent = `Giải đã kết thúc sau trận chung kết tại ${lastMatch.stadium.name}.`;
-  elements.phaseProgress.textContent = "100%";
-}
-
 function teamHtml(team) {
   const fallback = escapeHtml(team.abbreviation || "TBD");
   const flag = flagEmojiByCountry[team.country] || flagEmojiByCountry[team.abbreviation] || fallback;
@@ -287,10 +258,13 @@ function compactTeamHtml(team) {
 }
 
 function matchTeamsHtml(match) {
+  const centerText = match.score ? scoreText(match) : "vs";
+  const centerClass = match.score ? "match-score" : "versus";
+
   return `
     <div class="matchup">
       ${teamHtml(match.home)}
-      <span class="versus">vs</span>
+      <span class="${centerClass}">${escapeHtml(centerText)}</span>
       ${teamHtml(match.away)}
     </div>
   `;
@@ -308,9 +282,47 @@ function scoreText(match) {
   return score;
 }
 
+function matchDisplayStatus(match, now = new Date()) {
+  if (match.score) {
+    return {
+      label: "Kết thúc",
+      type: "done"
+    };
+  }
+
+  const start = new Date(match.utcDate);
+  const end = new Date(start.getTime() + liveMatchWindowMs);
+  if (now >= start && now <= end) {
+    return {
+      label: "Đang diễn ra",
+      type: "live"
+    };
+  }
+
+  if (now > end) {
+    return {
+      label: "Chờ cập nhật",
+      type: "pending"
+    };
+  }
+
+  return {
+    label: "Sắp diễn ra",
+    type: "upcoming"
+  };
+}
+
 function renderNextMatch() {
   const now = new Date();
-  const upcoming = state.data.matches.find((match) => new Date(match.utcDate) >= now) || state.data.matches[0];
+  const upcoming = state.data.matches.find((match) => {
+    if (match.score) {
+      return false;
+    }
+
+    const start = new Date(match.utcDate);
+    const end = new Date(start.getTime() + liveMatchWindowMs);
+    return now <= end;
+  }) || state.data.matches[0];
   state.nextMatch = upcoming;
 
   if (!upcoming) {
@@ -318,6 +330,7 @@ function renderNextMatch() {
     return;
   }
 
+  const status = matchDisplayStatus(upcoming, now);
   elements.nextMatch.classList.remove("skeleton");
   elements.nextMatch.innerHTML = `
     <div class="next-time">
@@ -329,6 +342,7 @@ function renderNextMatch() {
       <div class="match-title-row">
         <span class="badge red">Trận ${escapeHtml(upcoming.matchNumber)}</span>
         <span class="badge">${escapeHtml(upcoming.group || upcoming.stageVi)}</span>
+        <span class="badge status-${status.type}">${escapeHtml(status.label)}</span>
       </div>
       ${matchTeamsHtml(upcoming)}
     </div>
@@ -346,10 +360,8 @@ function startCountdown() {
   }
 
   const update = () => {
-    const countdown = document.querySelector("#next-countdown");
-    if (countdown && state.nextMatch) {
-      countdown.textContent = formatCountdown(state.nextMatch.utcDate);
-    }
+    renderNextMatch();
+    renderSchedule();
   };
 
   update();
@@ -394,6 +406,8 @@ function getFilteredMatches() {
 }
 
 function matchCardHtml(match) {
+  const status = matchDisplayStatus(match);
+
   return `
     <article class="match-card">
       <div class="match-number">
@@ -404,8 +418,7 @@ function matchCardHtml(match) {
       <div class="match-main">
         <div class="match-title-row">
           <span class="badge">${escapeHtml(match.group || match.stageVi)}</span>
-          <span class="badge red">${escapeHtml(match.status.label)}</span>
-          <span class="score">${escapeHtml(scoreText(match))}</span>
+          <span class="badge status-${status.type}">${escapeHtml(status.label)}</span>
         </div>
         ${matchTeamsHtml(match)}
         <div class="venue-line">
@@ -791,7 +804,6 @@ async function init() {
     state.data = await loadData();
     setupFilters();
     renderStats();
-    renderTournamentPhase();
     renderNextMatch();
     startCountdown();
     renderSchedule();

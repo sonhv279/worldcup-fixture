@@ -61,27 +61,12 @@
         </article>
       </section>
 
-      <section class="phase-card" aria-labelledby="phase-title">
-        <div>
-          <p class="eyebrow">Trạng thái giải</p>
-          <h2 id="phase-title"><span id="phase-label">Đang tải...</span></h2>
-          <p id="phase-detail">Đang phân tích lịch thi đấu và dữ liệu tỷ số.</p>
-        </div>
-        <div class="phase-metrics" aria-label="Thông tin trạng thái">
-          <div>
-            <span>Tiến độ</span>
-            <strong id="phase-progress">--</strong>
-          </div>
-        </div>
-      </section>
-
       <section class="next-card" aria-labelledby="next-title">
         <div class="section-heading">
           <div>
             <p class="eyebrow">Sắp tới</p>
             <h2 id="next-title">Trận gần nhất</h2>
           </div>
-          <button class="ghost-button" id="reset-filters" type="button">Xóa lọc</button>
         </div>
         <div id="next-match" class="next-match skeleton">Đang tải trận gần nhất...</div>
       </section>
@@ -92,7 +77,10 @@
             <p class="eyebrow">Dashboard</p>
             <h2 id="schedule-title">Lịch thi đấu</h2>
           </div>
-          <div class="result-count" id="result-count">-- trận</div>
+          <div class="schedule-actions">
+            <div class="result-count" id="result-count">-- trận</div>
+            <button class="ghost-button" id="reset-filters" type="button">Xóa lọc</button>
+          </div>
         </div>
 
         <form class="filters" id="filters" aria-label="Bộ lọc lịch thi đấu">
