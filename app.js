@@ -1,10 +1,13 @@
 const DATA_URL = "data/worldcup-2026.json";
+const FIFA_MATCHES_URL = "https://api.fifa.com/api/v3/calendar/matches?idSeason=285023&language=en&count=200";
+const LIVE_SYNC_INTERVAL_MS = 60 * 1000;
 
 const state = {
   data: null,
   view: "schedule",
   nextMatch: null,
   countdownTimer: null,
+  liveSyncTimer: null,
   filters: {
     query: "",
     date: "",
@@ -67,6 +70,25 @@ const shortWeekdays = ["T2", "T3", "T4", "T5", "T6", "T7", "CN"];
 
 const knockoutStages = ["Vòng 1/32", "Vòng 1/8", "Tứ kết", "Bán kết", "Tranh hạng ba", "Chung kết"];
 const liveMatchWindowMs = 135 * 60 * 1000;
+
+const liveStatusLabels = {
+  0: "Kết thúc",
+  1: "Sắp diễn ra",
+  2: "Trước trận",
+  3: "Hiệp 1",
+  4: "Nghỉ giữa hiệp",
+  5: "Hiệp 2",
+  6: "Hiệp phụ",
+  7: "Hiệp phụ 1",
+  8: "Nghỉ hiệp phụ",
+  9: "Hiệp phụ 2",
+  10: "Kết thúc",
+  11: "Luân lưu",
+  12: "Sau trận",
+  13: "Bị hủy/bỏ dở",
+  16: "Chuẩn bị luân lưu",
+  17: "Chuẩn bị hiệp phụ"
+};
 
 const flagEmojiByCountry = {
   ALG: "🇩🇿",
@@ -280,6 +302,115 @@ function scoreText(match) {
     score += ` pen ${match.score.penaltyHome} - ${match.score.penaltyAway}`;
   }
   return score;
+}
+
+function scoreFromLiveMatch(match) {
+  if (match.HomeTeamScore == null || match.AwayTeamScore == null) {
+    return null;
+  }
+
+  return {
+    home: match.HomeTeamScore,
+    away: match.AwayTeamScore,
+    penaltyHome: match.HomeTeamPenaltyScore,
+    penaltyAway: match.AwayTeamPenaltyScore
+  };
+}
+
+function liveStatusFor(match) {
+  return {
+    code: match.MatchStatus,
+    label: liveStatusLabels[match.MatchStatus] || "Không rõ"
+  };
+}
+
+function scoreSignature(score) {
+  if (!score) {
+    return "";
+  }
+
+  return [score.home, score.away, score.penaltyHome ?? "", score.penaltyAway ?? ""].join(":");
+}
+
+async function fetchLiveMatches() {
+  const response = await fetch(`${FIFA_MATCHES_URL}&_=${Date.now()}`, {
+    cache: "no-store",
+    headers: {
+      accept: "application/json"
+    }
+  });
+
+  if (!response.ok) {
+    throw new Error(`FIFA live sync returned ${response.status}`);
+  }
+
+  const json = await response.json();
+  return json.Results || [];
+}
+
+function mergeLiveMatches(rawMatches) {
+  const byId = new Map(state.data.matches.map((match) => [String(match.id), match]));
+  const byNumber = new Map(state.data.matches.map((match) => [Number(match.matchNumber), match]));
+  let changed = false;
+
+  for (const rawMatch of rawMatches) {
+    const match = byId.get(String(rawMatch.IdMatch)) || byNumber.get(Number(rawMatch.MatchNumber));
+    if (!match) {
+      continue;
+    }
+
+    const nextScore = scoreFromLiveMatch(rawMatch);
+    const nextStatus = liveStatusFor(rawMatch);
+    const scoreChanged = scoreSignature(match.score) !== scoreSignature(nextScore);
+    const statusChanged = match.status?.code !== nextStatus.code || match.status?.label !== nextStatus.label;
+
+    if (scoreChanged) {
+      match.score = nextScore;
+      changed = true;
+    }
+
+    if (statusChanged) {
+      match.status = nextStatus;
+      changed = true;
+    }
+  }
+
+  if (changed) {
+    state.data.generatedAt = new Date().toISOString();
+  }
+
+  return changed;
+}
+
+function rerenderLiveData() {
+  renderStats();
+  renderNextMatch();
+  renderSchedule();
+  renderCalendar();
+  renderStandings();
+  renderBracket();
+}
+
+async function syncLiveData() {
+  try {
+    const rawMatches = await fetchLiveMatches();
+    const changed = mergeLiveMatches(rawMatches);
+    elements.lastUpdated.textContent = `${formatUpdated(state.data.generatedAt)} · live`;
+    if (changed) {
+      rerenderLiveData();
+    }
+  } catch (error) {
+    console.warn("Không cập nhật được dữ liệu live từ FIFA", error);
+  }
+}
+
+function startLiveSync() {
+  if (state.liveSyncTimer) {
+    window.clearInterval(state.liveSyncTimer);
+  }
+
+  syncLiveData();
+  state.liveSyncTimer = window.setInterval(syncLiveData, LIVE_SYNC_INTERVAL_MS);
 }
 
 function matchDisplayStatus(match, now = new Date()) {
@@ -811,6 +942,7 @@ async function init() {
     renderVenues();
     renderStandings();
     renderBracket();
+    startLiveSync();
   } catch (error) {
     console.error(error);
     elements.nextMatch.hidden = true;

@@ -7,7 +7,7 @@ Website tinh gon de theo doi lich 104 tran FIFA World Cup 2026 theo gio Viet Nam
 - Hien thi 104 tran theo ngay/gio Viet Nam.
 - Bo loc theo ngay, vong dau, bang, san, quoc gia dang cai va tim kiem nhanh.
 - Khu "Tran gan nhat" kem countdown den gio bong lan.
-- Card trang thai giai dau: truoc giai, dang dien ra, da ket thuc.
+- Tu dong poll FIFA API moi 60 giay khi mo trang de cap nhat ban thang, ty so va bang xep hang.
 - Tab "Lich thang" hien thi cac ngay co tran theo dang calendar.
 - Tab "Bang xep hang" tinh diem cac bang tu ty so FIFA.
 - Tab "Nhanh dau" hien thi knockout bracket theo tung vong.
