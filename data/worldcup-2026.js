@@ -1,5 +1,5 @@
 window.__WORLD_CUP_2026_DATA__ = {
-  "generatedAt": "2026-06-12T01:55:01.109Z",
+  "generatedAt": "2026-06-12T04:18:39.702Z",
   "sourceUrl": "https://api.fifa.com/api/v3/calendar/matches?idSeason=285023&language=en&count=200",
   "idCompetition": "17",
   "idSeason": "285023",
@@ -89,10 +89,15 @@ window.__WORLD_CUP_2026_DATA__ = {
       },
       "placeholderHome": "A3",
       "placeholderAway": "A4",
-      "score": null,
+      "score": {
+        "home": 2,
+        "away": 1,
+        "penaltyHome": null,
+        "penaltyAway": null
+      },
       "status": {
-        "code": 1,
-        "label": "Sắp diễn ra"
+        "code": 0,
+        "label": "Kết thúc"
       },
       "stadium": {
         "id": "400252150",
