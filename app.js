@@ -216,6 +216,24 @@ function uniqueBy(items, keyFn) {
   return [...map.values()];
 }
 
+function compareMatchesByTime(a, b) {
+  return new Date(a.utcDate) - new Date(b.utcDate) || Number(a.matchNumber) - Number(b.matchNumber);
+}
+
+function compareMatchesByOfficialNumber(a, b) {
+  return Number(a.matchNumber) - Number(b.matchNumber) || new Date(a.utcDate) - new Date(b.utcDate);
+}
+
+function assignDisplayNumbers(matches) {
+  [...matches].sort(compareMatchesByTime).forEach((match, index) => {
+    match.displayNumber = index + 1;
+  });
+}
+
+function displayMatchNumber(match) {
+  return match.displayNumber || match.matchNumber;
+}
+
 function populateSelect(select, items, getValue, getLabel) {
   const firstOption = select.querySelector("option");
   select.replaceChildren(firstOption);
@@ -471,7 +489,7 @@ function renderNextMatch() {
     </div>
     <div>
       <div class="match-title-row">
-        <span class="badge red">Trận ${escapeHtml(upcoming.matchNumber)}</span>
+        <span class="badge red">Trận ${escapeHtml(displayMatchNumber(upcoming))}</span>
         <span class="badge">${escapeHtml(upcoming.group || upcoming.stageVi)}</span>
         <span class="badge status-${status.type}">${escapeHtml(status.label)}</span>
       </div>
@@ -505,6 +523,7 @@ function matchesQuery(match, query) {
   }
 
   const haystack = [
+    displayMatchNumber(match),
     match.matchNumber,
     match.stage,
     match.stageVi,
@@ -525,15 +544,17 @@ function matchesQuery(match, query) {
 function getFilteredMatches() {
   const filters = state.filters;
 
-  return state.data.matches.filter((match) => {
-    if (!matchesQuery(match, filters.query)) return false;
-    if (filters.date && match.vietnamShortDate !== filters.date) return false;
-    if (filters.stage && match.stageVi !== filters.stage) return false;
-    if (filters.group && match.group !== filters.group) return false;
-    if (filters.venue && match.stadium.name !== filters.venue) return false;
-    if (filters.country && match.stadium.country !== filters.country) return false;
-    return true;
-  });
+  return state.data.matches
+    .filter((match) => {
+      if (!matchesQuery(match, filters.query)) return false;
+      if (filters.date && match.vietnamShortDate !== filters.date) return false;
+      if (filters.stage && match.stageVi !== filters.stage) return false;
+      if (filters.group && match.group !== filters.group) return false;
+      if (filters.venue && match.stadium.name !== filters.venue) return false;
+      if (filters.country && match.stadium.country !== filters.country) return false;
+      return true;
+    })
+    .sort(compareMatchesByTime);
 }
 
 function matchCardHtml(match) {
@@ -543,7 +564,7 @@ function matchCardHtml(match) {
     <article class="match-card">
       <div class="match-number">
         <span>Trận</span>
-        <strong>${escapeHtml(match.matchNumber)}</strong>
+        <strong>${escapeHtml(displayMatchNumber(match))}</strong>
         <span>${escapeHtml(match.vietnamTime)}</span>
       </div>
       <div class="match-main">
@@ -595,9 +616,17 @@ function renderSchedule() {
 }
 
 function renderVenues() {
+  const matchByNumber = new Map(state.data.matches.map((match) => [Number(match.matchNumber), match]));
   elements.venueCount.textContent = `${state.data.venues.length} sân`;
   elements.venuesList.innerHTML = state.data.venues
-    .map((venue) => `
+    .map((venue) => {
+      const displayNumbers = venue.matchNumbers
+        .map((number) => matchByNumber.get(Number(number)))
+        .filter(Boolean)
+        .sort(compareMatchesByTime)
+        .map(displayMatchNumber);
+
+      return `
       <article class="venue-card">
         <div class="venue-photo" aria-hidden="true"></div>
         <header>
@@ -612,11 +641,12 @@ function renderVenues() {
           <div><dt>Mái che</dt><dd>${venue.roof ? "Có" : "Không rõ"}</dd></div>
         </dl>
         <div class="match-chips" aria-label="Danh sách trận">
-          ${venue.matchNumbers.map((number) => `<span class="match-chip">Trận ${escapeHtml(number)}</span>`).join("")}
+          ${displayNumbers.map((number) => `<span class="match-chip">Trận ${escapeHtml(number)}</span>`).join("")}
         </div>
         <a class="map-link" href="${escapeHtml(googleMapsUrl(venue))}" target="_blank" rel="noreferrer">Xem trên bản đồ</a>
       </article>
-    `)
+    `;
+    })
     .join("");
 }
 
@@ -752,7 +782,7 @@ function renderStandings() {
 
 function renderCalendar() {
   const dayGroups = new Map();
-  for (const match of state.data.matches) {
+  for (const match of [...state.data.matches].sort(compareMatchesByTime)) {
     const key = match.vietnamShortDate;
     if (!dayGroups.has(key)) {
       dayGroups.set(key, []);
@@ -794,7 +824,7 @@ function renderCalendar() {
               <span>${matches.length} trận</span>
               <div class="calendar-matches">
                 ${matches.slice(0, 3).map((match) => `
-                  <div>${escapeHtml(match.vietnamTime)} · Trận ${escapeHtml(match.matchNumber)}</div>
+                  <div>${escapeHtml(match.vietnamTime)} · Trận ${escapeHtml(displayMatchNumber(match))}</div>
                 `).join("")}
                 ${matches.length > 3 ? `<div>+${matches.length - 3} trận nữa</div>` : ""}
               </div>
@@ -823,7 +853,7 @@ function bracketTeamName(team) {
 }
 
 function renderBracket() {
-  const knockoutMatches = state.data.matches.filter((match) => !match.group);
+  const knockoutMatches = state.data.matches.filter((match) => !match.group).sort(compareMatchesByOfficialNumber);
   elements.bracketCount.textContent = `${knockoutMatches.length} trận`;
   elements.bracketList.innerHTML = knockoutStages
     .map((stage) => {
@@ -933,6 +963,7 @@ async function init() {
 
   try {
     state.data = await loadData();
+    assignDisplayNumbers(state.data.matches);
     setupFilters();
     renderStats();
     renderNextMatch();
