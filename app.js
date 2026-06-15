@@ -70,6 +70,9 @@ const shortWeekdays = ["T2", "T3", "T4", "T5", "T6", "T7", "CN"];
 
 const knockoutStages = ["Vòng 1/32", "Vòng 1/8", "Tứ kết", "Bán kết", "Tranh hạng ba", "Chung kết"];
 const liveMatchWindowMs = 135 * 60 * 1000;
+const finishedStatusCodes = new Set([0, 10, 12]);
+const liveStatusCodes = new Set([3, 4, 5, 6, 7, 8, 9, 11, 16, 17]);
+const cancelledStatusCodes = new Set([13]);
 
 const liveStatusLabels = {
   0: "Kết thúc",
@@ -350,6 +353,20 @@ function scoreSignature(score) {
   return [score.home, score.away, score.penaltyHome ?? "", score.penaltyAway ?? ""].join(":");
 }
 
+function matchStatusCode(match) {
+  const code = Number(match.status?.code);
+  return Number.isNaN(code) ? null : code;
+}
+
+function hasFinishedStatus(match) {
+  const code = matchStatusCode(match);
+  return code == null ? Boolean(match.score) : finishedStatusCodes.has(code);
+}
+
+function hasFinalScore(match) {
+  return Boolean(match.score) && hasFinishedStatus(match);
+}
+
 async function fetchLiveMatches() {
   const response = await fetch(`${FIFA_MATCHES_URL}&_=${Date.now()}`, {
     cache: "no-store",
@@ -432,15 +449,31 @@ function startLiveSync() {
 }
 
 function matchDisplayStatus(match, now = new Date()) {
-  if (match.score) {
+  const statusCode = matchStatusCode(match);
+  const start = new Date(match.utcDate);
+  const end = new Date(start.getTime() + liveMatchWindowMs);
+
+  if (statusCode != null && cancelledStatusCodes.has(statusCode)) {
+    return {
+      label: match.status?.label || "Bị hủy/bỏ dở",
+      type: "pending"
+    };
+  }
+
+  if (hasFinishedStatus(match)) {
     return {
       label: "Kết thúc",
       type: "done"
     };
   }
 
-  const start = new Date(match.utcDate);
-  const end = new Date(start.getTime() + liveMatchWindowMs);
+  if (statusCode != null && liveStatusCodes.has(statusCode)) {
+    return {
+      label: match.status?.label || "Đang diễn ra",
+      type: "live"
+    };
+  }
+
   if (now >= start && now <= end) {
     return {
       label: "Đang diễn ra",
@@ -464,7 +497,7 @@ function matchDisplayStatus(match, now = new Date()) {
 function renderNextMatch() {
   const now = new Date();
   const upcoming = state.data.matches.find((match) => {
-    if (match.score) {
+    if (hasFinishedStatus(match)) {
       return false;
     }
 
@@ -683,7 +716,7 @@ function buildStandings() {
       }
     }
 
-    if (!match.score) {
+    if (!hasFinalScore(match)) {
       continue;
     }
 
