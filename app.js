@@ -78,9 +78,9 @@ const liveStatusLabels = {
   0: "Kết thúc",
   1: "Sắp diễn ra",
   2: "Trước trận",
-  3: "Hiệp 1",
+  3: "Đang diễn ra",
   4: "Nghỉ giữa hiệp",
-  5: "Hiệp 2",
+  5: "Đang diễn ra",
   6: "Hiệp phụ",
   7: "Hiệp phụ 1",
   8: "Nghỉ hiệp phụ",
@@ -341,7 +341,8 @@ function scoreFromLiveMatch(match) {
 function liveStatusFor(match) {
   return {
     code: match.MatchStatus,
-    label: liveStatusLabels[match.MatchStatus] || "Không rõ"
+    label: liveStatusLabels[match.MatchStatus] || "Không rõ",
+    matchTime: match.MatchTime || null
   };
 }
 
@@ -365,6 +366,25 @@ function hasFinishedStatus(match) {
 
 function hasFinalScore(match) {
   return Boolean(match.score) && hasFinishedStatus(match);
+}
+
+function matchTimeMinute(matchTime) {
+  const minute = String(matchTime || "").match(/\d+/);
+  return minute ? Number(minute[0]) : null;
+}
+
+function livePeriodLabel(match) {
+  const statusCode = matchStatusCode(match);
+  const matchTime = match.status?.matchTime;
+
+  if ((statusCode === 3 || statusCode === 5) && matchTime) {
+    const minute = matchTimeMinute(matchTime);
+    if (minute != null) {
+      return `${minute > 45 ? "Hiệp 2" : "Hiệp 1"} · ${matchTime}`;
+    }
+  }
+
+  return match.status?.label || "Đang diễn ra";
 }
 
 async function fetchLiveMatches() {
@@ -397,7 +417,10 @@ function mergeLiveMatches(rawMatches) {
     const nextScore = scoreFromLiveMatch(rawMatch);
     const nextStatus = liveStatusFor(rawMatch);
     const scoreChanged = scoreSignature(match.score) !== scoreSignature(nextScore);
-    const statusChanged = match.status?.code !== nextStatus.code || match.status?.label !== nextStatus.label;
+    const statusChanged =
+      match.status?.code !== nextStatus.code ||
+      match.status?.label !== nextStatus.label ||
+      match.status?.matchTime !== nextStatus.matchTime;
 
     if (scoreChanged) {
       match.score = nextScore;
@@ -469,7 +492,7 @@ function matchDisplayStatus(match, now = new Date()) {
 
   if (statusCode != null && liveStatusCodes.has(statusCode)) {
     return {
-      label: match.status?.label || "Đang diễn ra",
+      label: livePeriodLabel(match),
       type: "live"
     };
   }

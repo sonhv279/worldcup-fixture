@@ -18,9 +18,9 @@ const statusLabels = {
   0: "Kết thúc",
   1: "Sắp diễn ra",
   2: "Trước trận",
-  3: "Hiệp 1",
+  3: "Đang diễn ra",
   4: "Nghỉ giữa hiệp",
-  5: "Hiệp 2",
+  5: "Đang diễn ra",
   6: "Hiệp phụ",
   7: "Hiệp phụ 1",
   8: "Nghỉ hiệp phụ",
@@ -236,7 +236,8 @@ function normalizeMatch(match) {
     score: scoreFor(match),
     status: {
       code: match.MatchStatus,
-      label: statusLabels[match.MatchStatus] || "Không rõ"
+      label: statusLabels[match.MatchStatus] || "Không rõ",
+      matchTime: match.MatchTime || null
     },
     stadium
   };
