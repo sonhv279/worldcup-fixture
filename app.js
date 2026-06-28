@@ -1032,51 +1032,6 @@ function renderCalendar() {
     .join("");
 }
 
-function candidateTeamsFor(team, visited = new Set()) {
-  if (!team?.isPlaceholder) {
-    return team ? [team] : [];
-  }
-
-  const reference = placeholderReference(team);
-  if (!reference) {
-    return [];
-  }
-
-  const sourceMatch = matchByOfficialNumber.get(reference.matchNumber);
-  if (!sourceMatch || visited.has(reference.matchNumber)) {
-    return [];
-  }
-
-  const nextVisited = new Set(visited);
-  nextVisited.add(reference.matchNumber);
-  return [
-    ...candidateTeamsFor(sourceMatch.home, nextVisited),
-    ...candidateTeamsFor(sourceMatch.away, nextVisited)
-  ];
-}
-
-function uniqueCandidateTeams(teams) {
-  const seen = new Set();
-  return teams.filter((team) => {
-    const key = team.id || team.abbreviation || team.name;
-    if (seen.has(key)) {
-      return false;
-    }
-    seen.add(key);
-    return true;
-  });
-}
-
-function bracketTeamCandidateHtml(team) {
-  const name = team.name || team.shortName || team.abbreviation || "Chưa xác định";
-  return `
-    <span class="bracket-candidate">
-      ${teamFlagHtml(team, name)}
-      <span>${escapeHtml(name)}</span>
-    </span>
-  `;
-}
-
 function bracketTeamHtml(team) {
   const name = team.name || team.shortName || team.abbreviation || "Chưa xác định";
   const reference = placeholderReference(team);
@@ -1090,17 +1045,9 @@ function bracketTeamHtml(team) {
     `;
   }
 
-  const candidates = uniqueCandidateTeams(candidateTeamsFor(team));
   return `
     <div class="bracket-team is-placeholder">
-      <span class="bracket-team-source">${escapeHtml(name)}</span>
-      ${candidates.length ? `
-        <span class="bracket-candidates">
-          ${candidates.map(bracketTeamCandidateHtml).join("")}
-        </span>
-      ` : `
-        <span class="bracket-candidates">${escapeHtml(resolvedTeamName(team))}</span>
-      `}
+      <span>${escapeHtml(resolvedTeamName(team))}</span>
     </div>
   `;
 }
