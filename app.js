@@ -68,7 +68,46 @@ const monthFormatter = new Intl.DateTimeFormat("vi-VN", {
 
 const shortWeekdays = ["T2", "T3", "T4", "T5", "T6", "T7", "CN"];
 
-const knockoutStages = ["Vòng 1/32", "Vòng 1/8", "Tứ kết", "Bán kết", "Tranh hạng ba", "Chung kết"];
+const bracketStageColumns = [
+  { label: "Vòng 1/32", column: 1 },
+  { label: "Vòng 1/8", column: 2 },
+  { label: "Tứ kết", column: 3 },
+  { label: "Bán kết", column: 4 },
+  { label: "Chung kết", column: 5 }
+];
+const championshipBracketLayout = [
+  { matchNumber: 74, column: 1, row: 1, span: 1 },
+  { matchNumber: 77, column: 1, row: 2, span: 1 },
+  { matchNumber: 73, column: 1, row: 3, span: 1 },
+  { matchNumber: 75, column: 1, row: 4, span: 1 },
+  { matchNumber: 83, column: 1, row: 5, span: 1 },
+  { matchNumber: 84, column: 1, row: 6, span: 1 },
+  { matchNumber: 81, column: 1, row: 7, span: 1 },
+  { matchNumber: 82, column: 1, row: 8, span: 1 },
+  { matchNumber: 76, column: 1, row: 9, span: 1 },
+  { matchNumber: 78, column: 1, row: 10, span: 1 },
+  { matchNumber: 79, column: 1, row: 11, span: 1 },
+  { matchNumber: 80, column: 1, row: 12, span: 1 },
+  { matchNumber: 86, column: 1, row: 13, span: 1 },
+  { matchNumber: 88, column: 1, row: 14, span: 1 },
+  { matchNumber: 85, column: 1, row: 15, span: 1 },
+  { matchNumber: 87, column: 1, row: 16, span: 1 },
+  { matchNumber: 89, column: 2, row: 1, span: 2 },
+  { matchNumber: 90, column: 2, row: 3, span: 2 },
+  { matchNumber: 93, column: 2, row: 5, span: 2 },
+  { matchNumber: 94, column: 2, row: 7, span: 2 },
+  { matchNumber: 91, column: 2, row: 9, span: 2 },
+  { matchNumber: 92, column: 2, row: 11, span: 2 },
+  { matchNumber: 95, column: 2, row: 13, span: 2 },
+  { matchNumber: 96, column: 2, row: 15, span: 2 },
+  { matchNumber: 97, column: 3, row: 1, span: 4 },
+  { matchNumber: 98, column: 3, row: 5, span: 4 },
+  { matchNumber: 99, column: 3, row: 9, span: 4 },
+  { matchNumber: 100, column: 3, row: 13, span: 4 },
+  { matchNumber: 101, column: 4, row: 1, span: 8 },
+  { matchNumber: 102, column: 4, row: 9, span: 8 },
+  { matchNumber: 104, column: 5, row: 1, span: 16 }
+];
 const liveMatchWindowMs = 135 * 60 * 1000;
 const finishedStatusCodes = new Set([0, 10, 12]);
 const liveStatusCodes = new Set([3, 4, 5, 6, 7, 8, 9, 11, 16, 17]);
@@ -1032,15 +1071,45 @@ function renderCalendar() {
     .join("");
 }
 
-function bracketTeamHtml(team) {
+function bracketScoreValue(match, side) {
+  if (!match.score) {
+    return "";
+  }
+
+  const score = side === "home" ? match.score.home : match.score.away;
+  const penalty = side === "home" ? match.score.penaltyHome : match.score.penaltyAway;
+
+  return penalty == null ? String(score) : `${score} (${penalty})`;
+}
+
+function bracketWinnerSide(match) {
+  if (!hasFinalScore(match)) {
+    return null;
+  }
+
+  if (match.score.home !== match.score.away) {
+    return match.score.home > match.score.away ? "home" : "away";
+  }
+
+  if (match.score.penaltyHome != null && match.score.penaltyAway != null) {
+    return match.score.penaltyHome > match.score.penaltyAway ? "home" : "away";
+  }
+
+  return null;
+}
+
+function bracketTeamHtml(team, score = "", isWinner = false) {
   const name = team.name || team.shortName || team.abbreviation || "Chưa xác định";
   const reference = placeholderReference(team);
 
   if (!reference) {
     return `
-      <div class="bracket-team">
-        ${teamFlagHtml(team, name)}
-        <span>${escapeHtml(name)}</span>
+      <div class="bracket-team ${isWinner ? "is-winner" : ""}">
+        <span class="bracket-team-name">
+          ${teamFlagHtml(team, name)}
+          <span>${escapeHtml(name)}</span>
+        </span>
+        ${score ? `<strong class="bracket-team-score">${escapeHtml(score)}</strong>` : ""}
       </div>
     `;
   }
@@ -1048,36 +1117,92 @@ function bracketTeamHtml(team) {
   return `
     <div class="bracket-team is-placeholder">
       <span>${escapeHtml(resolvedTeamName(team))}</span>
+      ${score ? `<strong class="bracket-team-score">${escapeHtml(score)}</strong>` : ""}
     </div>
+  `;
+}
+
+function bracketDestinationsFor(match, knockoutMatches) {
+  return knockoutMatches
+    .flatMap((target) => [
+      { target, reference: placeholderReference(target.home) },
+      { target, reference: placeholderReference(target.away) }
+    ])
+    .filter((item) => item.reference?.matchNumber === Number(match.matchNumber))
+    .sort((a, b) => {
+      if (a.reference.label !== b.reference.label) {
+        return a.reference.label === "Thắng" ? -1 : 1;
+      }
+      return Number(a.target.matchNumber) - Number(b.target.matchNumber);
+    });
+}
+
+function bracketDestinationHtml(match, knockoutMatches) {
+  const destinations = bracketDestinationsFor(match, knockoutMatches);
+  if (destinations.length === 0) {
+    return "";
+  }
+
+  return `
+    <div class="bracket-paths">
+      ${destinations.map(({ target, reference }) => `
+        <span>${escapeHtml(reference.label)} &rarr; Trận ${escapeHtml(target.matchNumber)}</span>
+      `).join("")}
+    </div>
+  `;
+}
+
+function bracketMatchCardHtml(match, knockoutMatches) {
+  const winnerSide = bracketWinnerSide(match);
+  return `
+    <article class="bracket-match">
+      <div class="bracket-meta">
+        <span>Trận ${escapeHtml(match.matchNumber)}</span>
+        <strong>${escapeHtml(match.vietnamTime)} · ${escapeHtml(match.vietnamShortDate)}</strong>
+      </div>
+      <div class="bracket-teams">
+        ${bracketTeamHtml(match.home, bracketScoreValue(match, "home"), winnerSide === "home")}
+        ${bracketTeamHtml(match.away, bracketScoreValue(match, "away"), winnerSide === "away")}
+      </div>
+      ${bracketDestinationHtml(match, knockoutMatches)}
+      <p>${escapeHtml(match.stadium.name)} · ${escapeHtml(match.stadium.city)}</p>
+    </article>
   `;
 }
 
 function renderBracket() {
   const knockoutMatches = state.data.matches.filter((match) => !match.group).sort(compareMatchesByOfficialNumber);
+  const matchByNumber = new Map(knockoutMatches.map((match) => [Number(match.matchNumber), match]));
+  const thirdPlaceMatch = matchByNumber.get(103);
   elements.bracketCount.textContent = `${knockoutMatches.length} trận`;
-  elements.bracketList.innerHTML = knockoutStages
-    .map((stage) => {
-      const matches = knockoutMatches.filter((match) => match.stageVi === stage);
-      return `
-        <section class="bracket-round">
-          <h3>${escapeHtml(stage)}</h3>
-          ${matches.map((match) => `
-            <article class="bracket-match">
-              <div class="bracket-meta">
-                <span>Trận ${escapeHtml(match.matchNumber)}</span>
-                <strong>${escapeHtml(match.vietnamTime)} · ${escapeHtml(match.vietnamShortDate)}</strong>
-              </div>
-              <div class="bracket-teams">
-                ${bracketTeamHtml(match.home)}
-                ${bracketTeamHtml(match.away)}
-              </div>
-              <p>${escapeHtml(match.stadium.name)} · ${escapeHtml(match.stadium.city)}</p>
-            </article>
-          `).join("")}
-        </section>
-      `;
-    })
-    .join("");
+  elements.bracketList.innerHTML = `
+    <div class="bracket-stage-labels">
+      ${bracketStageColumns.map((stage) => `
+        <h3 style="--col: ${stage.column};">${escapeHtml(stage.label)}</h3>
+      `).join("")}
+    </div>
+    <div class="bracket-tree">
+      ${championshipBracketLayout.map((item) => {
+        const match = matchByNumber.get(item.matchNumber);
+        if (!match) {
+          return "";
+        }
+
+        return `
+          <div class="bracket-cell ${item.column > 1 ? "has-sources" : ""} ${item.column < 5 ? "has-target" : "is-final"}"
+            style="--col: ${item.column}; --row: ${item.row}; --span: ${item.span};">
+            ${bracketMatchCardHtml(match, knockoutMatches)}
+          </div>
+        `;
+      }).join("")}
+    </div>
+    ${thirdPlaceMatch ? `
+      <section class="bracket-consolation">
+        <h3>Tranh hạng ba</h3>
+        ${bracketMatchCardHtml(thirdPlaceMatch, knockoutMatches)}
+      </section>
+    ` : ""}
+  `;
 }
 
 function updateFilterFromInputs() {
