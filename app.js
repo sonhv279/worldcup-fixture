@@ -282,12 +282,12 @@ function resolvedTeamName(team) {
     return name;
   }
 
-  const reference = String(name).match(/^(Thắng|Thua) trận (\d+)$/i);
+  const reference = placeholderReference(team);
   if (!reference) {
     return name;
   }
 
-  const sourceMatch = matchByOfficialNumber.get(Number(reference[2]));
+  const sourceMatch = matchByOfficialNumber.get(reference.matchNumber);
   if (!sourceMatch) {
     return name;
   }
@@ -297,15 +297,33 @@ function resolvedTeamName(team) {
   return `${name} (${sourceHome} / ${sourceAway})`;
 }
 
-function teamHtml(team) {
+function placeholderReference(team) {
+  const name = team?.name || team?.shortName || "";
+  const reference = String(name).match(/^(Thắng|Thua) trận (\d+)$/i);
+
+  if (!reference) {
+    return null;
+  }
+
+  return {
+    label: reference[1],
+    matchNumber: Number(reference[2])
+  };
+}
+
+function teamFlagHtml(team, title) {
   const fallback = escapeHtml(team.abbreviation || "TBD");
   const flag = flagEmojiByCountry[team.country] || flagEmojiByCountry[team.abbreviation] || fallback;
   const isEmojiFlag = flag !== fallback;
+  return `<span class="flag ${isEmojiFlag ? "is-emoji" : ""}" title="${escapeHtml(team.abbreviation || title)}">${escapeHtml(flag)}</span>`;
+}
+
+function teamHtml(team) {
   const name = resolvedTeamName(team);
 
   return `
     <div class="team">
-      <span class="flag ${isEmojiFlag ? "is-emoji" : ""}" title="${escapeHtml(team.abbreviation || name)}">${escapeHtml(flag)}</span>
+      ${teamFlagHtml(team, name)}
       <span>${escapeHtml(name)}</span>
     </div>
   `;
@@ -1014,8 +1032,77 @@ function renderCalendar() {
     .join("");
 }
 
-function bracketTeamName(team) {
-  return resolvedTeamName(team);
+function candidateTeamsFor(team, visited = new Set()) {
+  if (!team?.isPlaceholder) {
+    return team ? [team] : [];
+  }
+
+  const reference = placeholderReference(team);
+  if (!reference) {
+    return [];
+  }
+
+  const sourceMatch = matchByOfficialNumber.get(reference.matchNumber);
+  if (!sourceMatch || visited.has(reference.matchNumber)) {
+    return [];
+  }
+
+  const nextVisited = new Set(visited);
+  nextVisited.add(reference.matchNumber);
+  return [
+    ...candidateTeamsFor(sourceMatch.home, nextVisited),
+    ...candidateTeamsFor(sourceMatch.away, nextVisited)
+  ];
+}
+
+function uniqueCandidateTeams(teams) {
+  const seen = new Set();
+  return teams.filter((team) => {
+    const key = team.id || team.abbreviation || team.name;
+    if (seen.has(key)) {
+      return false;
+    }
+    seen.add(key);
+    return true;
+  });
+}
+
+function bracketTeamCandidateHtml(team) {
+  const name = team.name || team.shortName || team.abbreviation || "Chưa xác định";
+  return `
+    <span class="bracket-candidate">
+      ${teamFlagHtml(team, name)}
+      <span>${escapeHtml(name)}</span>
+    </span>
+  `;
+}
+
+function bracketTeamHtml(team) {
+  const name = team.name || team.shortName || team.abbreviation || "Chưa xác định";
+  const reference = placeholderReference(team);
+
+  if (!reference) {
+    return `
+      <div class="bracket-team">
+        ${teamFlagHtml(team, name)}
+        <span>${escapeHtml(name)}</span>
+      </div>
+    `;
+  }
+
+  const candidates = uniqueCandidateTeams(candidateTeamsFor(team));
+  return `
+    <div class="bracket-team is-placeholder">
+      <span class="bracket-team-source">${escapeHtml(name)}</span>
+      ${candidates.length ? `
+        <span class="bracket-candidates">
+          ${candidates.map(bracketTeamCandidateHtml).join("")}
+        </span>
+      ` : `
+        <span class="bracket-candidates">${escapeHtml(resolvedTeamName(team))}</span>
+      `}
+    </div>
+  `;
 }
 
 function renderBracket() {
@@ -1034,8 +1121,8 @@ function renderBracket() {
                 <strong>${escapeHtml(match.vietnamTime)} · ${escapeHtml(match.vietnamShortDate)}</strong>
               </div>
               <div class="bracket-teams">
-                <div>${escapeHtml(bracketTeamName(match.home))}</div>
-                <div>${escapeHtml(bracketTeamName(match.away))}</div>
+                ${bracketTeamHtml(match.home)}
+                ${bracketTeamHtml(match.away)}
               </div>
               <p>${escapeHtml(match.stadium.name)} · ${escapeHtml(match.stadium.city)}</p>
             </article>

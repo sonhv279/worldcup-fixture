@@ -869,12 +869,44 @@ main {
   gap: 6px;
 }
 
-.bracket-teams div {
+.bracket-team {
+  display: flex;
+  align-items: center;
+  gap: 8px;
   border-radius: 6px;
   background: var(--surface-soft);
   padding: 7px 8px;
   color: var(--green-dark);
   font-weight: 900;
+}
+
+.bracket-team.is-placeholder {
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.bracket-team-source {
+  color: var(--green-dark);
+}
+
+.bracket-candidates {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.bracket-candidate {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--card);
+  padding: 3px 7px;
+  color: var(--text);
+  font-size: 0.72rem;
+  font-weight: 800;
 }
 
 .bracket-match p {
