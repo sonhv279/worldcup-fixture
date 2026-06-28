@@ -73,6 +73,7 @@ const liveMatchWindowMs = 135 * 60 * 1000;
 const finishedStatusCodes = new Set([0, 10, 12]);
 const liveStatusCodes = new Set([3, 4, 5, 6, 7, 8, 9, 11, 16, 17]);
 const cancelledStatusCodes = new Set([13]);
+let matchByOfficialNumber = new Map();
 
 const liveStatusLabels = {
   0: "Kết thúc",
@@ -274,15 +275,38 @@ function renderStats() {
   elements.statDays.textContent = days.size;
 }
 
+function resolvedTeamName(team) {
+  const name = team.name || team.shortName || team.abbreviation || "Chưa xác định";
+
+  if (!team.isPlaceholder) {
+    return name;
+  }
+
+  const reference = String(name).match(/^(Thắng|Thua) trận (\d+)$/i);
+  if (!reference) {
+    return name;
+  }
+
+  const sourceMatch = matchByOfficialNumber.get(Number(reference[2]));
+  if (!sourceMatch) {
+    return name;
+  }
+
+  const sourceHome = sourceMatch.home?.name || sourceMatch.placeholderHome || "Chưa xác định";
+  const sourceAway = sourceMatch.away?.name || sourceMatch.placeholderAway || "Chưa xác định";
+  return `${name} (${sourceHome} / ${sourceAway})`;
+}
+
 function teamHtml(team) {
   const fallback = escapeHtml(team.abbreviation || "TBD");
   const flag = flagEmojiByCountry[team.country] || flagEmojiByCountry[team.abbreviation] || fallback;
   const isEmojiFlag = flag !== fallback;
+  const name = resolvedTeamName(team);
 
   return `
     <div class="team">
-      <span class="flag ${isEmojiFlag ? "is-emoji" : ""}" title="${escapeHtml(team.abbreviation || team.name)}">${escapeHtml(flag)}</span>
-      <span>${escapeHtml(team.name)}</span>
+      <span class="flag ${isEmojiFlag ? "is-emoji" : ""}" title="${escapeHtml(team.abbreviation || name)}">${escapeHtml(flag)}</span>
+      <span>${escapeHtml(name)}</span>
     </div>
   `;
 }
@@ -346,12 +370,85 @@ function liveStatusFor(match) {
   };
 }
 
+function liveLocalizedValue(value, fallback = "") {
+  if (value == null) {
+    return fallback;
+  }
+
+  if (typeof value === "string") {
+    return value || fallback;
+  }
+
+  if (Array.isArray(value)) {
+    const item =
+      value.find((entry) => entry.Locale === "en" || entry.Language === "en") ||
+      value.find((entry) => entry.Description || entry.Name) ||
+      value[0];
+    return item?.Description || item?.Name || fallback;
+  }
+
+  return value.Description || value.Name || fallback;
+}
+
+function normalizeLivePlaceholder(value) {
+  if (!value) {
+    return "Chưa xác định";
+  }
+
+  return String(value)
+    .replace(/^W(\d+)$/i, "Thắng trận $1")
+    .replace(/^L(\d+)$/i, "Thua trận $1");
+}
+
+function teamFromLiveMatch(team, placeholder) {
+  const label = normalizeLivePlaceholder(placeholder);
+
+  if (!team) {
+    return {
+      id: null,
+      name: label,
+      shortName: label,
+      abbreviation: "",
+      country: "",
+      flagUrl: null,
+      isPlaceholder: true
+    };
+  }
+
+  const name = liveLocalizedValue(team.TeamName, team.ShortClubName || team.Abbreviation || "Chưa xác định");
+
+  return {
+    id: team.IdTeam || null,
+    name,
+    shortName: team.ShortClubName || name,
+    abbreviation: team.Abbreviation || "",
+    country: team.IdCountry || "",
+    flagUrl: team.PictureUrl ? team.PictureUrl.replace("{format}", "png").replace("{size}", "2") : null,
+    isPlaceholder: false
+  };
+}
+
 function scoreSignature(score) {
   if (!score) {
     return "";
   }
 
   return [score.home, score.away, score.penaltyHome ?? "", score.penaltyAway ?? ""].join(":");
+}
+
+function teamSignature(team) {
+  if (!team) {
+    return "";
+  }
+
+  return [
+    team.id ?? "",
+    team.name ?? "",
+    team.shortName ?? "",
+    team.abbreviation ?? "",
+    team.country ?? "",
+    team.isPlaceholder ? "placeholder" : "team"
+  ].join(":");
 }
 
 function matchStatusCode(match) {
@@ -416,7 +513,12 @@ function mergeLiveMatches(rawMatches) {
 
     const nextScore = scoreFromLiveMatch(rawMatch);
     const nextStatus = liveStatusFor(rawMatch);
+    const nextHome = teamFromLiveMatch(rawMatch.Home, rawMatch.PlaceHolderA);
+    const nextAway = teamFromLiveMatch(rawMatch.Away, rawMatch.PlaceHolderB);
     const scoreChanged = scoreSignature(match.score) !== scoreSignature(nextScore);
+    const teamsChanged =
+      teamSignature(match.home) !== teamSignature(nextHome) ||
+      teamSignature(match.away) !== teamSignature(nextAway);
     const statusChanged =
       match.status?.code !== nextStatus.code ||
       match.status?.label !== nextStatus.label ||
@@ -424,6 +526,14 @@ function mergeLiveMatches(rawMatches) {
 
     if (scoreChanged) {
       match.score = nextScore;
+      changed = true;
+    }
+
+    if (teamsChanged) {
+      match.home = nextHome;
+      match.away = nextAway;
+      match.placeholderHome = normalizeLivePlaceholder(rawMatch.PlaceHolderA);
+      match.placeholderAway = normalizeLivePlaceholder(rawMatch.PlaceHolderB);
       changed = true;
     }
 
@@ -584,9 +694,9 @@ function matchesQuery(match, query) {
     match.stage,
     match.stageVi,
     match.group,
-    match.home.name,
+    resolvedTeamName(match.home),
     match.home.abbreviation,
-    match.away.name,
+    resolvedTeamName(match.away),
     match.away.abbreviation,
     match.stadium.name,
     match.stadium.city,
@@ -905,7 +1015,7 @@ function renderCalendar() {
 }
 
 function bracketTeamName(team) {
-  return team.name || team.shortName || team.abbreviation || "Chưa xác định";
+  return resolvedTeamName(team);
 }
 
 function renderBracket() {
@@ -1020,6 +1130,7 @@ async function init() {
   try {
     state.data = await loadData();
     assignDisplayNumbers(state.data.matches);
+    matchByOfficialNumber = new Map(state.data.matches.map((match) => [Number(match.matchNumber), match]));
     setupFilters();
     renderStats();
     renderNextMatch();

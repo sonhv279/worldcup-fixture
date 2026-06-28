@@ -1,5 +1,5 @@
 window.__WORLD_CUP_2026_DATA__ = {
-  "generatedAt": "2026-06-12T04:18:39.702Z",
+  "generatedAt": "2026-06-28T06:34:49.974Z",
   "sourceUrl": "https://api.fifa.com/api/v3/calendar/matches?idSeason=285023&language=en&count=200",
   "idCompetition": "17",
   "idSeason": "285023",
@@ -45,7 +45,8 @@ window.__WORLD_CUP_2026_DATA__ = {
       },
       "status": {
         "code": 0,
-        "label": "Kết thúc"
+        "label": "Kết thúc",
+        "matchTime": "98'"
       },
       "stadium": {
         "id": "400222084",
@@ -97,7 +98,8 @@ window.__WORLD_CUP_2026_DATA__ = {
       },
       "status": {
         "code": 0,
-        "label": "Kết thúc"
+        "label": "Kết thúc",
+        "matchTime": "97'"
       },
       "stadium": {
         "id": "400252150",
@@ -141,10 +143,16 @@ window.__WORLD_CUP_2026_DATA__ = {
       },
       "placeholderHome": "B1",
       "placeholderAway": "B2",
-      "score": null,
+      "score": {
+        "home": 1,
+        "away": 1,
+        "penaltyHome": null,
+        "penaltyAway": null
+      },
       "status": {
-        "code": 1,
-        "label": "Sắp diễn ra"
+        "code": 0,
+        "label": "Kết thúc",
+        "matchTime": "97'"
       },
       "stadium": {
         "id": "400242032",
@@ -188,10 +196,16 @@ window.__WORLD_CUP_2026_DATA__ = {
       },
       "placeholderHome": "D1",
       "placeholderAway": "D2",
-      "score": null,
+      "score": {
+        "home": 4,
+        "away": 1,
+        "penaltyHome": null,
+        "penaltyAway": null
+      },
       "status": {
-        "code": 1,
-        "label": "Sắp diễn ra"
+        "code": 0,
+        "label": "Kết thúc",
+        "matchTime": "99'"
       },
       "stadium": {
         "id": "400017978",
@@ -235,10 +249,16 @@ window.__WORLD_CUP_2026_DATA__ = {
       },
       "placeholderHome": "B3",
       "placeholderAway": "B4",
-      "score": null,
+      "score": {
+        "home": 1,
+        "away": 1,
+        "penaltyHome": null,
+        "penaltyAway": null
+      },
       "status": {
-        "code": 1,
-        "label": "Sắp diễn ra"
+        "code": 0,
+        "label": "Kết thúc",
+        "matchTime": "98'"
       },
       "stadium": {
         "id": "400257521",
@@ -282,10 +302,16 @@ window.__WORLD_CUP_2026_DATA__ = {
       },
       "placeholderHome": "C1",
       "placeholderAway": "C2",
-      "score": null,
+      "score": {
+        "home": 1,
+        "away": 1,
+        "penaltyHome": null,
+        "penaltyAway": null
+      },
       "status": {
-        "code": 1,
-        "label": "Sắp diễn ra"
+        "code": 0,
+        "label": "Kết thúc",
+        "matchTime": "101'"
       },
       "stadium": {
         "id": "400257536",
@@ -329,10 +355,16 @@ window.__WORLD_CUP_2026_DATA__ = {
       },
       "placeholderHome": "C3",
       "placeholderAway": "C4",
-      "score": null,
+      "score": {
+        "home": 0,
+        "away": 1,
+        "penaltyHome": null,
+        "penaltyAway": null
+      },
       "status": {
-        "code": 1,
-        "label": "Sắp diễn ra"
+        "code": 0,
+        "label": "Kết thúc",
+        "matchTime": "99'"
       },
       "stadium": {
         "id": "400248623",
@@ -376,10 +408,16 @@ window.__WORLD_CUP_2026_DATA__ = {
       },
       "placeholderHome": "D3",
       "placeholderAway": "D4",
-      "score": null,
+      "score": {
+        "home": 2,
+        "away": 0,
+        "penaltyHome": null,
+        "penaltyAway": null
+      },
       "status": {
-        "code": 1,
-        "label": "Sắp diễn ra"
+        "code": 0,
+        "label": "Kết thúc",
+        "matchTime": "97'"
       },
       "stadium": {
         "id": "400248370",
@@ -423,10 +461,16 @@ window.__WORLD_CUP_2026_DATA__ = {
       },
       "placeholderHome": "E1",
       "placeholderAway": "E2",
-      "score": null,
+      "score": {
+        "home": 7,
+        "away": 1,
+        "penaltyHome": null,
+        "penaltyAway": null
+      },
       "status": {
-        "code": 1,
-        "label": "Sắp diễn ra"
+        "code": 0,
+        "label": "Kết thúc",
+        "matchTime": "96'"
       },
       "stadium": {
         "id": "400249385",
@@ -470,10 +514,16 @@ window.__WORLD_CUP_2026_DATA__ = {
       },
       "placeholderHome": "F1",
       "placeholderAway": "F2",
-      "score": null,
+      "score": {
+        "home": 2,
+        "away": 2,
+        "penaltyHome": null,
+        "penaltyAway": null
+      },
       "status": {
-        "code": 1,
-        "label": "Sắp diễn ra"
+        "code": 0,
+        "label": "Kết thúc",
+        "matchTime": "97'"
       },
       "stadium": {
         "id": "400257526",
@@ -517,10 +567,16 @@ window.__WORLD_CUP_2026_DATA__ = {
       },
       "placeholderHome": "E3",
       "placeholderAway": "E4",
-      "score": null,
+      "score": {
+        "home": 1,
+        "away": 0,
+        "penaltyHome": null,
+        "penaltyAway": null
+      },
       "status": {
-        "code": 1,
-        "label": "Sắp diễn ra"
+        "code": 0,
+        "label": "Kết thúc",
+        "matchTime": "99'"
       },
       "stadium": {
         "id": "400248622",
@@ -564,10 +620,16 @@ window.__WORLD_CUP_2026_DATA__ = {
       },
       "placeholderHome": "F3",
       "placeholderAway": "F4",
-      "score": null,
+      "score": {
+        "home": 5,
+        "away": 1,
+        "penaltyHome": null,
+        "penaltyAway": null
+      },
       "status": {
-        "code": 1,
-        "label": "Sắp diễn ra"
+        "code": 0,
+        "label": "Kết thúc",
+        "matchTime": "97'"
       },
       "stadium": {
         "id": "400238450",
@@ -611,10 +673,16 @@ window.__WORLD_CUP_2026_DATA__ = {
       },
       "placeholderHome": "H1",
       "placeholderAway": "H2",
-      "score": null,
+      "score": {
+        "home": 0,
+        "away": 0,
+        "penaltyHome": null,
+        "penaltyAway": null
+      },
       "status": {
-        "code": 1,
-        "label": "Sắp diễn ra"
+        "code": 0,
+        "label": "Kết thúc",
+        "matchTime": "96'"
       },
       "stadium": {
         "id": "400098290",
@@ -658,10 +726,16 @@ window.__WORLD_CUP_2026_DATA__ = {
       },
       "placeholderHome": "G1",
       "placeholderAway": "G2",
-      "score": null,
+      "score": {
+        "home": 1,
+        "away": 1,
+        "penaltyHome": null,
+        "penaltyAway": null
+      },
       "status": {
-        "code": 1,
-        "label": "Sắp diễn ra"
+        "code": 0,
+        "label": "Kết thúc",
+        "matchTime": "96'"
       },
       "stadium": {
         "id": "400216606",
@@ -705,10 +779,16 @@ window.__WORLD_CUP_2026_DATA__ = {
       },
       "placeholderHome": "H3",
       "placeholderAway": "H4",
-      "score": null,
+      "score": {
+        "home": 1,
+        "away": 1,
+        "penaltyHome": null,
+        "penaltyAway": null
+      },
       "status": {
-        "code": 1,
-        "label": "Sắp diễn ra"
+        "code": 0,
+        "label": "Kết thúc",
+        "matchTime": "99'"
       },
       "stadium": {
         "id": "400257525",
@@ -752,10 +832,16 @@ window.__WORLD_CUP_2026_DATA__ = {
       },
       "placeholderHome": "G3",
       "placeholderAway": "G4",
-      "score": null,
+      "score": {
+        "home": 2,
+        "away": 2,
+        "penaltyHome": null,
+        "penaltyAway": null
+      },
       "status": {
-        "code": 1,
-        "label": "Sắp diễn ra"
+        "code": 0,
+        "label": "Kết thúc",
+        "matchTime": "96'"
       },
       "stadium": {
         "id": "400017978",
@@ -799,10 +885,16 @@ window.__WORLD_CUP_2026_DATA__ = {
       },
       "placeholderHome": "I1",
       "placeholderAway": "I2",
-      "score": null,
+      "score": {
+        "home": 3,
+        "away": 1,
+        "penaltyHome": null,
+        "penaltyAway": null
+      },
       "status": {
-        "code": 1,
-        "label": "Sắp diễn ra"
+        "code": 0,
+        "label": "Kết thúc",
+        "matchTime": "100'"
       },
       "stadium": {
         "id": "400257536",
@@ -846,10 +938,16 @@ window.__WORLD_CUP_2026_DATA__ = {
       },
       "placeholderHome": "I3",
       "placeholderAway": "I4",
-      "score": null,
+      "score": {
+        "home": 1,
+        "away": 4,
+        "penaltyHome": null,
+        "penaltyAway": null
+      },
       "status": {
-        "code": 1,
-        "label": "Sắp diễn ra"
+        "code": 0,
+        "label": "Kết thúc",
+        "matchTime": "98'"
       },
       "stadium": {
         "id": "400248623",
@@ -893,10 +991,16 @@ window.__WORLD_CUP_2026_DATA__ = {
       },
       "placeholderHome": "J1",
       "placeholderAway": "J2",
-      "score": null,
+      "score": {
+        "home": 3,
+        "away": 0,
+        "penaltyHome": null,
+        "penaltyAway": null
+      },
       "status": {
-        "code": 1,
-        "label": "Sắp diễn ra"
+        "code": 0,
+        "label": "Kết thúc",
+        "matchTime": "97'"
       },
       "stadium": {
         "id": "400254717",
@@ -940,10 +1044,16 @@ window.__WORLD_CUP_2026_DATA__ = {
       },
       "placeholderHome": "J3",
       "placeholderAway": "J4",
-      "score": null,
+      "score": {
+        "home": 3,
+        "away": 1,
+        "penaltyHome": null,
+        "penaltyAway": null
+      },
       "status": {
-        "code": 1,
-        "label": "Sắp diễn ra"
+        "code": 0,
+        "label": "Kết thúc",
+        "matchTime": "103'"
       },
       "stadium": {
         "id": "400257521",
@@ -987,10 +1097,16 @@ window.__WORLD_CUP_2026_DATA__ = {
       },
       "placeholderHome": "K1",
       "placeholderAway": "K2",
-      "score": null,
+      "score": {
+        "home": 1,
+        "away": 1,
+        "penaltyHome": null,
+        "penaltyAway": null
+      },
       "status": {
-        "code": 1,
-        "label": "Sắp diễn ra"
+        "code": 0,
+        "label": "Kết thúc",
+        "matchTime": "95'"
       },
       "stadium": {
         "id": "400249385",
@@ -1034,10 +1150,16 @@ window.__WORLD_CUP_2026_DATA__ = {
       },
       "placeholderHome": "Thua trận 1",
       "placeholderAway": "Thua trận 2",
-      "score": null,
+      "score": {
+        "home": 4,
+        "away": 2,
+        "penaltyHome": null,
+        "penaltyAway": null
+      },
       "status": {
-        "code": 1,
-        "label": "Sắp diễn ra"
+        "code": 0,
+        "label": "Kết thúc",
+        "matchTime": "97'"
       },
       "stadium": {
         "id": "400257526",
@@ -1081,10 +1203,16 @@ window.__WORLD_CUP_2026_DATA__ = {
       },
       "placeholderHome": "Thua trận 3",
       "placeholderAway": "Thua trận 4",
-      "score": null,
+      "score": {
+        "home": 1,
+        "away": 0,
+        "penaltyHome": null,
+        "penaltyAway": null
+      },
       "status": {
-        "code": 1,
-        "label": "Sắp diễn ra"
+        "code": 0,
+        "label": "Kết thúc",
+        "matchTime": "102'"
       },
       "stadium": {
         "id": "400242032",
@@ -1128,10 +1256,16 @@ window.__WORLD_CUP_2026_DATA__ = {
       },
       "placeholderHome": "K3",
       "placeholderAway": "K4",
-      "score": null,
+      "score": {
+        "home": 1,
+        "away": 3,
+        "penaltyHome": null,
+        "penaltyAway": null
+      },
       "status": {
-        "code": 1,
-        "label": "Sắp diễn ra"
+        "code": 0,
+        "label": "Kết thúc",
+        "matchTime": "101'"
       },
       "stadium": {
         "id": "400222084",
@@ -1175,10 +1309,16 @@ window.__WORLD_CUP_2026_DATA__ = {
       },
       "placeholderHome": "A4",
       "placeholderAway": "A2",
-      "score": null,
+      "score": {
+        "home": 1,
+        "away": 1,
+        "penaltyHome": null,
+        "penaltyAway": null
+      },
       "status": {
-        "code": 1,
-        "label": "Sắp diễn ra"
+        "code": 0,
+        "label": "Kết thúc",
+        "matchTime": "98'"
       },
       "stadium": {
         "id": "400098290",
@@ -1222,10 +1362,16 @@ window.__WORLD_CUP_2026_DATA__ = {
       },
       "placeholderHome": "B4",
       "placeholderAway": "B2",
-      "score": null,
+      "score": {
+        "home": 4,
+        "away": 1,
+        "penaltyHome": null,
+        "penaltyAway": null
+      },
       "status": {
-        "code": 1,
-        "label": "Sắp diễn ra"
+        "code": 0,
+        "label": "Kết thúc",
+        "matchTime": "98'"
       },
       "stadium": {
         "id": "400017978",
@@ -1269,10 +1415,16 @@ window.__WORLD_CUP_2026_DATA__ = {
       },
       "placeholderHome": "B1",
       "placeholderAway": "B3",
-      "score": null,
+      "score": {
+        "home": 6,
+        "away": 0,
+        "penaltyHome": null,
+        "penaltyAway": null
+      },
       "status": {
-        "code": 1,
-        "label": "Sắp diễn ra"
+        "code": 0,
+        "label": "Kết thúc",
+        "matchTime": "100'"
       },
       "stadium": {
         "id": "400248370",
@@ -1316,10 +1468,16 @@ window.__WORLD_CUP_2026_DATA__ = {
       },
       "placeholderHome": "A1",
       "placeholderAway": "A3",
-      "score": null,
+      "score": {
+        "home": 1,
+        "away": 0,
+        "penaltyHome": null,
+        "penaltyAway": null
+      },
       "status": {
-        "code": 1,
-        "label": "Sắp diễn ra"
+        "code": 0,
+        "label": "Kết thúc",
+        "matchTime": "97'"
       },
       "stadium": {
         "id": "400252150",
@@ -1363,10 +1521,16 @@ window.__WORLD_CUP_2026_DATA__ = {
       },
       "placeholderHome": "D1",
       "placeholderAway": "D3",
-      "score": null,
+      "score": {
+        "home": 2,
+        "away": 0,
+        "penaltyHome": null,
+        "penaltyAway": null
+      },
       "status": {
-        "code": 1,
-        "label": "Sắp diễn ra"
+        "code": 0,
+        "label": "Kết thúc",
+        "matchTime": "99'"
       },
       "stadium": {
         "id": "400216606",
@@ -1410,10 +1574,16 @@ window.__WORLD_CUP_2026_DATA__ = {
       },
       "placeholderHome": "C4",
       "placeholderAway": "C2",
-      "score": null,
+      "score": {
+        "home": 0,
+        "away": 1,
+        "penaltyHome": null,
+        "penaltyAway": null
+      },
       "status": {
-        "code": 1,
-        "label": "Sắp diễn ra"
+        "code": 0,
+        "label": "Kết thúc",
+        "matchTime": "97'"
       },
       "stadium": {
         "id": "400248623",
@@ -1457,10 +1627,16 @@ window.__WORLD_CUP_2026_DATA__ = {
       },
       "placeholderHome": "C1",
       "placeholderAway": "C3",
-      "score": null,
+      "score": {
+        "home": 3,
+        "away": 0,
+        "penaltyHome": null,
+        "penaltyAway": null
+      },
       "status": {
-        "code": 1,
-        "label": "Sắp diễn ra"
+        "code": 0,
+        "label": "Kết thúc",
+        "matchTime": "96'"
       },
       "stadium": {
         "id": "400248622",
@@ -1504,10 +1680,16 @@ window.__WORLD_CUP_2026_DATA__ = {
       },
       "placeholderHome": "D4",
       "placeholderAway": "D2",
-      "score": null,
+      "score": {
+        "home": 0,
+        "away": 1,
+        "penaltyHome": null,
+        "penaltyAway": null
+      },
       "status": {
-        "code": 1,
-        "label": "Sắp diễn ra"
+        "code": 0,
+        "label": "Kết thúc",
+        "matchTime": "99'"
       },
       "stadium": {
         "id": "400257521",
@@ -1551,10 +1733,16 @@ window.__WORLD_CUP_2026_DATA__ = {
       },
       "placeholderHome": "F1",
       "placeholderAway": "F3",
-      "score": null,
+      "score": {
+        "home": 5,
+        "away": 1,
+        "penaltyHome": null,
+        "penaltyAway": null
+      },
       "status": {
-        "code": 1,
-        "label": "Sắp diễn ra"
+        "code": 0,
+        "label": "Kết thúc",
+        "matchTime": "96'"
       },
       "stadium": {
         "id": "400249385",
@@ -1598,10 +1786,16 @@ window.__WORLD_CUP_2026_DATA__ = {
       },
       "placeholderHome": "E1",
       "placeholderAway": "E3",
-      "score": null,
+      "score": {
+        "home": 2,
+        "away": 1,
+        "penaltyHome": null,
+        "penaltyAway": null
+      },
       "status": {
-        "code": 1,
-        "label": "Sắp diễn ra"
+        "code": 0,
+        "label": "Kết thúc",
+        "matchTime": "98'"
       },
       "stadium": {
         "id": "400242032",
@@ -1645,10 +1839,16 @@ window.__WORLD_CUP_2026_DATA__ = {
       },
       "placeholderHome": "E4",
       "placeholderAway": "E2",
-      "score": null,
+      "score": {
+        "home": 0,
+        "away": 0,
+        "penaltyHome": null,
+        "penaltyAway": null
+      },
       "status": {
-        "code": 1,
-        "label": "Sắp diễn ra"
+        "code": 0,
+        "label": "Kết thúc",
+        "matchTime": "96'"
       },
       "stadium": {
         "id": "400254717",
@@ -1692,10 +1892,16 @@ window.__WORLD_CUP_2026_DATA__ = {
       },
       "placeholderHome": "F4",
       "placeholderAway": "F2",
-      "score": null,
+      "score": {
+        "home": 0,
+        "away": 4,
+        "penaltyHome": null,
+        "penaltyAway": null
+      },
       "status": {
-        "code": 1,
-        "label": "Sắp diễn ra"
+        "code": 0,
+        "label": "Kết thúc",
+        "matchTime": "97'"
       },
       "stadium": {
         "id": "400238450",
@@ -1739,10 +1945,16 @@ window.__WORLD_CUP_2026_DATA__ = {
       },
       "placeholderHome": "H1",
       "placeholderAway": "H3",
-      "score": null,
+      "score": {
+        "home": 4,
+        "away": 0,
+        "penaltyHome": null,
+        "penaltyAway": null
+      },
       "status": {
-        "code": 1,
-        "label": "Sắp diễn ra"
+        "code": 0,
+        "label": "Kết thúc",
+        "matchTime": "99'"
       },
       "stadium": {
         "id": "400098290",
@@ -1786,10 +1998,16 @@ window.__WORLD_CUP_2026_DATA__ = {
       },
       "placeholderHome": "G1",
       "placeholderAway": "G3",
-      "score": null,
+      "score": {
+        "home": 0,
+        "away": 0,
+        "penaltyHome": null,
+        "penaltyAway": null
+      },
       "status": {
-        "code": 1,
-        "label": "Sắp diễn ra"
+        "code": 0,
+        "label": "Kết thúc",
+        "matchTime": "96'"
       },
       "stadium": {
         "id": "400017978",
@@ -1833,10 +2051,16 @@ window.__WORLD_CUP_2026_DATA__ = {
       },
       "placeholderHome": "H4",
       "placeholderAway": "H2",
-      "score": null,
+      "score": {
+        "home": 2,
+        "away": 2,
+        "penaltyHome": null,
+        "penaltyAway": null
+      },
       "status": {
-        "code": 1,
-        "label": "Sắp diễn ra"
+        "code": 0,
+        "label": "Kết thúc",
+        "matchTime": "99'"
       },
       "stadium": {
         "id": "400257525",
@@ -1880,10 +2104,16 @@ window.__WORLD_CUP_2026_DATA__ = {
       },
       "placeholderHome": "G4",
       "placeholderAway": "G2",
-      "score": null,
+      "score": {
+        "home": 1,
+        "away": 3,
+        "penaltyHome": null,
+        "penaltyAway": null
+      },
       "status": {
-        "code": 1,
-        "label": "Sắp diễn ra"
+        "code": 0,
+        "label": "Kết thúc",
+        "matchTime": "101'"
       },
       "stadium": {
         "id": "400248370",
@@ -1927,10 +2157,16 @@ window.__WORLD_CUP_2026_DATA__ = {
       },
       "placeholderHome": "J1",
       "placeholderAway": "J3",
-      "score": null,
+      "score": {
+        "home": 2,
+        "away": 0,
+        "penaltyHome": null,
+        "penaltyAway": null
+      },
       "status": {
-        "code": 1,
-        "label": "Sắp diễn ra"
+        "code": 0,
+        "label": "Kết thúc",
+        "matchTime": "98'"
       },
       "stadium": {
         "id": "400257526",
@@ -1974,10 +2210,16 @@ window.__WORLD_CUP_2026_DATA__ = {
       },
       "placeholderHome": "I1",
       "placeholderAway": "I3",
-      "score": null,
+      "score": {
+        "home": 3,
+        "away": 0,
+        "penaltyHome": null,
+        "penaltyAway": null
+      },
       "status": {
-        "code": 1,
-        "label": "Sắp diễn ra"
+        "code": 0,
+        "label": "Kết thúc",
+        "matchTime": "93'"
       },
       "stadium": {
         "id": "400248622",
@@ -2021,10 +2263,16 @@ window.__WORLD_CUP_2026_DATA__ = {
       },
       "placeholderHome": "I4",
       "placeholderAway": "I2",
-      "score": null,
+      "score": {
+        "home": 3,
+        "away": 2,
+        "penaltyHome": null,
+        "penaltyAway": null
+      },
       "status": {
-        "code": 1,
-        "label": "Sắp diễn ra"
+        "code": 0,
+        "label": "Kết thúc",
+        "matchTime": "101'"
       },
       "stadium": {
         "id": "400257536",
@@ -2068,10 +2316,16 @@ window.__WORLD_CUP_2026_DATA__ = {
       },
       "placeholderHome": "J4",
       "placeholderAway": "J2",
-      "score": null,
+      "score": {
+        "home": 1,
+        "away": 2,
+        "penaltyHome": null,
+        "penaltyAway": null
+      },
       "status": {
-        "code": 1,
-        "label": "Sắp diễn ra"
+        "code": 0,
+        "label": "Kết thúc",
+        "matchTime": "98'"
       },
       "stadium": {
         "id": "400257521",
@@ -2115,10 +2369,16 @@ window.__WORLD_CUP_2026_DATA__ = {
       },
       "placeholderHome": "K1",
       "placeholderAway": "K3",
-      "score": null,
+      "score": {
+        "home": 5,
+        "away": 0,
+        "penaltyHome": null,
+        "penaltyAway": null
+      },
       "status": {
-        "code": 1,
-        "label": "Sắp diễn ra"
+        "code": 0,
+        "label": "Kết thúc",
+        "matchTime": "96'"
       },
       "stadium": {
         "id": "400249385",
@@ -2162,10 +2422,16 @@ window.__WORLD_CUP_2026_DATA__ = {
       },
       "placeholderHome": "Thua trận 1",
       "placeholderAway": "Thua trận 3",
-      "score": null,
+      "score": {
+        "home": 0,
+        "away": 0,
+        "penaltyHome": null,
+        "penaltyAway": null
+      },
       "status": {
-        "code": 1,
-        "label": "Sắp diễn ra"
+        "code": 0,
+        "label": "Kết thúc",
+        "matchTime": "97'"
       },
       "stadium": {
         "id": "400248623",
@@ -2209,10 +2475,16 @@ window.__WORLD_CUP_2026_DATA__ = {
       },
       "placeholderHome": "Thua trận 4",
       "placeholderAway": "Thua trận 2",
-      "score": null,
+      "score": {
+        "home": 0,
+        "away": 1,
+        "penaltyHome": null,
+        "penaltyAway": null
+      },
       "status": {
-        "code": 1,
-        "label": "Sắp diễn ra"
+        "code": 0,
+        "label": "Kết thúc",
+        "matchTime": "96'"
       },
       "stadium": {
         "id": "400242032",
@@ -2256,10 +2528,16 @@ window.__WORLD_CUP_2026_DATA__ = {
       },
       "placeholderHome": "K4",
       "placeholderAway": "K2",
-      "score": null,
+      "score": {
+        "home": 1,
+        "away": 0,
+        "penaltyHome": null,
+        "penaltyAway": null
+      },
       "status": {
-        "code": 1,
-        "label": "Sắp diễn ra"
+        "code": 0,
+        "label": "Kết thúc",
+        "matchTime": "97'"
       },
       "stadium": {
         "id": "400252150",
@@ -2303,10 +2581,16 @@ window.__WORLD_CUP_2026_DATA__ = {
       },
       "placeholderHome": "B4",
       "placeholderAway": "B1",
-      "score": null,
+      "score": {
+        "home": 2,
+        "away": 1,
+        "penaltyHome": null,
+        "penaltyAway": null
+      },
       "status": {
-        "code": 1,
-        "label": "Sắp diễn ra"
+        "code": 0,
+        "label": "Kết thúc",
+        "matchTime": "97'"
       },
       "stadium": {
         "id": "400248370",
@@ -2350,10 +2634,16 @@ window.__WORLD_CUP_2026_DATA__ = {
       },
       "placeholderHome": "B2",
       "placeholderAway": "B3",
-      "score": null,
+      "score": {
+        "home": 3,
+        "away": 1,
+        "penaltyHome": null,
+        "penaltyAway": null
+      },
       "status": {
-        "code": 1,
-        "label": "Sắp diễn ra"
+        "code": 0,
+        "label": "Kết thúc",
+        "matchTime": "97'"
       },
       "stadium": {
         "id": "400216606",
@@ -2397,10 +2687,16 @@ window.__WORLD_CUP_2026_DATA__ = {
       },
       "placeholderHome": "C4",
       "placeholderAway": "C1",
-      "score": null,
+      "score": {
+        "home": 0,
+        "away": 3,
+        "penaltyHome": null,
+        "penaltyAway": null
+      },
       "status": {
-        "code": 1,
-        "label": "Sắp diễn ra"
+        "code": 0,
+        "label": "Kết thúc",
+        "matchTime": "97'"
       },
       "stadium": {
         "id": "400257525",
@@ -2444,10 +2740,16 @@ window.__WORLD_CUP_2026_DATA__ = {
       },
       "placeholderHome": "C2",
       "placeholderAway": "C3",
-      "score": null,
+      "score": {
+        "home": 4,
+        "away": 2,
+        "penaltyHome": null,
+        "penaltyAway": null
+      },
       "status": {
-        "code": 1,
-        "label": "Sắp diễn ra"
+        "code": 0,
+        "label": "Kết thúc",
+        "matchTime": "99'"
       },
       "stadium": {
         "id": "400098290",
@@ -2491,10 +2793,16 @@ window.__WORLD_CUP_2026_DATA__ = {
       },
       "placeholderHome": "A4",
       "placeholderAway": "A1",
-      "score": null,
+      "score": {
+        "home": 0,
+        "away": 3,
+        "penaltyHome": null,
+        "penaltyAway": null
+      },
       "status": {
-        "code": 1,
-        "label": "Sắp diễn ra"
+        "code": 0,
+        "label": "Kết thúc",
+        "matchTime": "97'"
       },
       "stadium": {
         "id": "400222084",
@@ -2538,10 +2846,16 @@ window.__WORLD_CUP_2026_DATA__ = {
       },
       "placeholderHome": "A2",
       "placeholderAway": "A3",
-      "score": null,
+      "score": {
+        "home": 1,
+        "away": 0,
+        "penaltyHome": null,
+        "penaltyAway": null
+      },
       "status": {
-        "code": 1,
-        "label": "Sắp diễn ra"
+        "code": 0,
+        "label": "Kết thúc",
+        "matchTime": "97'"
       },
       "stadium": {
         "id": "400238450",
@@ -2585,10 +2899,16 @@ window.__WORLD_CUP_2026_DATA__ = {
       },
       "placeholderHome": "E2",
       "placeholderAway": "E3",
-      "score": null,
+      "score": {
+        "home": 0,
+        "away": 2,
+        "penaltyHome": null,
+        "penaltyAway": null
+      },
       "status": {
-        "code": 1,
-        "label": "Sắp diễn ra"
+        "code": 0,
+        "label": "Kết thúc",
+        "matchTime": "97'"
       },
       "stadium": {
         "id": "400248622",
@@ -2632,10 +2952,16 @@ window.__WORLD_CUP_2026_DATA__ = {
       },
       "placeholderHome": "E4",
       "placeholderAway": "E1",
-      "score": null,
+      "score": {
+        "home": 2,
+        "away": 1,
+        "penaltyHome": null,
+        "penaltyAway": null
+      },
       "status": {
-        "code": 1,
-        "label": "Sắp diễn ra"
+        "code": 0,
+        "label": "Kết thúc",
+        "matchTime": "98'"
       },
       "stadium": {
         "id": "400257536",
@@ -2679,10 +3005,16 @@ window.__WORLD_CUP_2026_DATA__ = {
       },
       "placeholderHome": "F2",
       "placeholderAway": "F3",
-      "score": null,
+      "score": {
+        "home": 1,
+        "away": 1,
+        "penaltyHome": null,
+        "penaltyAway": null
+      },
       "status": {
-        "code": 1,
-        "label": "Sắp diễn ra"
+        "code": 0,
+        "label": "Kết thúc",
+        "matchTime": "98'"
       },
       "stadium": {
         "id": "400257526",
@@ -2726,10 +3058,16 @@ window.__WORLD_CUP_2026_DATA__ = {
       },
       "placeholderHome": "F4",
       "placeholderAway": "F1",
-      "score": null,
+      "score": {
+        "home": 1,
+        "away": 3,
+        "penaltyHome": null,
+        "penaltyAway": null
+      },
       "status": {
-        "code": 1,
-        "label": "Sắp diễn ra"
+        "code": 0,
+        "label": "Kết thúc",
+        "matchTime": "96'"
       },
       "stadium": {
         "id": "400254717",
@@ -2773,10 +3111,16 @@ window.__WORLD_CUP_2026_DATA__ = {
       },
       "placeholderHome": "D4",
       "placeholderAway": "D1",
-      "score": null,
+      "score": {
+        "home": 3,
+        "away": 2,
+        "penaltyHome": null,
+        "penaltyAway": null
+      },
       "status": {
-        "code": 1,
-        "label": "Sắp diễn ra"
+        "code": 0,
+        "label": "Kết thúc",
+        "matchTime": "99'"
       },
       "stadium": {
         "id": "400017978",
@@ -2820,10 +3164,16 @@ window.__WORLD_CUP_2026_DATA__ = {
       },
       "placeholderHome": "D2",
       "placeholderAway": "D3",
-      "score": null,
+      "score": {
+        "home": 0,
+        "away": 0,
+        "penaltyHome": null,
+        "penaltyAway": null
+      },
       "status": {
-        "code": 1,
-        "label": "Sắp diễn ra"
+        "code": 0,
+        "label": "Kết thúc",
+        "matchTime": "96'"
       },
       "stadium": {
         "id": "400257521",
@@ -2867,10 +3217,16 @@ window.__WORLD_CUP_2026_DATA__ = {
       },
       "placeholderHome": "I4",
       "placeholderAway": "I1",
-      "score": null,
+      "score": {
+        "home": 1,
+        "away": 4,
+        "penaltyHome": null,
+        "penaltyAway": null
+      },
       "status": {
-        "code": 1,
-        "label": "Sắp diễn ra"
+        "code": 0,
+        "label": "Kết thúc",
+        "matchTime": "96'"
       },
       "stadium": {
         "id": "400248623",
@@ -2914,10 +3270,16 @@ window.__WORLD_CUP_2026_DATA__ = {
       },
       "placeholderHome": "I2",
       "placeholderAway": "I3",
-      "score": null,
+      "score": {
+        "home": 5,
+        "away": 0,
+        "penaltyHome": null,
+        "penaltyAway": null
+      },
       "status": {
-        "code": 1,
-        "label": "Sắp diễn ra"
+        "code": 0,
+        "label": "Kết thúc",
+        "matchTime": "97'"
       },
       "stadium": {
         "id": "400242032",
@@ -2961,10 +3323,16 @@ window.__WORLD_CUP_2026_DATA__ = {
       },
       "placeholderHome": "H2",
       "placeholderAway": "H3",
-      "score": null,
+      "score": {
+        "home": 0,
+        "away": 0,
+        "penaltyHome": null,
+        "penaltyAway": null
+      },
       "status": {
-        "code": 1,
-        "label": "Sắp diễn ra"
+        "code": 0,
+        "label": "Kết thúc",
+        "matchTime": "96'"
       },
       "stadium": {
         "id": "400249385",
@@ -3008,10 +3376,16 @@ window.__WORLD_CUP_2026_DATA__ = {
       },
       "placeholderHome": "H4",
       "placeholderAway": "H1",
-      "score": null,
+      "score": {
+        "home": 0,
+        "away": 1,
+        "penaltyHome": null,
+        "penaltyAway": null
+      },
       "status": {
-        "code": 1,
-        "label": "Sắp diễn ra"
+        "code": 0,
+        "label": "Kết thúc",
+        "matchTime": "97'"
       },
       "stadium": {
         "id": "400252150",
@@ -3055,10 +3429,16 @@ window.__WORLD_CUP_2026_DATA__ = {
       },
       "placeholderHome": "G2",
       "placeholderAway": "G3",
-      "score": null,
+      "score": {
+        "home": 1,
+        "away": 1,
+        "penaltyHome": null,
+        "penaltyAway": null
+      },
       "status": {
-        "code": 1,
-        "label": "Sắp diễn ra"
+        "code": 0,
+        "label": "Kết thúc",
+        "matchTime": "99'"
       },
       "stadium": {
         "id": "400216606",
@@ -3102,10 +3482,16 @@ window.__WORLD_CUP_2026_DATA__ = {
       },
       "placeholderHome": "G4",
       "placeholderAway": "G1",
-      "score": null,
+      "score": {
+        "home": 1,
+        "away": 5,
+        "penaltyHome": null,
+        "penaltyAway": null
+      },
       "status": {
-        "code": 1,
-        "label": "Sắp diễn ra"
+        "code": 0,
+        "label": "Kết thúc",
+        "matchTime": "96'"
       },
       "stadium": {
         "id": "400248370",
@@ -3149,10 +3535,16 @@ window.__WORLD_CUP_2026_DATA__ = {
       },
       "placeholderHome": "Thua trận 4",
       "placeholderAway": "Thua trận 1",
-      "score": null,
+      "score": {
+        "home": 0,
+        "away": 2,
+        "penaltyHome": null,
+        "penaltyAway": null
+      },
       "status": {
-        "code": 1,
-        "label": "Sắp diễn ra"
+        "code": 0,
+        "label": "Kết thúc",
+        "matchTime": "98'"
       },
       "stadium": {
         "id": "400257536",
@@ -3196,10 +3588,16 @@ window.__WORLD_CUP_2026_DATA__ = {
       },
       "placeholderHome": "Thua trận 2",
       "placeholderAway": "Thua trận 3",
-      "score": null,
+      "score": {
+        "home": 2,
+        "away": 1,
+        "penaltyHome": null,
+        "penaltyAway": null
+      },
       "status": {
-        "code": 1,
-        "label": "Sắp diễn ra"
+        "code": 0,
+        "label": "Kết thúc",
+        "matchTime": "98'"
       },
       "stadium": {
         "id": "400248622",
@@ -3243,10 +3641,16 @@ window.__WORLD_CUP_2026_DATA__ = {
       },
       "placeholderHome": "K4",
       "placeholderAway": "K1",
-      "score": null,
+      "score": {
+        "home": 0,
+        "away": 0,
+        "penaltyHome": null,
+        "penaltyAway": null
+      },
       "status": {
-        "code": 1,
-        "label": "Sắp diễn ra"
+        "code": 0,
+        "label": "Kết thúc",
+        "matchTime": "96'"
       },
       "stadium": {
         "id": "400257525",
@@ -3290,10 +3694,16 @@ window.__WORLD_CUP_2026_DATA__ = {
       },
       "placeholderHome": "K2",
       "placeholderAway": "K3",
-      "score": null,
+      "score": {
+        "home": 3,
+        "away": 1,
+        "penaltyHome": null,
+        "penaltyAway": null
+      },
       "status": {
-        "code": 1,
-        "label": "Sắp diễn ra"
+        "code": 0,
+        "label": "Kết thúc",
+        "matchTime": "99'"
       },
       "stadium": {
         "id": "400098290",
@@ -3337,10 +3747,16 @@ window.__WORLD_CUP_2026_DATA__ = {
       },
       "placeholderHome": "J2",
       "placeholderAway": "J3",
-      "score": null,
+      "score": {
+        "home": 3,
+        "away": 3,
+        "penaltyHome": null,
+        "penaltyAway": null
+      },
       "status": {
-        "code": 1,
-        "label": "Sắp diễn ra"
+        "code": 0,
+        "label": "Kết thúc",
+        "matchTime": "97'"
       },
       "stadium": {
         "id": "400254717",
@@ -3384,10 +3800,16 @@ window.__WORLD_CUP_2026_DATA__ = {
       },
       "placeholderHome": "J4",
       "placeholderAway": "J1",
-      "score": null,
+      "score": {
+        "home": 1,
+        "away": 3,
+        "penaltyHome": null,
+        "penaltyAway": null
+      },
       "status": {
-        "code": 1,
-        "label": "Sắp diễn ra"
+        "code": 0,
+        "label": "Kết thúc",
+        "matchTime": "96'"
       },
       "stadium": {
         "id": "400257526",
@@ -3412,29 +3834,30 @@ window.__WORLD_CUP_2026_DATA__ = {
       "vietnamShortDate": "29/06/2026",
       "vietnamTime": "02:00",
       "home": {
-        "id": null,
-        "name": "2A",
-        "shortName": "2A",
-        "abbreviation": "",
-        "country": "",
-        "flagUrl": null,
-        "isPlaceholder": true
+        "id": "43883",
+        "name": "South Africa",
+        "shortName": "South Africa",
+        "abbreviation": "RSA",
+        "country": "RSA",
+        "flagUrl": "https://api.fifa.com/api/v3/picture/flags-png-2/RSA",
+        "isPlaceholder": false
       },
       "away": {
-        "id": null,
-        "name": "2B",
-        "shortName": "2B",
-        "abbreviation": "",
-        "country": "",
-        "flagUrl": null,
-        "isPlaceholder": true
+        "id": "43899",
+        "name": "Canada",
+        "shortName": "Canada",
+        "abbreviation": "CAN",
+        "country": "CAN",
+        "flagUrl": "https://api.fifa.com/api/v3/picture/flags-png-2/CAN",
+        "isPlaceholder": false
       },
       "placeholderHome": "2A",
       "placeholderAway": "2B",
       "score": null,
       "status": {
         "code": 1,
-        "label": "Sắp diễn ra"
+        "label": "Sắp diễn ra",
+        "matchTime": "0'"
       },
       "stadium": {
         "id": "400017978",
@@ -3459,29 +3882,30 @@ window.__WORLD_CUP_2026_DATA__ = {
       "vietnamShortDate": "30/06/2026",
       "vietnamTime": "00:00",
       "home": {
-        "id": null,
-        "name": "1C",
-        "shortName": "1C",
-        "abbreviation": "",
-        "country": "",
-        "flagUrl": null,
-        "isPlaceholder": true
+        "id": "43924",
+        "name": "Brazil",
+        "shortName": "Brazil",
+        "abbreviation": "BRA",
+        "country": "BRA",
+        "flagUrl": "https://api.fifa.com/api/v3/picture/flags-png-2/BRA",
+        "isPlaceholder": false
       },
       "away": {
-        "id": null,
-        "name": "2F",
-        "shortName": "2F",
-        "abbreviation": "",
-        "country": "",
-        "flagUrl": null,
-        "isPlaceholder": true
+        "id": "43819",
+        "name": "Japan",
+        "shortName": "Japan",
+        "abbreviation": "JPN",
+        "country": "JPN",
+        "flagUrl": "https://api.fifa.com/api/v3/picture/flags-png-2/JPN",
+        "isPlaceholder": false
       },
       "placeholderHome": "1C",
       "placeholderAway": "2F",
       "score": null,
       "status": {
         "code": 1,
-        "label": "Sắp diễn ra"
+        "label": "Sắp diễn ra",
+        "matchTime": "0'"
       },
       "stadium": {
         "id": "400249385",
@@ -3506,29 +3930,30 @@ window.__WORLD_CUP_2026_DATA__ = {
       "vietnamShortDate": "30/06/2026",
       "vietnamTime": "03:30",
       "home": {
-        "id": null,
-        "name": "1E",
-        "shortName": "1E",
-        "abbreviation": "",
-        "country": "",
-        "flagUrl": null,
-        "isPlaceholder": true
+        "id": "43948",
+        "name": "Germany",
+        "shortName": "Germany",
+        "abbreviation": "GER",
+        "country": "GER",
+        "flagUrl": "https://api.fifa.com/api/v3/picture/flags-png-2/GER",
+        "isPlaceholder": false
       },
       "away": {
-        "id": null,
-        "name": "3ABCDF",
-        "shortName": "3ABCDF",
-        "abbreviation": "",
-        "country": "",
-        "flagUrl": null,
-        "isPlaceholder": true
+        "id": "43928",
+        "name": "Paraguay",
+        "shortName": "Paraguay",
+        "abbreviation": "PAR",
+        "country": "PAR",
+        "flagUrl": "https://api.fifa.com/api/v3/picture/flags-png-2/PAR",
+        "isPlaceholder": false
       },
       "placeholderHome": "1E",
       "placeholderAway": "3ABCDF",
       "score": null,
       "status": {
         "code": 1,
-        "label": "Sắp diễn ra"
+        "label": "Sắp diễn ra",
+        "matchTime": "0'"
       },
       "stadium": {
         "id": "400248623",
@@ -3553,29 +3978,30 @@ window.__WORLD_CUP_2026_DATA__ = {
       "vietnamShortDate": "30/06/2026",
       "vietnamTime": "08:00",
       "home": {
-        "id": null,
-        "name": "1F",
-        "shortName": "1F",
-        "abbreviation": "",
-        "country": "",
-        "flagUrl": null,
-        "isPlaceholder": true
+        "id": "43960",
+        "name": "Netherlands",
+        "shortName": "Netherlands",
+        "abbreviation": "NED",
+        "country": "NED",
+        "flagUrl": "https://api.fifa.com/api/v3/picture/flags-png-2/NED",
+        "isPlaceholder": false
       },
       "away": {
-        "id": null,
-        "name": "2C",
-        "shortName": "2C",
-        "abbreviation": "",
-        "country": "",
-        "flagUrl": null,
-        "isPlaceholder": true
+        "id": "43872",
+        "name": "Morocco",
+        "shortName": "Morocco",
+        "abbreviation": "MAR",
+        "country": "MAR",
+        "flagUrl": "https://api.fifa.com/api/v3/picture/flags-png-2/MAR",
+        "isPlaceholder": false
       },
       "placeholderHome": "1F",
       "placeholderAway": "2C",
       "score": null,
       "status": {
         "code": 1,
-        "label": "Sắp diễn ra"
+        "label": "Sắp diễn ra",
+        "matchTime": "0'"
       },
       "stadium": {
         "id": "400238450",
@@ -3600,29 +4026,30 @@ window.__WORLD_CUP_2026_DATA__ = {
       "vietnamShortDate": "01/07/2026",
       "vietnamTime": "00:00",
       "home": {
-        "id": null,
-        "name": "2E",
-        "shortName": "2E",
-        "abbreviation": "",
-        "country": "",
-        "flagUrl": null,
-        "isPlaceholder": true
+        "id": "43854",
+        "name": "Côte d'Ivoire",
+        "shortName": "Côte d'Ivoire",
+        "abbreviation": "CIV",
+        "country": "CIV",
+        "flagUrl": "https://api.fifa.com/api/v3/picture/flags-png-2/CIV",
+        "isPlaceholder": false
       },
       "away": {
-        "id": null,
-        "name": "2I",
-        "shortName": "2I",
-        "abbreviation": "",
-        "country": "",
-        "flagUrl": null,
-        "isPlaceholder": true
+        "id": "43961",
+        "name": "Norway",
+        "shortName": "Norway",
+        "abbreviation": "NOR",
+        "country": "NOR",
+        "flagUrl": "https://api.fifa.com/api/v3/picture/flags-png-2/NOR",
+        "isPlaceholder": false
       },
       "placeholderHome": "2E",
       "placeholderAway": "2I",
       "score": null,
       "status": {
         "code": 1,
-        "label": "Sắp diễn ra"
+        "label": "Sắp diễn ra",
+        "matchTime": "0'"
       },
       "stadium": {
         "id": "400257526",
@@ -3647,29 +4074,30 @@ window.__WORLD_CUP_2026_DATA__ = {
       "vietnamShortDate": "01/07/2026",
       "vietnamTime": "04:00",
       "home": {
-        "id": null,
-        "name": "1I",
-        "shortName": "1I",
-        "abbreviation": "",
-        "country": "",
-        "flagUrl": null,
-        "isPlaceholder": true
+        "id": "43946",
+        "name": "France",
+        "shortName": "France",
+        "abbreviation": "FRA",
+        "country": "FRA",
+        "flagUrl": "https://api.fifa.com/api/v3/picture/flags-png-2/FRA",
+        "isPlaceholder": false
       },
       "away": {
-        "id": null,
-        "name": "3CDFGH",
-        "shortName": "3CDFGH",
-        "abbreviation": "",
-        "country": "",
-        "flagUrl": null,
-        "isPlaceholder": true
+        "id": "43970",
+        "name": "Sweden",
+        "shortName": "Sweden",
+        "abbreviation": "SWE",
+        "country": "SWE",
+        "flagUrl": "https://api.fifa.com/api/v3/picture/flags-png-2/SWE",
+        "isPlaceholder": false
       },
       "placeholderHome": "1I",
       "placeholderAway": "3CDFGH",
       "score": null,
       "status": {
         "code": 1,
-        "label": "Sắp diễn ra"
+        "label": "Sắp diễn ra",
+        "matchTime": "0'"
       },
       "stadium": {
         "id": "400257536",
@@ -3694,29 +4122,30 @@ window.__WORLD_CUP_2026_DATA__ = {
       "vietnamShortDate": "01/07/2026",
       "vietnamTime": "08:00",
       "home": {
-        "id": null,
-        "name": "1A",
-        "shortName": "1A",
-        "abbreviation": "",
-        "country": "",
-        "flagUrl": null,
-        "isPlaceholder": true
+        "id": "43911",
+        "name": "Mexico",
+        "shortName": "Mexico",
+        "abbreviation": "MEX",
+        "country": "MEX",
+        "flagUrl": "https://api.fifa.com/api/v3/picture/flags-png-2/MEX",
+        "isPlaceholder": false
       },
       "away": {
-        "id": null,
-        "name": "3CEFHI",
-        "shortName": "3CEFHI",
-        "abbreviation": "",
-        "country": "",
-        "flagUrl": null,
-        "isPlaceholder": true
+        "id": "43927",
+        "name": "Ecuador",
+        "shortName": "Ecuador",
+        "abbreviation": "ECU",
+        "country": "ECU",
+        "flagUrl": "https://api.fifa.com/api/v3/picture/flags-png-2/ECU",
+        "isPlaceholder": false
       },
       "placeholderHome": "1A",
       "placeholderAway": "3CEFHI",
       "score": null,
       "status": {
         "code": 1,
-        "label": "Sắp diễn ra"
+        "label": "Sắp diễn ra",
+        "matchTime": "0'"
       },
       "stadium": {
         "id": "400222084",
@@ -3741,29 +4170,30 @@ window.__WORLD_CUP_2026_DATA__ = {
       "vietnamShortDate": "01/07/2026",
       "vietnamTime": "23:00",
       "home": {
-        "id": null,
-        "name": "1L",
-        "shortName": "1L",
-        "abbreviation": "",
-        "country": "",
-        "flagUrl": null,
-        "isPlaceholder": true
+        "id": "43942",
+        "name": "England",
+        "shortName": "England",
+        "abbreviation": "ENG",
+        "country": "ENG",
+        "flagUrl": "https://api.fifa.com/api/v3/picture/flags-png-2/ENG",
+        "isPlaceholder": false
       },
       "away": {
-        "id": null,
-        "name": "3EHIJK",
-        "shortName": "3EHIJK",
-        "abbreviation": "",
-        "country": "",
-        "flagUrl": null,
-        "isPlaceholder": true
+        "id": "20014",
+        "name": "Congo DR",
+        "shortName": "Congo DR",
+        "abbreviation": "COD",
+        "country": "COD",
+        "flagUrl": "https://api.fifa.com/api/v3/picture/flags-png-2/COD",
+        "isPlaceholder": false
       },
       "placeholderHome": "1L",
       "placeholderAway": "3EHIJK",
       "score": null,
       "status": {
         "code": 1,
-        "label": "Sắp diễn ra"
+        "label": "Sắp diễn ra",
+        "matchTime": "0'"
       },
       "stadium": {
         "id": "400098290",
@@ -3788,29 +4218,30 @@ window.__WORLD_CUP_2026_DATA__ = {
       "vietnamShortDate": "02/07/2026",
       "vietnamTime": "03:00",
       "home": {
-        "id": null,
-        "name": "1G",
-        "shortName": "1G",
-        "abbreviation": "",
-        "country": "",
-        "flagUrl": null,
-        "isPlaceholder": true
+        "id": "43935",
+        "name": "Belgium",
+        "shortName": "Belgium",
+        "abbreviation": "BEL",
+        "country": "BEL",
+        "flagUrl": "https://api.fifa.com/api/v3/picture/flags-png-2/BEL",
+        "isPlaceholder": false
       },
       "away": {
-        "id": null,
-        "name": "3AEHIJ",
-        "shortName": "3AEHIJ",
-        "abbreviation": "",
-        "country": "",
-        "flagUrl": null,
-        "isPlaceholder": true
+        "id": "43879",
+        "name": "Senegal",
+        "shortName": "Senegal",
+        "abbreviation": "SEN",
+        "country": "SEN",
+        "flagUrl": "https://api.fifa.com/api/v3/picture/flags-png-2/SEN",
+        "isPlaceholder": false
       },
       "placeholderHome": "1G",
       "placeholderAway": "3AEHIJ",
       "score": null,
       "status": {
         "code": 1,
-        "label": "Sắp diễn ra"
+        "label": "Sắp diễn ra",
+        "matchTime": "0'"
       },
       "stadium": {
         "id": "400216606",
@@ -3835,29 +4266,30 @@ window.__WORLD_CUP_2026_DATA__ = {
       "vietnamShortDate": "02/07/2026",
       "vietnamTime": "07:00",
       "home": {
-        "id": null,
-        "name": "1D",
-        "shortName": "1D",
-        "abbreviation": "",
-        "country": "",
-        "flagUrl": null,
-        "isPlaceholder": true
+        "id": "43921",
+        "name": "USA",
+        "shortName": "USA",
+        "abbreviation": "USA",
+        "country": "USA",
+        "flagUrl": "https://api.fifa.com/api/v3/picture/flags-png-2/USA",
+        "isPlaceholder": false
       },
       "away": {
-        "id": null,
-        "name": "3BEFIJ",
-        "shortName": "3BEFIJ",
-        "abbreviation": "",
-        "country": "",
-        "flagUrl": null,
-        "isPlaceholder": true
+        "id": "44037",
+        "name": "Bosnia and Herzegovina",
+        "shortName": "Bosnia and Herzegovina",
+        "abbreviation": "BIH",
+        "country": "BIH",
+        "flagUrl": "https://api.fifa.com/api/v3/picture/flags-png-2/BIH",
+        "isPlaceholder": false
       },
       "placeholderHome": "1D",
       "placeholderAway": "3BEFIJ",
       "score": null,
       "status": {
         "code": 1,
-        "label": "Sắp diễn ra"
+        "label": "Sắp diễn ra",
+        "matchTime": "0'"
       },
       "stadium": {
         "id": "400257521",
@@ -3882,29 +4314,30 @@ window.__WORLD_CUP_2026_DATA__ = {
       "vietnamShortDate": "03/07/2026",
       "vietnamTime": "02:00",
       "home": {
-        "id": null,
-        "name": "1H",
-        "shortName": "1H",
-        "abbreviation": "",
-        "country": "",
-        "flagUrl": null,
-        "isPlaceholder": true
+        "id": "43969",
+        "name": "Spain",
+        "shortName": "Spain",
+        "abbreviation": "ESP",
+        "country": "ESP",
+        "flagUrl": "https://api.fifa.com/api/v3/picture/flags-png-2/ESP",
+        "isPlaceholder": false
       },
       "away": {
-        "id": null,
-        "name": "2J",
-        "shortName": "2J",
-        "abbreviation": "",
-        "country": "",
-        "flagUrl": null,
-        "isPlaceholder": true
+        "id": "43934",
+        "name": "Austria",
+        "shortName": "Austria",
+        "abbreviation": "AUT",
+        "country": "AUT",
+        "flagUrl": "https://api.fifa.com/api/v3/picture/flags-png-2/AUT",
+        "isPlaceholder": false
       },
       "placeholderHome": "1H",
       "placeholderAway": "2J",
       "score": null,
       "status": {
         "code": 1,
-        "label": "Sắp diễn ra"
+        "label": "Sắp diễn ra",
+        "matchTime": "0'"
       },
       "stadium": {
         "id": "400017978",
@@ -3929,29 +4362,30 @@ window.__WORLD_CUP_2026_DATA__ = {
       "vietnamShortDate": "03/07/2026",
       "vietnamTime": "06:00",
       "home": {
-        "id": null,
-        "name": "2K",
-        "shortName": "2K",
-        "abbreviation": "",
-        "country": "",
-        "flagUrl": null,
-        "isPlaceholder": true
+        "id": "43963",
+        "name": "Portugal",
+        "shortName": "Portugal",
+        "abbreviation": "POR",
+        "country": "POR",
+        "flagUrl": "https://api.fifa.com/api/v3/picture/flags-png-2/POR",
+        "isPlaceholder": false
       },
       "away": {
-        "id": null,
-        "name": "2L",
-        "shortName": "2L",
-        "abbreviation": "",
-        "country": "",
-        "flagUrl": null,
-        "isPlaceholder": true
+        "id": "43938",
+        "name": "Croatia",
+        "shortName": "Croatia",
+        "abbreviation": "CRO",
+        "country": "CRO",
+        "flagUrl": "https://api.fifa.com/api/v3/picture/flags-png-2/CRO",
+        "isPlaceholder": false
       },
       "placeholderHome": "2K",
       "placeholderAway": "2L",
       "score": null,
       "status": {
         "code": 1,
-        "label": "Sắp diễn ra"
+        "label": "Sắp diễn ra",
+        "matchTime": "0'"
       },
       "stadium": {
         "id": "400242032",
@@ -3976,29 +4410,30 @@ window.__WORLD_CUP_2026_DATA__ = {
       "vietnamShortDate": "03/07/2026",
       "vietnamTime": "10:00",
       "home": {
-        "id": null,
-        "name": "1B",
-        "shortName": "1B",
-        "abbreviation": "",
-        "country": "",
-        "flagUrl": null,
-        "isPlaceholder": true
+        "id": "43971",
+        "name": "Switzerland",
+        "shortName": "Switzerland",
+        "abbreviation": "SUI",
+        "country": "SUI",
+        "flagUrl": "https://api.fifa.com/api/v3/picture/flags-png-2/SUI",
+        "isPlaceholder": false
       },
       "away": {
-        "id": null,
-        "name": "3EFGIJ",
-        "shortName": "3EFGIJ",
-        "abbreviation": "",
-        "country": "",
-        "flagUrl": null,
-        "isPlaceholder": true
+        "id": "43843",
+        "name": "Algeria",
+        "shortName": "Algeria",
+        "abbreviation": "ALG",
+        "country": "ALG",
+        "flagUrl": "https://api.fifa.com/api/v3/picture/flags-png-2/ALG",
+        "isPlaceholder": false
       },
       "placeholderHome": "1B",
       "placeholderAway": "3EFGIJ",
       "score": null,
       "status": {
         "code": 1,
-        "label": "Sắp diễn ra"
+        "label": "Sắp diễn ra",
+        "matchTime": "0'"
       },
       "stadium": {
         "id": "400248370",
@@ -4023,29 +4458,30 @@ window.__WORLD_CUP_2026_DATA__ = {
       "vietnamShortDate": "04/07/2026",
       "vietnamTime": "01:00",
       "home": {
-        "id": null,
-        "name": "2D",
-        "shortName": "2D",
-        "abbreviation": "",
-        "country": "",
-        "flagUrl": null,
-        "isPlaceholder": true
+        "id": "43976",
+        "name": "Australia",
+        "shortName": "Australia",
+        "abbreviation": "AUS",
+        "country": "AUS",
+        "flagUrl": "https://api.fifa.com/api/v3/picture/flags-png-2/AUS",
+        "isPlaceholder": false
       },
       "away": {
-        "id": null,
-        "name": "2G",
-        "shortName": "2G",
-        "abbreviation": "",
-        "country": "",
-        "flagUrl": null,
-        "isPlaceholder": true
+        "id": "43855",
+        "name": "Egypt",
+        "shortName": "Egypt",
+        "abbreviation": "EGY",
+        "country": "EGY",
+        "flagUrl": "https://api.fifa.com/api/v3/picture/flags-png-2/EGY",
+        "isPlaceholder": false
       },
       "placeholderHome": "2D",
       "placeholderAway": "2G",
       "score": null,
       "status": {
         "code": 1,
-        "label": "Sắp diễn ra"
+        "label": "Sắp diễn ra",
+        "matchTime": "0'"
       },
       "stadium": {
         "id": "400257526",
@@ -4070,29 +4506,30 @@ window.__WORLD_CUP_2026_DATA__ = {
       "vietnamShortDate": "04/07/2026",
       "vietnamTime": "05:00",
       "home": {
-        "id": null,
-        "name": "1J",
-        "shortName": "1J",
-        "abbreviation": "",
-        "country": "",
-        "flagUrl": null,
-        "isPlaceholder": true
+        "id": "43922",
+        "name": "Argentina",
+        "shortName": "Argentina",
+        "abbreviation": "ARG",
+        "country": "ARG",
+        "flagUrl": "https://api.fifa.com/api/v3/picture/flags-png-2/ARG",
+        "isPlaceholder": false
       },
       "away": {
-        "id": null,
-        "name": "2H",
-        "shortName": "2H",
-        "abbreviation": "",
-        "country": "",
-        "flagUrl": null,
-        "isPlaceholder": true
+        "id": "43850",
+        "name": "Cabo Verde",
+        "shortName": "Cabo Verde",
+        "abbreviation": "CPV",
+        "country": "CPV",
+        "flagUrl": "https://api.fifa.com/api/v3/picture/flags-png-2/CPV",
+        "isPlaceholder": false
       },
       "placeholderHome": "1J",
       "placeholderAway": "2H",
       "score": null,
       "status": {
         "code": 1,
-        "label": "Sắp diễn ra"
+        "label": "Sắp diễn ra",
+        "matchTime": "0'"
       },
       "stadium": {
         "id": "400257525",
@@ -4117,29 +4554,30 @@ window.__WORLD_CUP_2026_DATA__ = {
       "vietnamShortDate": "04/07/2026",
       "vietnamTime": "08:30",
       "home": {
-        "id": null,
-        "name": "1K",
-        "shortName": "1K",
-        "abbreviation": "",
-        "country": "",
-        "flagUrl": null,
-        "isPlaceholder": true
+        "id": "43926",
+        "name": "Colombia",
+        "shortName": "Colombia",
+        "abbreviation": "COL",
+        "country": "COL",
+        "flagUrl": "https://api.fifa.com/api/v3/picture/flags-png-2/COL",
+        "isPlaceholder": false
       },
       "away": {
-        "id": null,
-        "name": "3DEIJL",
-        "shortName": "3DEIJL",
-        "abbreviation": "",
-        "country": "",
-        "flagUrl": null,
-        "isPlaceholder": true
+        "id": "43860",
+        "name": "Ghana",
+        "shortName": "Ghana",
+        "abbreviation": "GHA",
+        "country": "GHA",
+        "flagUrl": "https://api.fifa.com/api/v3/picture/flags-png-2/GHA",
+        "isPlaceholder": false
       },
       "placeholderHome": "1K",
       "placeholderAway": "3DEIJL",
       "score": null,
       "status": {
         "code": 1,
-        "label": "Sắp diễn ra"
+        "label": "Sắp diễn ra",
+        "matchTime": "0'"
       },
       "stadium": {
         "id": "400254717",
@@ -4186,7 +4624,8 @@ window.__WORLD_CUP_2026_DATA__ = {
       "score": null,
       "status": {
         "code": 1,
-        "label": "Sắp diễn ra"
+        "label": "Sắp diễn ra",
+        "matchTime": null
       },
       "stadium": {
         "id": "400249385",
@@ -4233,7 +4672,8 @@ window.__WORLD_CUP_2026_DATA__ = {
       "score": null,
       "status": {
         "code": 1,
-        "label": "Sắp diễn ra"
+        "label": "Sắp diễn ra",
+        "matchTime": null
       },
       "stadium": {
         "id": "400248622",
@@ -4280,7 +4720,8 @@ window.__WORLD_CUP_2026_DATA__ = {
       "score": null,
       "status": {
         "code": 1,
-        "label": "Sắp diễn ra"
+        "label": "Sắp diễn ra",
+        "matchTime": null
       },
       "stadium": {
         "id": "400257536",
@@ -4327,7 +4768,8 @@ window.__WORLD_CUP_2026_DATA__ = {
       "score": null,
       "status": {
         "code": 1,
-        "label": "Sắp diễn ra"
+        "label": "Sắp diễn ra",
+        "matchTime": null
       },
       "stadium": {
         "id": "400222084",
@@ -4374,7 +4816,8 @@ window.__WORLD_CUP_2026_DATA__ = {
       "score": null,
       "status": {
         "code": 1,
-        "label": "Sắp diễn ra"
+        "label": "Sắp diễn ra",
+        "matchTime": null
       },
       "stadium": {
         "id": "400257526",
@@ -4421,7 +4864,8 @@ window.__WORLD_CUP_2026_DATA__ = {
       "score": null,
       "status": {
         "code": 1,
-        "label": "Sắp diễn ra"
+        "label": "Sắp diễn ra",
+        "matchTime": null
       },
       "stadium": {
         "id": "400216606",
@@ -4468,7 +4912,8 @@ window.__WORLD_CUP_2026_DATA__ = {
       "score": null,
       "status": {
         "code": 1,
-        "label": "Sắp diễn ra"
+        "label": "Sắp diễn ra",
+        "matchTime": null
       },
       "stadium": {
         "id": "400098290",
@@ -4515,7 +4960,8 @@ window.__WORLD_CUP_2026_DATA__ = {
       "score": null,
       "status": {
         "code": 1,
-        "label": "Sắp diễn ra"
+        "label": "Sắp diễn ra",
+        "matchTime": null
       },
       "stadium": {
         "id": "400248370",
@@ -4562,7 +5008,8 @@ window.__WORLD_CUP_2026_DATA__ = {
       "score": null,
       "status": {
         "code": 1,
-        "label": "Sắp diễn ra"
+        "label": "Sắp diễn ra",
+        "matchTime": null
       },
       "stadium": {
         "id": "400248623",
@@ -4609,7 +5056,8 @@ window.__WORLD_CUP_2026_DATA__ = {
       "score": null,
       "status": {
         "code": 1,
-        "label": "Sắp diễn ra"
+        "label": "Sắp diễn ra",
+        "matchTime": null
       },
       "stadium": {
         "id": "400017978",
@@ -4656,7 +5104,8 @@ window.__WORLD_CUP_2026_DATA__ = {
       "score": null,
       "status": {
         "code": 1,
-        "label": "Sắp diễn ra"
+        "label": "Sắp diễn ra",
+        "matchTime": null
       },
       "stadium": {
         "id": "400257525",
@@ -4703,7 +5152,8 @@ window.__WORLD_CUP_2026_DATA__ = {
       "score": null,
       "status": {
         "code": 1,
-        "label": "Sắp diễn ra"
+        "label": "Sắp diễn ra",
+        "matchTime": null
       },
       "stadium": {
         "id": "400254717",
@@ -4750,7 +5200,8 @@ window.__WORLD_CUP_2026_DATA__ = {
       "score": null,
       "status": {
         "code": 1,
-        "label": "Sắp diễn ra"
+        "label": "Sắp diễn ra",
+        "matchTime": null
       },
       "stadium": {
         "id": "400257526",
@@ -4797,7 +5248,8 @@ window.__WORLD_CUP_2026_DATA__ = {
       "score": null,
       "status": {
         "code": 1,
-        "label": "Sắp diễn ra"
+        "label": "Sắp diễn ra",
+        "matchTime": null
       },
       "stadium": {
         "id": "400098290",
@@ -4844,7 +5296,8 @@ window.__WORLD_CUP_2026_DATA__ = {
       "score": null,
       "status": {
         "code": 1,
-        "label": "Sắp diễn ra"
+        "label": "Sắp diễn ra",
+        "matchTime": null
       },
       "stadium": {
         "id": "400257525",
@@ -4891,7 +5344,8 @@ window.__WORLD_CUP_2026_DATA__ = {
       "score": null,
       "status": {
         "code": 1,
-        "label": "Sắp diễn ra"
+        "label": "Sắp diễn ra",
+        "matchTime": null
       },
       "stadium": {
         "id": "400257536",
