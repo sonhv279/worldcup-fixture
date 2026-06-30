@@ -891,6 +891,7 @@ main {
   z-index: 1;
   display: grid;
   gap: 9px;
+  min-width: 0;
   border: 1px solid var(--line);
   border-radius: 8px;
   background: var(--card);
@@ -919,6 +920,8 @@ main {
   align-items: center;
   justify-content: space-between;
   gap: 8px;
+  min-width: 0;
+  overflow: hidden;
   border-radius: 6px;
   background: var(--surface-soft);
   padding: 7px 8px;
@@ -929,11 +932,15 @@ main {
 .bracket-team-name {
   display: inline-flex;
   align-items: center;
+  flex: 1;
+  max-width: 100%;
   min-width: 0;
+  overflow: hidden;
   gap: 8px;
 }
 
 .bracket-team-name span:last-child {
+  min-width: 0;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
